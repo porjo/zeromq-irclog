@@ -15,4 +15,3 @@ for( var i=0; i< timestamps.length; i++){
 }
 var info = document.getElementById("timeinfo");
 info.innerHTML = "*Times are relative to local timezone";
-
