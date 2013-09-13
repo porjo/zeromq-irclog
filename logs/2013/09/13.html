@@ -66,7 +66,7 @@
 
       </section>
 <div id="msgtablediv">
-<h3 id="titleDate" data-time="1379084401">Friday September 13th 2013</h3>
+<h3 id="titleDate" data-time="1379086201">Friday September 13th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -148,6 +148,10 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1379084189">00:04</span>]</a></td><td class="nicktd">shaggy-h</td>
 		<td class="msgtd">hmm interesting&comma; the same thing happens even if there is no broker running for the pub socket to connect to</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1379084411">00:04</span>]</a></td><td class="nicktd">shaggy-h</td>
+		<td class="msgtd">is it a threading issue perhaps&quest; I have one thread that is publishing away&comma; another thread that is closing the context &lpar;to shut down the app&rpar;. I realise I could do it cleaner by signalling the publishing thread&comma; but that doesn&apos;t work for sockets that are doing a blocking read</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
