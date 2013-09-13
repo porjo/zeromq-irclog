@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Zeromq-irclog : IRC Log repository for ZeroMQ" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/zeromq-irclog/stylesheets/stylesheet.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+
+    <title>Zeromq-irclog</title>
+
+    <style>
+	    #msgtablediv {
+		margin-left: 20px;
+		margin-right: 20px;
+	    }
+	    #msgtable {
+		    width: 100%;
+		    border: 0;
+		    padding: 0;
+	    }
+	    #msgtableHead {
+		    font-weight: bold;
+	    }
+	    #msgtable td {
+		    border: 0;
+		    margin: 0;
+		    padding: 0px 5px 0px 5px;
+	    }
+	    .timetd {
+		    width: 60px;
+	    }
+	    #msgtable td.nicktd {
+		    width: 100px;
+		    text-align: right;
+		    border-right: 1px #555 dashed;
+	    }
+	    .light {
+		    background-color: #ccc;
+	    }
+	    .dark {
+		    background-color: #eee;
+	    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+	  <a href="/zeromq-irclog/index.html"><h1 id="project_title">Zeromq-irclog</h1></a>
+          <h2 id="project_tagline">IRC Log repository for ZeroMQ</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+      <p>These logs have been collected from the <a href="https://webchat.freenode.net?randomnick=1&channels=%23zeromq&uio=d4" target="_blank">#zeromq</a> IRC channel on Freenode.</p>
+
+
+      </section>
+<div id="msgtablediv">
+<h3 id="titleDate" data-time="1378067053">Sunday September 1st 2013</h3>
+<table id="msgtable">
+<tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1378066447">23:47</span>]</a></td><td class="nicktd">sadasant</td>
+		<td class="msgtd">for example&comma; keeping new types to the minimum&comma; the usage of flags is preferred to using json or yaml to configurations</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1378066472">23:47</span>]</a></td><td class="nicktd">sadasant</td>
+		<td class="msgtd">&lpar;in the case of excecutables&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1378066521">23:47</span>]</a></td><td class="nicktd">sadasant</td>
+		<td class="msgtd">or&comma; as I learn from you&comma; using sync instead of relying on plain channels to control goroutines</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1378066532">23:47</span>]</a></td><td class="nicktd">sadasant</td>
+		<td class="msgtd">common practices &colon;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1378066666">23:47</span>]</a></td><td class="nicktd">sadasant</td>
+		<td class="msgtd">or&comma; if better&comma; is there a repo that you consider the best example of go code&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1378066682">23:47</span>]</a></td><td class="nicktd">sadasant</td>
+		<td class="msgtd">besides the standar libs and the go&apos;s source code</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1378066852">23:47</span>]</a></td><td class="nicktd">phy</td>
+		<td class="msgtd">mb0&colon; good idea&comma; i&apos;ll give that a try</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1378066940">23:47</span>]</a></td><td class="nicktd">mortdeus</td>
+		<td class="msgtd">dominikh&comma; they would both be logically represented as pointers&period; Its just the val type would be weak reference&period; I know some languages have the concept&period; Im trying to find it&period;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1378066980">23:47</span>]</a></td><td class="nicktd">dominikh</td>
+		<td class="msgtd">mortdeus&colon; and in how many places does Go have that kind of behaviour&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1378067043">23:47</span>]</a></td><td class="nicktd">mb0</td>
+		<td class="msgtd">sadasant&comma; look at https&colon;&sol;&sol;github&period;com&sol;golang&sol;groupcache</td>
+	</tr>
+</table>
+<p id="timeinfo">*Times are in UTC</p>
+</div>
+<script src="/zeromq-irclog/javascripts/time.js"></script>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Zeromq-irclog maintained by <a href="https://github.com/porjo">porjo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
