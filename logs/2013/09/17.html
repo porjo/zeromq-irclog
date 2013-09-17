@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379379602">Tuesday September 17th 2013</h3>
+<h3 id="titleDate" data-time="1379381401">Tuesday September 17th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -76,6 +76,54 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1379379487">00:09</span>]</a></td><td class="nicktd">russkey</td>
 		<td class="msgtd">michelp: I understand that part. I mean&comma; why not combine the pump and sink into a single thread&quest; why do most of the examples I&apos;ve come across seem to have them in different threads or different processes or different machines&quest; Am I just missing the examples that show otherwise&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1379379558">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: I suppose it depends on how many messages a second you&apos;re trying to deal with</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1379379567">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: and how many mbit/s</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1379379599">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: if you have a problem you&apos;re trying to parallelize where the workers will be working on one unit of work for awhile&comma; probably couldn&apos;t hurt to have pump and sink in same proc</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1379379697">00:09</span>]</a></td><td class="nicktd">russkey</td>
+		<td class="msgtd">that is the situation&comma; indeed. more than that&comma; the work is sequential&comma; so all of the workers need to be done and some integration needs to happen at the sink before the next calculation can start</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1379379734">00:09</span>]</a></td><td class="nicktd">russkey</td>
+		<td class="msgtd">this is an agent based simulation</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1379379779">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: then from my own experience I&apos;d say you&apos;d be fine doing it that way</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1379379806">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: if you end up bottlenecking you can always move the sink to a separate process &lpar;or thread&rpar; later</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1379379833">00:09</span>]</a></td><td class="nicktd">russkey</td>
+		<td class="msgtd">well that is encouraging&comma; then. i was worried i was missing some sort of deep and important law</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1379379943">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: nope&excl; I think most of the examples have sink separate just assuming that you might not want the work the sink is doing interfering with the ventilator sending messages</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1379380009">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">russkey: but if you have a case where your bottleneck will be the work your workers are doing and not so much the messaging itself&comma; there&apos;s no other concerns </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1379380054">00:09</span>]</a></td><td class="nicktd">russkey</td>
+		<td class="msgtd">thanks&comma; taotetek&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1379380095">00:09</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">no problem&excl;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
