@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379604601">Thursday September 19th 2013</h3>
+<h3 id="titleDate" data-time="1379606401">Thursday September 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -756,6 +756,70 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-172">[<span class="ts" data-time="1379604166">00:13</span>]</a></td><td class="nicktd">Guest40567</td>
 		<td class="msgtd"><a href="http://pastebin.com/LyeQ1pxC">http://pastebin.com/LyeQ1pxC</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-173">[<span class="ts" data-time="1379604619">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">Guest40567: I just skimmed your code but isn&apos;t your connecting and binding reversed&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-174">[<span class="ts" data-time="1379604711">00:13</span>]</a></td><td class="nicktd">Guest40567</td>
+		<td class="msgtd">sphaero&UnderBar;z25: thanks a lot&comma; that was the problem :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-175">[<span class="ts" data-time="1379605969">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sphaero&UnderBar;z25: we hit cases where multicast didn&apos;t work&comma; and broadcast did</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-176">[<span class="ts" data-time="1379605997">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and there was no particular benefit in multicast on IPv4</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-177">[<span class="ts" data-time="1379606027">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">mhk: sure&comma; what questions&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-178">[<span class="ts" data-time="1379606101">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">pieterh:what were the cases multicast didn&apos;t work&quest; The benefit of multicast would be to be able reach beyond one network subnet&comma; not&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-179">[<span class="ts" data-time="1379606149">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">we were developing on mobile devices&comma; and on android&comma; the wifi stack does not propagate multicast properly when it&apos;s acting as access point</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-180">[<span class="ts" data-time="1379606178">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">also the way multicast reaches beyond subnets can be dangerous if not done properly</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-181">[<span class="ts" data-time="1379606182">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">that&apos;s good to know</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-182">[<span class="ts" data-time="1379606205">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">broadcast is simple and safe and was sufficient for the use case &lpar;10-200 nodes on a subnet&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-183">[<span class="ts" data-time="1379606225">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">however if we get a use case where multicast works&comma; that would definitely be interesting</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-184">[<span class="ts" data-time="1379606250">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">however the protocol doens&apos;t have any way of discovering across subnets currently&comma; right&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-185">[<span class="ts" data-time="1379606275">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I&apos;ve built almost exactly the same protocol using multicast</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-186">[<span class="ts" data-time="1379606286">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">but just as a prototype</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-187">[<span class="ts" data-time="1379606300">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">that&apos;s why I was interested in the broadcast choice</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-188">[<span class="ts" data-time="1379606301">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if you have proposals for modifying the protocol that would be welcome</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
