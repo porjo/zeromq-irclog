@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379597401">Thursday September 19th 2013</h3>
+<h3 id="titleDate" data-time="1379599201">Thursday September 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -324,6 +324,126 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1379597266">00:13</span>]</a></td><td class="nicktd">mhk</td>
 		<td class="msgtd">&bsol;o/ one more byte to kill&excl; :D</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1379597356">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">mhk: it&apos;s much the same thing</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1379597397">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s all built around simple&comma; self-testing APIs where ownership is part of the visible syntax</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1379597813">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">So&comma; from the API docs &mldr; zmsg&UnderBar;pop does NOT return a copy but I still have to free this pointer&comma; right&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1379598324">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;31894&equals;&equals; 1 bytes in 1 blocks are definitely lost in loss record 1 of 70</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1379598325">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;31894&equals;&equals;    at 0x4A06409: malloc &lpar;in /usr/lib64/valgrind/vgpreload&UnderBar;memcheck-amd64-linux.so&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1379598328">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;31894&equals;&equals;    by 0x4EB2717: zframe&UnderBar;strdup &lpar;zframe.c:246&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1379598330">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;31894&equals;&equals;    by 0x4EB80EB: zmsg&UnderBar;popstr &lpar;zmsg.c:321&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1379598332">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Last one I can&apos;t find</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1379598335">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;31894&equals;&equals;    by 0x40145D: &UnderBar;recv&UnderBar;message &lpar;kt&UnderBar;server.c:119&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1379598583">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1379598648">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Except I&apos;m a total idiot &lpar;which I probably am&rpar; char &midast;msg &equals; zmsg&UnderBar;popstr&lpar;m&rpar;&semi; free &lpar;msg&rpar;&semi; should be enough&comma; right&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1379598648">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">also zframe&UnderBar;strdup &lpar;&rpar; allocates a new string&comma; and zmsg&UnderBar;popstr&lpar;&rpar; does that too</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1379598661">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that works&comma; yes</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1379598686">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you can see lots of examples of this in the CZMQ code itself</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1379598690">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">zmsg&UnderBar;unwrap requires zframe&UnderBar;destroy&comma; right&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1379598693">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1379598706">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Then WHY 1 &lpar;one&rpar; Byte&quest;&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1379598721">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what is 1 byte&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1379598745">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; lost memory... </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1379598765">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Only thing I can think of: Char</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1379598772">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that&apos;s not significant</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1379598804">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the heap allocates in chunks of 16 bytes at least&semi; valgrind&apos;s estimate of the allocation may be fuzzy</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1379598806">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Could this be a off-by-one error&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1379598810">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">nope</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1379598821">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">A string is zero-terminated&comma; right&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1379598838">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">are you still getting a memory leak after making the change I suggested&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1379598847">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: Yes&comma; one byte.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1379598869">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">can you send me the actual code then&quest; ph&commat;imatix.com</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1379598876">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">gimme a sec</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1379598882">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">or put it into a pastebin... we can&apos;t discuss abstracts</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
