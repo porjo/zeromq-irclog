@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379606401">Thursday September 19th 2013</h3>
+<h3 id="titleDate" data-time="1379608202">Thursday September 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -820,6 +820,58 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-188">[<span class="ts" data-time="1379606301">00:13</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">if you have proposals for modifying the protocol that would be welcome</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-189">[<span class="ts" data-time="1379606353">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I&apos;m going to look if the ZRE protocol is sufficient for my case enhanced with multicast</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-190">[<span class="ts" data-time="1379606375">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">Perhaps I could add a multicast option</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-191">[<span class="ts" data-time="1379606699">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what language are you working in&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-192">[<span class="ts" data-time="1379606753">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">in the ZRE protocol it&apos;s just one section that&apos;s broadcast specific&comma; &quot;Node Discovery&quot;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-193">[<span class="ts" data-time="1379606766">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">we could extend that to discovery over different mechanisms</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-194">[<span class="ts" data-time="1379607814">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I prototyped in python and ported to C</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-195">[<span class="ts" data-time="1379607835">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">however prototyping and tests I tend to do in python</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-196">[<span class="ts" data-time="1379607855">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the ZRE implementation is in zbeacon.c in CZMQ &lpar;at least the discovery part&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-197">[<span class="ts" data-time="1379607886">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if you can modify zbeacon to work with multicast&comma; so people can test it&comma; that would be a good start</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-198">[<span class="ts" data-time="1379607896">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;ll make sure the API remains backwards compatible</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-199">[<span class="ts" data-time="1379607937">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I&apos;ll have a look&comma; I&apos;d like to do it in native python but I read it contains some undocumented calls</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-200">[<span class="ts" data-time="1379608037">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">If I do a multicast implementation I&apos;ll let you know. I need to test ZRE itself first :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-201">[<span class="ts" data-time="1379608058">00:13</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">thanks for your feedback</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
