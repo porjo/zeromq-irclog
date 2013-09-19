@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379599201">Thursday September 19th 2013</h3>
+<h3 id="titleDate" data-time="1379601001">Thursday September 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -444,6 +444,194 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1379598882">00:13</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">or put it into a pastebin... we can&apos;t discuss abstracts</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1379599897">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: sent</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1379599936">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">:-&rpar; i was hoping for a 10-line minimal case</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1379599942">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; walk me through this</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1379599950">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what file&comma; what line&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1379600041">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">note that calls like &quot;zframe&UnderBar;destroy &lpar;&amp;msg-&gt;&UnderBar;identity&rpar;&semi;&quot; are meant to be safe even if the reference is null</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1379600055">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">src/core/kt&UnderBar;server.c in &UnderBar;recv&UnderBar;message</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1379600057">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">You can run this with build/&dollar;ARCH/server&UnderBar;0mq with build/&dollar;ARCH/client&UnderBar;0mq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1379600120">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Basically kt&UnderBar;server.c handles all the boring stuff&comma; the dev eventually should only to write handleRequest&lpar;&rpar; in src/examples/main&UnderBar;server&UnderBar;0mq.c</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1379600182">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">fwiw</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1379600183">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&Tab;zframe&UnderBar;send&lpar;&amp;frame&UnderBar;reply&comma; sock&comma; ZFRAME&UnderBar;REUSE&rpar;&semi;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-105">[<span class="ts" data-time="1379600183">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&Tab;zframe&UnderBar;destroy&lpar;&amp;frame&UnderBar;reply&rpar;&semi;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-106">[<span class="ts" data-time="1379600194">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">can be simplified to just sending&comma; without the reuse flag</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-107">[<span class="ts" data-time="1379600219">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">ok</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-108">[<span class="ts" data-time="1379600235">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">OK&comma; I don&apos;t see the leak immediately&comma; and don&apos;t see the zframe&UnderBar;strdup&lpar;&rpar; there</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-109">[<span class="ts" data-time="1379600245">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what&apos;s the valgrind report then&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-110">[<span class="ts" data-time="1379600268">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">zframe&UnderBar;strdup&lpar;&rpar; has been removed and I added zmsg&UnderBar;popstr&lpar;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-111">[<span class="ts" data-time="1379600301">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right&comma; can you re-run under valgrind and tell us the report&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-112">[<span class="ts" data-time="1379600395">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;32465&equals;&equals; 1 bytes in 1 blocks are definitely lost in loss record 1 of 74</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-113">[<span class="ts" data-time="1379600395">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;32465&equals;&equals;    at 0x4A06409: malloc &lpar;in /usr/lib64/valgrind/vgpreload&UnderBar;memcheck-amd64-linux.so&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-114">[<span class="ts" data-time="1379600398">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;32465&equals;&equals;    by 0x4EB2717: zframe&UnderBar;strdup &lpar;zframe.c:246&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-115">[<span class="ts" data-time="1379600400">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;32465&equals;&equals;    by 0x4EB80EB: zmsg&UnderBar;popstr &lpar;zmsg.c:321&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-116">[<span class="ts" data-time="1379600403">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&equals;&equals;32465&equals;&equals;    by 0x4014CE: &UnderBar;recv&UnderBar;message &lpar;kt&UnderBar;server.c:119&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-117">[<span class="ts" data-time="1379600416">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; right</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-118">[<span class="ts" data-time="1379600444">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sorry&comma; I missed that zframe&UnderBar;strdup was being called from inside zmsg&UnderBar;popstr</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-119">[<span class="ts" data-time="1379600464">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">np :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-120">[<span class="ts" data-time="1379600578">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you&apos;re creating a frame from a string&comma; then sending the frame&comma; then destroying it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-121">[<span class="ts" data-time="1379600586">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the simpler way is zstr&UnderBar;send &lpar;string&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-122">[<span class="ts" data-time="1379600666">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: So &mldr; you think &UnderBar;send&UnderBar;message&lpar;&rpar; actually is the place where the leak happens&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-123">[<span class="ts" data-time="1379600676">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">nope</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-124">[<span class="ts" data-time="1379600684">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what I think is that code looks fine</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-125">[<span class="ts" data-time="1379600704">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">but I&apos;m looking for where you substitute msgData for another allocated string</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-126">[<span class="ts" data-time="1379600712">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so you in fact free the &apos;wrong&apos; one</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-127">[<span class="ts" data-time="1379600726">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&lpar;just my hypothesis&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-128">[<span class="ts" data-time="1379600732">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">src/examples/main&UnderBar;server&UnderBar;0mq.c you mean&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-129">[<span class="ts" data-time="1379600782">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">maybe</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-130">[<span class="ts" data-time="1379600794">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">certainly in kt&UnderBar;client you have a leak in recv&UnderBar;message</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-131">[<span class="ts" data-time="1379600805">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I can&apos;t build/test this</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-132">[<span class="ts" data-time="1379600808">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">YESSS&excl;&excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-133">[<span class="ts" data-time="1379600819">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: You were damn right&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-134">[<span class="ts" data-time="1379600841">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yeah&comma; nailed it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-135">[<span class="ts" data-time="1379600857">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; my code review comments come for free</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-136">[<span class="ts" data-time="1379600865">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">- make the code simpler&comma; simpler&comma; simpler</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-137">[<span class="ts" data-time="1379600889">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">well&comma; simpler anyhow</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-138">[<span class="ts" data-time="1379600908">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">- study and use the CLASS style&comma; it will help you</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-139">[<span class="ts" data-time="1379600922">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for example here you&apos;re messing with the private property of a class</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-140">[<span class="ts" data-time="1379600932">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">a common source of errors</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-141">[<span class="ts" data-time="1379600934">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that should not be possible</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
