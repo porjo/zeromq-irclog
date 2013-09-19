@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379593801">Thursday September 19th 2013</h3>
+<h3 id="titleDate" data-time="1379597401">Thursday September 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -248,6 +248,82 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1379593218">00:13</span>]</a></td><td class="nicktd">mhk</td>
 		<td class="msgtd">.oO&lpar; Bah&comma; I only leak like &mldr; 57 Bytes &mldr; who cares&excl; &rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1379596614">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">mhk: hi</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1379596631">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">we&apos;re pretty intolerant of memory leaks in CZMQ</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1379596650">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">as in&comma; not even a little bit tolerant</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1379596677">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: I have no clue what causes this one &mldr;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1379596683">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I emailed on the list</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1379596698">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there are two usual patterns when receiving string data</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1379596713">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">one&comma; char &midast;data &equals; zstr&UnderBar;recv &lpar;&rpar;... free &lpar;data&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1379596737">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">two&comma; zmsg&UnderBar;t &midast;msg &equals; zmsg&UnderBar;recv &lpar;&rpar;... char &midast;data &equals; zmsg&UnderBar;popstr &lpar;&rpar;... free &lpar;data&rpar;... zmsg&UnderBar;destroy &lpar;&amp;msg&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1379596777">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">every pop/popstr has to be matched by a destroy/free</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1379597036">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: Hit me &mldr; THAT&apos;s why noobs shouldn&apos;t code in C.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1379597066">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">this is one area it&apos;s hard to get right</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1379597079">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ownership of pieces of memory gets very tricky</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1379597098">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">C&plus;&plus; is easier for this kind of problems</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1379597103">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">using valgrind on your code is a very good idea</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1379597169">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and the zmsg API was the first in CZMQ and not the best class</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1379597169">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">I have three friends who manage to make me go over my code again and again&comma; and even if the codes was only 20 LOCs.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1379597203">00:13</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">mostly&comma; once you learn the CZMQ style &lpar;CLASS&rpar; you can work &midast;very&midast; rapidly without many errors</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1379597247">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: You talk about development style or programming style&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1379597266">00:13</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">&bsol;o/ one more byte to kill&excl; :D</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
