@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379678401">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379680201">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -864,6 +864,126 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-199">[<span class="ts" data-time="1379677610">00:14</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">where your router keeps track of dealers but dealers talk to just one router</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-200">[<span class="ts" data-time="1379678685">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: zauth is fun&excl; :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-201">[<span class="ts" data-time="1379678698">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">:-&rpar; mission accomplished</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-202">[<span class="ts" data-time="1379678723">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">also fun is the new zpoller</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-203">[<span class="ts" data-time="1379678752">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">and at first blush&comma; once domains are supported I believe it covers my use cases from an operational perspective</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-204">[<span class="ts" data-time="1379678758">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: aaah need to look at that.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-205">[<span class="ts" data-time="1379678778">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">even without domains it&apos;s extremely useful</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-206">[<span class="ts" data-time="1379678787">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s a minimal poller API for reading several sockets</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-207">[<span class="ts" data-time="1379678794">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I was getting border of using zmq&UnderBar;poll</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-208">[<span class="ts" data-time="1379678807">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;ll take a look - I have been using libzmq zmq&UnderBar;poll directly mostly</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-209">[<span class="ts" data-time="1379678822">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I found that 80&percnt; of my cases were just readers</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-210">[<span class="ts" data-time="1379678854">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: zloop is nice&comma; but I found zmq&UnderBar;poll more straightforward than the callback kind of pattern zloop implements - just personal preference</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-211">[<span class="ts" data-time="1379678892">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-212">[<span class="ts" data-time="1379678921">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">aaah this does look nice</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-213">[<span class="ts" data-time="1379678949">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I&apos;ll try switching over my canonical &quot;this is how we like to do things here&quot; example to use both it and zauth today</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-214">[<span class="ts" data-time="1379678956">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">    zpoller&UnderBar;t &midast;poller &equals; zpoller&UnderBar;new &lpar;bowl&comma; sink&comma; dish&comma; NULL&rpar;&semi;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-215">[<span class="ts" data-time="1379678963">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">void &midast;which &equals; zpoller&UnderBar;wait &lpar;poller&comma; -1&rpar;&semi;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-216">[<span class="ts" data-time="1379678998">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">my only regret is C won&apos;t let me do a switch on a void &midast;... :-&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-217">[<span class="ts" data-time="1379679003">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: haha</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-218">[<span class="ts" data-time="1379679017">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I -just- thought &quot;I can dispatch using a case statement from.. oh&comma; damn&quot;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-219">[<span class="ts" data-time="1379679057">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for the next version of CZMQ I want to redesign the zthread and zsocket classes</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-220">[<span class="ts" data-time="1379679079">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">they are looking out of date</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-221">[<span class="ts" data-time="1379679119">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">ok I&apos;ve got up through woodhouse running</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-222">[<span class="ts" data-time="1379679129">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">do the names make sense&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-223">[<span class="ts" data-time="1379679136">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">no cut and pasting - rewriting for muscle memory &semi;&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-224">[<span class="ts" data-time="1379679143">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: three little pigs :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-225">[<span class="ts" data-time="1379679150">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">indeed :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-226">[<span class="ts" data-time="1379679179">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">is the big bag wolf a government agency these days&quest; &semi;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-227">[<span class="ts" data-time="1379679188">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">presumably&comma; yes</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-228">[<span class="ts" data-time="1379679251">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I think that&apos;s the accepted definition of BBW these days</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-229">[<span class="ts" data-time="1379679408">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">this poller api is definitely a little cleaner for a good 90&percnt; of what I use the poller for.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
