@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379671201">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379673001">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -440,6 +440,114 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1379671078">00:14</span>]</a></td><td class="nicktd">mhk</td>
 		<td class="msgtd">It&apos;s obviously a bad idea&comma; but &mldr; are we entitled to judge if it&apos;s his choice&quest; We live in a free world&excl; Free as in OpenSource&excl; :D</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1379671213">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">oh he left</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1379671228">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">in any case without a definition of &quot;a lot&quot; in the sentence &quot;creating a lot&quot; it&apos;s hard to know</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1379671574">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">this should be a FAQ topic&comma; especially for Java users</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1379671616">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: the question of rapidly creating and destroying sockets&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1379671811">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes&comma; but with some sympathy of where the user is coming from... there are languages where you simply can&apos;t rely on threads being persistent</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1379671818">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">taotetek: I think he rather speaks of not rapidly creating and destroying objects.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1379671859">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the three options seem to be create/destroy per use&comma; threadsafe sockets&comma; or some thread pool</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1379671870">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">taotetek: Java does not just allocate memory&comma; it also NULLs it &mldr; so if you create and destroy a 10&apos;000x10&apos;000 int array you gonna have a bad time.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1379671870">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: agreed... what could be considered an antipattern &midast;with zeromq&midast; is not necessarily one without it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1379671906">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I shot myself in the foot using gevent &lpar;python coroutine library&rpar; with zeromq before&comma; because I was so used to just spawning and killing coroutines on a whim</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1379672123">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">oooh</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-105">[<span class="ts" data-time="1379672145">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: just saw your blog post - guess I&apos;m playing w/ the encryption today.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-106">[<span class="ts" data-time="1379672342">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">nice. looks just as clean as the rest of the czmq api.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-107">[<span class="ts" data-time="1379672708">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">hello masters</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-108">[<span class="ts" data-time="1379672723">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">i have been here few min ago&comma; but bee disconnected</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-109">[<span class="ts" data-time="1379672732">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">i was asking about socket.close&lpar;&rpar; in jzmq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-110">[<span class="ts" data-time="1379672751">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">i would much appreciate for the help </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-111">[<span class="ts" data-time="1379672752">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">oh&comma; I&apos;m not a master</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-112">[<span class="ts" data-time="1379672769">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">may ask mate&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-113">[<span class="ts" data-time="1379672803">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">to paraphrase Gag Halfrunt&comma; &quot;Vell... he&apos;s just zis guy&comma; you know&quest;&quot;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-114">[<span class="ts" data-time="1379672822">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I&apos;ve never personally worked with jeromq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-115">[<span class="ts" data-time="1379672837">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">i went into troubles at calling socket.close&lpar;&rpar;  in  java in jzmq.   I&apos;m using jzmq-2.2.1.  </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-116">[<span class="ts" data-time="1379672844">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">no JERO-MQ</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-117">[<span class="ts" data-time="1379672847">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">jzmq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-118">[<span class="ts" data-time="1379672855">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I&apos;ve never worked with jzmq either</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-119">[<span class="ts" data-time="1379672867">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">8&lpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-120">[<span class="ts" data-time="1379672880">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">as to your question though... how rapidly are you creating / destroying sockets&quest;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
