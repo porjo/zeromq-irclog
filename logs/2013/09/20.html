@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379667601">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379669401">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -100,6 +100,74 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1379667064">00:14</span>]</a></td><td class="nicktd">mhk</td>
 		<td class="msgtd">But the IP white-/blacklisting applies to the whole context and not to a single socket&comma; that&apos;s what makes me unsure if this is the right way.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1379668086">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">mhk: hi</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1379668117">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">pieterh: morning</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1379668118">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the white/blacklisting is still brutal and simple</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1379668149">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I figure&comma; if you want to blacklist an address&comma; it&apos;s because it&apos;s a problem</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1379668204">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">i.e. known trouble maker&comma; so it should be banned globally</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1379668205">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Anyway&comma; I think any firewall &lpar;iptables&comma; pf&comma; ipf etc&rpar; does a better job at this.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1379668209">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for sure</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1379668239">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">Will this somewhen change&comma; that an auth &quot;object&quot; is assigned to a context&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1379668260">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that&apos;s essential</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1379668288">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">since it deals with all requests on a specific context&comma; over an inproc connection to libzmq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1379668306">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you could handle multiple contexts in one zauth object but that seems pointless</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1379668324">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and since contexts are our top-level object&comma; also would be confusing</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1379668475">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">No&comma; I meant if auth will be somewhen assigned to a socket instead to a whole context. I imagine a situation where I make two sockets &lpar;one for encryption&comma; one publishing statistical data like CPU&percnt;&rpar; and one socket shall be totally unauthenticated/unsecured but the other exchanges business data.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1379669327">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; that&apos;s the purpose of the domain concept</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1379669344">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sorry... let me explain this better</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1379669348">00:14</span>]</a></td><td class="nicktd">mhk</td>
+		<td class="msgtd">ah ok</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1379669355">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">first&comma; you can set the security level on each socket via the ZMQ API</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
