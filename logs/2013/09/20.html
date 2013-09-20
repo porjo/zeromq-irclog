@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379676601">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379678401">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -836,6 +836,34 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-192">[<span class="ts" data-time="1379676388">00:14</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">however that is trivial to do yourself on top</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-193">[<span class="ts" data-time="1379676576">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">2pieterh:   i originally went through pattern where   i appended message&UnderBar;id   to the message envelope&comma;   and wrote a custom DEALER client which did keep tracking of what have been sent by   having a list of those message&UnderBar;id-s.   But i found this way complicated.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-194">[<span class="ts" data-time="1379676693">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">so i removed that code  and decided to create new DEALER on every batch-of-requests. That worked&excl; But than I found that win is limited to 1024 FD-s.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-195">[<span class="ts" data-time="1379676727">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">&midast;win -- windows</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-196">[<span class="ts" data-time="1379676809">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">that&apos;s why I came onto this IRC channel :&rpar;   and keep asking why-oh-why  inproc sockets   are not disappear immediately once i call socket.close&lpar;&rpar;      :&lpar;&lpar;&lpar;&lpar;&lpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-197">[<span class="ts" data-time="1379677575">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-198">[<span class="ts" data-time="1379677597">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">my advice is to use a router-dealer pattern</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-199">[<span class="ts" data-time="1379677610">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">where your router keeps track of dealers but dealers talk to just one router</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
