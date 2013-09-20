@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379709002">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379710801">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -1284,6 +1284,110 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-304">[<span class="ts" data-time="1379708850">00:15</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">opaque frames&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-305">[<span class="ts" data-time="1379708981">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: not if we&apos;re using the same definition of the word &quot;frame&quot;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-306">[<span class="ts" data-time="1379708997">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I didn&apos;t look at nano... what does it do&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-307">[<span class="ts" data-time="1379709004">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: as in&comma; I can shove multiple blobs into the same message&comma; not have to worry about delimeters&comma; and interact with the multiple parts easily</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-308">[<span class="ts" data-time="1379709015">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right&comma; as nature intended...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-309">[<span class="ts" data-time="1379709038">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: it&apos;s more like straight up tcp from what I can see - if I wanted to not chunk bytes I&apos;d have to implement framing on top of it</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-310">[<span class="ts" data-time="1379709057">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you&apos;re kidding&comma; surely</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-311">[<span class="ts" data-time="1379709068">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; I know you&apos;re not</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-312">[<span class="ts" data-time="1379709072">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">rhetorical wtf there</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-313">[<span class="ts" data-time="1379709077">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;m not kidding - I leave open the possibility that I missed something and I&apos;m terribly incorrect though.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-314">[<span class="ts" data-time="1379709103">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the lack of router sockets I understand&comma; Martin was always terribly unhappy we did that</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-315">[<span class="ts" data-time="1379709118">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">wait - if I was really good at being incorrect that would be &quot;wonderfully incorrect&quot; wouldn&apos;t it</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-316">[<span class="ts" data-time="1379709120">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">hijacking his neat xrep &lpar;xreq&quest;&rpar; for nefarious gain</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-317">[<span class="ts" data-time="1379709140">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">perfectly incorrect</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-318">[<span class="ts" data-time="1379709144">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">hah</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-319">[<span class="ts" data-time="1379709178">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: the routing is of great interest to me specifically combined with inproc transport&comma; because it lets me route to named threads without mucking about with tcp ports.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-320">[<span class="ts" data-time="1379709188">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">well&comma; it&apos;s a core tool</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-321">[<span class="ts" data-time="1379709198">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">without that you cannot make any kind of smart server</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-322">[<span class="ts" data-time="1379709210">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">i&apos;ve not used router with inproc&comma; that sounds kind of fun</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-323">[<span class="ts" data-time="1379709220">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">works great</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-324">[<span class="ts" data-time="1379709221">00:15</span>]</a></td><td class="nicktd">broo</td>
+		<td class="msgtd">router is what sold me&comma; have a nice mesh network based on router</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-325">[<span class="ts" data-time="1379709252">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">when we unlocked that level&comma; the whole game became awesome</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-326">[<span class="ts" data-time="1379709289">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">broo: are you using zyre by any chance&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-327">[<span class="ts" data-time="1379709306">00:15</span>]</a></td><td class="nicktd">broo</td>
+		<td class="msgtd">no &lpar;at least not that I&apos;m aware of&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-328">[<span class="ts" data-time="1379709360">00:15</span>]</a></td><td class="nicktd">broo</td>
+		<td class="msgtd">sounds very interesting though&comma; I&apos;ll have to take a good look at it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-329">[<span class="ts" data-time="1379710477">00:15</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: time to go walk the dogs&comma; followed by time to enjoy a beer. catch you later&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-330">[<span class="ts" data-time="1379710604">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">tyl&excl;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
