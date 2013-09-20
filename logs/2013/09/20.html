@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379710801">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379712602">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -1388,6 +1388,34 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-330">[<span class="ts" data-time="1379710604">00:15</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">tyl&excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-331">[<span class="ts" data-time="1379711518">00:15</span>]</a></td><td class="nicktd">broo</td>
+		<td class="msgtd">pieterh: just an fyi when I&apos;m compiling up 4.0.0-rc1 I&apos;m getting test failures - test&UnderBar;linger.cpp:86 &lpar;main&rpar; and test&UnderBar;stream.cpp:177 &lpar;test&UnderBar;stream&UnderBar;to&UnderBar;stream&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-332">[<span class="ts" data-time="1379711678">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the test&UnderBar;linger failure is normal &lpar;a known issue&comma; XFAIL&rpar;&comma; but test&UnderBar;stream should pass</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-333">[<span class="ts" data-time="1379711728">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">presumably another service is bound to that port &lpar;8080&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-334">[<span class="ts" data-time="1379711739">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s a bad choice for the test program&comma; I&apos;ll change it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-335">[<span class="ts" data-time="1379711794">00:15</span>]</a></td><td class="nicktd">broo</td>
+		<td class="msgtd">that port definitely is a possibility&comma; this is on our local OBS server</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-336">[<span class="ts" data-time="1379711844">00:15</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; I&apos;ve fixed it and am pushing the change</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-337">[<span class="ts" data-time="1379712265">00:15</span>]</a></td><td class="nicktd">zombor</td>
+		<td class="msgtd">hello&comma; does anyone know why i&apos;d get this error&quest; &quot;Interrupted system call&quot; this is in a ZMQ::PULL socket connection</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
