@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379673001">Friday September 20th 2013</h3>
+<h3 id="titleDate" data-time="1379674801">Friday September 20th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -548,6 +548,234 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-120">[<span class="ts" data-time="1379672880">00:14</span>]</a></td><td class="nicktd">taotetek</td>
 		<td class="msgtd">as to your question though... how rapidly are you creating / destroying sockets&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-121">[<span class="ts" data-time="1379672968">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">well.   pretty  tight.   in a loop.   i supposed since they are &quot;inproc&quot;  sockets&comma; their creation/detroy should be cheap.  but it appears that windows &lpar;i only tested on win&rpar;    keep   growing FD-s  &comma; the limit in 1024.   </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-122">[<span class="ts" data-time="1379673007">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">so somewhere you&apos;re leaking file descriptors somehow</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-123">[<span class="ts" data-time="1379673041">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">taotetek: it&apos;s quite fun... if you have questions&comma; shoot them at me</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-124">[<span class="ts" data-time="1379673084">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: will do - just moving to libzmq / czmq head at the moment&comma; time to live on the edge &semi;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-125">[<span class="ts" data-time="1379673084">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">artem-v: even inproc sockets use internal file handles</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-126">[<span class="ts" data-time="1379673113">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it may take a short time after a socket is closed for those handles to be freed</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-127">[<span class="ts" data-time="1379673134">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">ok.. i see.   this is pastebin link : <a href="http://pastebin.com/8n14YTsh">http://pastebin.com/8n14YTsh</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-128">[<span class="ts" data-time="1379673141">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">with test code</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-129">[<span class="ts" data-time="1379673142">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you can raise the limit in Windows&comma; if you rebuild libzmq -- it&apos;s a macro</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-130">[<span class="ts" data-time="1379673200">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">artem-v: yeah&comma; you&apos;re basically going to run out of resources like that</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-131">[<span class="ts" data-time="1379673214">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">assume closing a socket takes a small time and happens in the background</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-132">[<span class="ts" data-time="1379673225">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">.. but I&semi;m closing them &rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-133">[<span class="ts" data-time="1379673236">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&midast;happens in the background&midast;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-134">[<span class="ts" data-time="1379673263">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">your loop can create thousands of new sockets in the time it takes to close old one</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-135">[<span class="ts" data-time="1379673309">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">btw&excl; thatnks for assistance. </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-136">[<span class="ts" data-time="1379673318">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">zmq sockets are not inproc/tcp/etc</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-137">[<span class="ts" data-time="1379673326">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">they are api objects that talk to an internal engine</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-138">[<span class="ts" data-time="1379673331">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">anycase&comma; the question remains 8&lpar; ... how to make the disposal of FD  faster</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-139">[<span class="ts" data-time="1379673334">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the engine will talk over inproc&comma; tcp&comma; etc.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-140">[<span class="ts" data-time="1379673350">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: this will be nice to integrate into the rsyslog plugins.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-141">[<span class="ts" data-time="1379673359">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">well... as people have said here&comma; rapid creation / destruction is not a healthy pattern</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-142">[<span class="ts" data-time="1379673380">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">taotetek: yes... it should be relatively easy</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-143">[<span class="ts" data-time="1379673381">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">maybe I&apos;ll make that a weekend project</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-144">[<span class="ts" data-time="1379673472">00:14</span>]</a></td><td class="nicktd">Guest98338</td>
+		<td class="msgtd">is it a good idea to write a zmq binding using czmq&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-145">[<span class="ts" data-time="1379673538">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">Guest98338: yes&comma; that would be a good idea&comma; especially since CZMQ/2.0 adds security support</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-146">[<span class="ts" data-time="1379673660">00:14</span>]</a></td><td class="nicktd">Guest98338</td>
+		<td class="msgtd">pieterh: thanks&comma; i will rewrite my code.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-147">[<span class="ts" data-time="1379673675">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">question on socket fundamentals.    can I get a reference to the socket&apos; FD  and destroy it directly from my code &lpar;I&apos;m on java&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-148">[<span class="ts" data-time="1379673689">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">artem-v: no&comma; absolutely not :</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-149">[<span class="ts" data-time="1379673697">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there is no such thing as the socket FD</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-150">[<span class="ts" data-time="1379673732">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and if there was&comma; messing with it would be like sticking a knife into a microwave oven</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-151">[<span class="ts" data-time="1379673745">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">a 0MQ socket is not a system socket with stuff on top</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-152">[<span class="ts" data-time="1379673777">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">a 0MQ socket is an API class that &midast;imitates&midast; a system socket but is in fact a fully multithreaded messaging engine</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-153">[<span class="ts" data-time="1379673868">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">ok. i see. but if that&apos;s the case ... &lpar;sorry for being annoying&rpar;  how it appears that i can create only 1024 inproc sockets on win. </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-154">[<span class="ts" data-time="1379673905">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">i know that there&apos;s a thing like FD&UnderBar;SIZE </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-155">[<span class="ts" data-time="1379673915">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">but why inproc is bound to it</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-156">[<span class="ts" data-time="1379673916">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">a 0MQ socket will use a socketpair internally as part of its wiring</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-157">[<span class="ts" data-time="1379673956">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">even a socket with no binds or connects will use a socketpair &lpar;I think&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-158">[<span class="ts" data-time="1379673989">00:14</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there is no such thing as &quot;inproc socket&quot;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-159">[<span class="ts" data-time="1379674050">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">i supposed i could re-create REQ inproc socket once i reveal that  i wouldn&apos;t get reply. </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-160">[<span class="ts" data-time="1379674062">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">and i supposed i can do this as many times as i want</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-161">[<span class="ts" data-time="1379674074">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: libzmq and czmq head built w/ libsodium and all tests pass&comma; yay.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-162">[<span class="ts" data-time="1379674179">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">artem-v: perhaps a good question is&comma; what are you trying to do&quest;  </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-163">[<span class="ts" data-time="1379674201">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">artem-v: from a broader context - why do you want to create a lot of zeromq sockets in a tight loop</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-164">[<span class="ts" data-time="1379674314">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">no no.. this is just a test. and this is edge case.   Im working on RPC framework on base of jzmq/zmq.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-165">[<span class="ts" data-time="1379674354">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">and in my RPC framework   server side may not be connected or even exist&comma; so Im expecting that REQ-s   will not receive replies ALWAYS</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-166">[<span class="ts" data-time="1379674370">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">so can&apos;t leave RE in a wrong state. I have to re-create it. </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-167">[<span class="ts" data-time="1379674392">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">artem-v: you might want to look at some of the &quot;reliable request reply patterns&quot; in the zeromq guide for some inspiration</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-168">[<span class="ts" data-time="1379674432">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">artem-v: you could use a ZMQ&UnderBar;ROUTER on the server side instead of a ZMQ&UnderBar;REP </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-169">[<span class="ts" data-time="1379674443">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">:&rpar; i read the guide. and im very patient reader. in fact I adore zeromq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-170">[<span class="ts" data-time="1379674464">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">artem-v: ZMQ&UnderBar;ROUTER is compatible with ZMQ&UnderBar;REQ and won&apos;t get you into a bind if the ZMQ&UnderBar;REQ vanishes before the reply is sent</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-171">[<span class="ts" data-time="1379674586">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">2taotetek:  understood.   but even if I go with REQ&lpar;client&rpar; -- ROUTER&lpar;server&rpar;&comma;   I will stuck in the same problem . When server becomes unresponsive -- my REQ clients will not receive replies </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-172">[<span class="ts" data-time="1379674612">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">so REQ clients shold re-create their REQ sockets</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-173">[<span class="ts" data-time="1379674631">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">artem-v: you can replace the REQ with a DEALER if you want to be sneaky</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-174">[<span class="ts" data-time="1379674657">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">then you could have a timeout interval and the DEALER could retry</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-175">[<span class="ts" data-time="1379674672">00:14</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">of course if the ROUTER vanishes off the face of the earth entirely you still need to destroy and reconnect.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-176">[<span class="ts" data-time="1379674696">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">2taotetek:   that&apos;s what i have come up with  -- DEALER as smart client.   But ... now the problem is -- I have to keep track correlation ids   for request/reply. </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-177">[<span class="ts" data-time="1379674745">00:14</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">since the DEALER is just a &quot;channel&quot;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
