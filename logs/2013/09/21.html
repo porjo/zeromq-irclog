@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379782801">Saturday September 21st 2013</h3>
+<h3 id="titleDate" data-time="1379784601">Saturday September 21st 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -104,6 +104,82 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1379781594">00:16</span>]</a></td><td class="nicktd">dhanush</td>
 		<td class="msgtd">Forgive me if its very obvious. But I am really new to this kind of architecture.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1379784001">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">hello pieterh &excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1379784034">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">hi Brian</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1379784038">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">how&apos;s it going&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1379784122">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: pretty good&excl; being lazy today&comma; hanging around the house hacking on code</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1379784133">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: ran into a fun one I didn&apos;t know today that took me a bit to figure out</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1379784160">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I knew with inproc you had to bind before you could connect</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1379784168">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; except not any more</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1379784179">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">what I didn&apos;t know is that if you create a client and connect without the bind..</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1379784188">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">that zsocket&UnderBar;destroy then fails on the socket</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1379784202">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: oh fun</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1379784203">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that is curious</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1379784243">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;d written part of a selftest but not the whole thing&comma; and my context wasn&apos;t exiting.. I had a client inproc that I&apos;d created and connected but hadn&apos;t written the other half</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1379784263">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: out of curiosity I checked to see if the socket was NULL after the zsocket&UnderBar;destroy call&comma; and it was not</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1379784296">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I&apos;m on libzmq head and czmq head as of.. yesterday morning if I recall correctly</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1379784412">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">hhm</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1379784424">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I just tried&comma; the connect seems to hang</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1379784441">00:16</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: writing a little same test case here</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1379784456">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">zsocket&UnderBar;destroy does not nullify the socket&comma; it&apos;s not using the proper style &lpar;&amp;ref&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1379784521">00:16</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; it blocks on zctx&UnderBar;destroy &lpar;&rpar;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
