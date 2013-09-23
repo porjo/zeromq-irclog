@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1379959202">Monday September 23rd 2013</h3>
+<h3 id="titleDate" data-time="1379971801">Monday September 23rd 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -264,6 +264,226 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1379958472">00:19</span>]</a></td><td class="nicktd">dwilson</td>
 		<td class="msgtd">guido&UnderBar;g: to clarify - i don&apos;t need control only data. the &quot;control&quot; is convention - subscribers are up before publishers&comma; data doesn&apos;t need to be gauranteed delivery - except without an initial publishing delay i&apos;m guaranteeing delivery failure for &lpar;at least&rpar; the first half milisecond &lpar;which is not okay&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1379970625">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: hello&excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1379970641">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">Hi :-&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1379970770">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;m working on a zstr like class for czmq that works with bstrings &lpar;from the bstring string handling library&rpar; rather than chars... since it requires another lib&comma; I didn&apos;t know if it would be of general interest to czmq users in general or not</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1379970801">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">any overlap with chunks&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1379970812">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">bstring &equals; binary string&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1379970844">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd"><a href="http://bstring.sourceforge.net/">http://bstring.sourceforge.net/</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1379970847">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd">better sting </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1379970851">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: aah no - it&apos;s just a nice OO style struct wrapper &plus; string parsing methods to make working with char arrays safer / easier</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1379970853">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; reading that now</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1379970887">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">dependencies on other libraries are always an issue</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1379970897">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;ll be tossing it up on my github when I&apos;m done either way in case others may find it of use</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1379970909">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">however it&apos;s worth exploring IMO</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1379970912">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: yeah&comma; it seemed against the spirit of czmq to introduce another dep</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1379970928">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">is the bstrings library large&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1379970938">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd">taotetek: I use bstring with czmq all the time - so worth looking at - plus so does mongal2 </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1379970943">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I wanted to add pcre at some point to enable regexps</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1379970956">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: the main bstrlib.c is around 3k lines of code</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1379970963">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and we have experience with libsodium</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1379970965">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: w/ 300 line header</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1379971020">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: ~ 1&comma;800 lines reported by sloccount when not counting whitespace&comma; so no&comma; not large.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1379971035">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; that was the wrong question</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1379971049">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: API wise&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1379971052">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">with sodium we do conditional compiles&comma; so if it&apos;s present&comma; we use it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1379971066">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I think that&apos;s the way to go</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1379971094">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: and I&apos;m not planning on changing zstr&comma; I was going to make a separate zbstr parallel to it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1379971099">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for sure</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1379971106">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: seemed like a good project to learn czmq coding standards and build system better in any case</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1379971159">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">jrossi: it&apos;s such a nice library &lpar;bstring&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1379971195">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd">taotetek: it really is how strings should be done.   Everytime I work on a project that does not use it i get sad &semi;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1379971197">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s very much like the string class we used in C older libraries</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1379971209">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">go for it&comma; &plus;1 from me</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1379971222">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">excellent I&apos;ll probably start hacking on it in the morning</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1379971232">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">:&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1379971319">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd">pieterh: who you are around is anyone working on virtual Addressing&quest;  I have only seen it in a blog post</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1379971345">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what do you mean by virtual addressing&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1379971363">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd"><a href="http://hintjens.com/blog:39">http://hintjens.com/blog:39</a> - zmq&UnderBar;connect &lpar;subscriber&comma; &quot;tcp://192.168.55.23:9001/my/resource/name&quot;&rpar;&semi;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1379971373">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; resources</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1379971377">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd">:&rpar; </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1379971389">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s defined in the RFC&comma; but we&apos;ve not made it &lpar;yet&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1379971414">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it may not happen in 4.0&comma; maybe in 4.1</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1379971450">00:19</span>]</a></td><td class="nicktd">jrossi</td>
+		<td class="msgtd">I will go see what I can do - I need this feature so I will play and learn some more about the insides of zeromq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1379971472">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">hmm&comma; great&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1379971482">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">Martin Hurton and I think we know what&apos;s needed</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1379971503">00:19</span>]</a></td><td class="nicktd">Martin&grave;</td>
+		<td class="msgtd">thats not me :P</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1379971512">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">haha</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1379971515">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">:&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1379971516">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">Martin&grave;: get to it already&excl; &semi;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1379971524">00:19</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">oh wow ... i didn&apos;t know that &lpar;resources&rpar; was on the roadmap&comma; but it would solve a huge problem i had.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1379971544">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">dwilson: roadmap&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1379971608">00:19</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">not roadmap - an idea anyone had</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1379971612">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">:-&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1379971623">00:19</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I have a sudden urge to play some Talking Heads.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1379971644">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I was just trolling...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1379971660">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I wanted to at least capture the idea in the protocol and propose a syntax</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1379971671">00:19</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">finally&comma; we get something like URLs in ZeroMQ</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
