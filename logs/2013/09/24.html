@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380047401">Tuesday September 24th 2013</h3>
+<h3 id="titleDate" data-time="1380049201">Tuesday September 24th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -248,6 +248,26 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1380045961">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
 		<td class="msgtd">cu</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1380047984">00:20</span>]</a></td><td class="nicktd">mindlube</td>
+		<td class="msgtd">howdy&excl; does anyone know how to for zeromq to build as 32-bit libzmq&quest; probably some option to ./configure script&quest; I ask because mono on OSX complains about 64bit library: /usr/local/lib/libzmq.dylib: mach-o&comma; but wrong architecture</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1380048430">00:20</span>]</a></td><td class="nicktd">mindlube</td>
+		<td class="msgtd">aha&excl; found an easy way to get 32bit and 64bit libzmq on OS X: brew install zeromq --universal</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1380048503">00:20</span>]</a></td><td class="nicktd">minrk</td>
+		<td class="msgtd">mindlube: I wrote that - all it does is build 32b and 64b independently&comma; then make a fat binary with lipo</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1380048547">00:20</span>]</a></td><td class="nicktd">minrk</td>
+		<td class="msgtd">you can do the same with any dylib where multi-arch compilation doesn&apos;t work for some reason.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1380048641">00:20</span>]</a></td><td class="nicktd">mindlube</td>
+		<td class="msgtd">cool&excl; thanks minrk. I havent used lipo before. Without the 32bit&comma; Mono refuses to bind to the clrzmq C&num; library.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
