@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380033001">Tuesday September 24th 2013</h3>
+<h3 id="titleDate" data-time="1380040201">Tuesday September 24th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -76,6 +76,154 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380032974">00:20</span>]</a></td><td class="nicktd">Martin&grave;</td>
 		<td class="msgtd">It wasnt me</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380038434">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">hi all</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380038457">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">any build system gurus available&quest; need some help to track down a build issue</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380038494">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">latest git master installs libs ending w/ 3.1.0&comma; which should be 4.1.0</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380038509">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">but i can&apos;t figure out where this is done</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380038524">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">version.sh reports 4.1.0 as it should</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380038781">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">guido&UnderBar;g: I believe the end on the lib name &lpar;libzmq.so.3&rpar; is the ABI version and not the library version</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380038792">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">guido&UnderBar;g: I may be remembering this incorrectly</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380038805">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">guido&UnderBar;g: but I think there was a thread on the email list to this effect recently</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380038809">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">this would crash with version 3 libs though</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380038836">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">guido&UnderBar;g: I fixed the library versioning today</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380038836">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">going to have a look at the ml then</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380038853">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">okay</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380038853">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the code version and library version are not the same thing at all</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380038860">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">hello pieterh :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380038867">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">taotetek: hi there Brian&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380038900">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">guido&UnderBar;g: you may want to take the latest git master</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380038908">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;m going to have some questions about the czmq build system and how you&apos;re doing the conditional libsodium builds more than likely&comma; once I have time to look under the covers</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380038917">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s in configure.ac</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380038918">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">it is the latest git master&comma; checkout a few minutes ago</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380038927">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: would you prefer those questions on the mailing list to help others and share the knowledge&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380038931">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">guido&UnderBar;g: oh&comma; ok... have you checked configure.ac&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1380038937">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">taotetek: I think so&comma; yes</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1380038947">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I have to leave anyhow</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1380038959">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I probably won&apos;t get to it today but when I do I&apos;ll just hit up the list</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1380038959">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">just a moment&comma; installing the rc version</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1380038970">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">have a good one&excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1380038975">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ttyl&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1380038986">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">guido&UnderBar;g: the rc version is still 3:0:1</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1380038987">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">cu</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1380039001">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">okay</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1380039017">00:20</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">guido&UnderBar;g: are you building from the knew libzmq4 repo by the way&quest; the repo forking on new release bit me once when I didn&apos;t know that was the policy</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1380039026">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd"><a href="https://github.com/zeromq/libzmq/commit/186b713aba6b5fb5224a77fbeba62ca9e0eb7bfe">https://github.com/zeromq/libzmq/commit/186b713aba6b5fb5224a77fbeba62ca9e0eb7bfe</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1380039041">00:20</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I did that in parallel on the 4-x repo</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1380039066">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">using this one <a href="https://github.com/zeromq/libzmq.git">https://github.com/zeromq/libzmq.git</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1380039072">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">for git master</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1380039086">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">i think this is where the development happens</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1380039988">00:20</span>]</a></td><td class="nicktd">guido&UnderBar;g</td>
+		<td class="msgtd">this versioning is weird</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
