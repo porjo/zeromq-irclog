@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380123001">Wednesday September 25th 2013</h3>
+<h3 id="titleDate" data-time="1380124801">Wednesday September 25th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -144,6 +144,202 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380122984">00:22</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">my workaround atm is to try to bind&comma; and only if that fails&comma; do a connect</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380123019">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">this is newish code&comma; and worth signalling to zeromq-dev</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380123044">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I had been so used to starting my binds first it doesn&apos;t really impact me much&comma; except that for some  unit tests I&apos;m doing that set up listening sockets to verify output from other threads I sometimes forget&comma; hah</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380123069">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: yup&comma; I&apos;ll test a few different scenarios with simple test case code and let the list know</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380123076">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: just still digging so I understand the permutations</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1380123080">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that&apos;ll be helpful</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1380123092">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I was thinking of a new socket API for CZMQ at least</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1380123108">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">zrouter&UnderBar;t&comma; zdealer&UnderBar;t&comma; zpush&UnderBar;t&comma; etc.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1380123133">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">thinking...</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1380123155">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">would zsocket&UnderBar;new &lpar;ctx TYPE&rpar; still be available as well&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1380123166">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">no breaking of stable APIs...</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1380123169">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">or an analog of that functionality&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1380123180">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">i&apos;m having some trouble exiting cleanly from python with context.term&lpar;&rpar; hanging until one of my threads cleans itself up... is this the right place to ask my question&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1380123182">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I was thinking of something on top&comma; as an experiment</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1380123190">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">dwilson: sure</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1380123232">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">context.term&lpar;&rpar; can hang if you have sockets still open or closing with linger &gt; 0</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1380123242">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: my only deal is I have some czmq code that creates different socket types conditionally and at first blush I think zsocket&UnderBar;new is simpler for those cases</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1380123262">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: but I&apos;m interested in seeing what you&apos;re thinking </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1380123271">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">taotetek: right... also things like zpoller become hard if you lose a generic void &midast;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1380123303">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: on the other hand&comma; I can make good arguments for having struct pointers intead of void pointers in other cases</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1380123326">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: so I like the idea - just musing on the impact </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1380123346">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">certainly&comma; I&apos;d first wanted to try a zsock&UnderBar;t class to get away from void &midast;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1380123367">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">pieterh: cool - here&apos;s the situation: i&apos;m sending a heartbeat from a thread from a process that does publishing &lpar;so i know its alive while its quiet&rpar;. in my heartbeat thread&comma; i&apos;m actually joining my parent thread with a timeout &lpar;so if my parent exits then my thread will kill itself&rpar;. but when my process is getting ready to shut down it calls context.term&lpar;&rpar; and hangs until the heartbeat thread tries to send another heartbeat &lpar;which raises ETERM and</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1380123380">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: like.. asserting that zsocket&UnderBar;new returned a void pointer doesn&apos;t really gain that much&comma; etc - which I&apos;m sure is part of why you&apos;re thinking in this direction</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1380123402">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">&quot;did I pass a void pointer&comma; yup&comma; I sure did&excl;&quot; </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1380123404">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">hehe</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1380123425">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">pieterh: so - will the context.term&lpar;&rpar; hang even if there&apos;s nothing pending to send&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1380123475">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">dwilson: sometimes&comma; yes&comma; if there are sockets open</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1380123490">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">but you didn&apos;t finish your explanation</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1380123505">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what is the heartbeat thread doing in between sending heartbeats&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1380123539">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">parent&UnderBar;thread.join&lpar;60&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1380123550">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right&comma; that&apos;s the problem</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1380123564">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it won&apos;t wake up from that properly</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1380123577">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">instead&comma; try this</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1380123588">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">- create two sockets before you start the child thread</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1380123598">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">- pair sockets&comma; one bound to an inproc&comma; one connected to the same inproc</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1380123605">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">- pass one of those sockets to the child thread</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1380123622">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">- now poll on that socket&comma; with a timeout for your heartbeat</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1380123645">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">when the parent wants to exit it can send a message on that pipe</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1380123670">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if the context is terminated&comma; polling or a blocking recv will end with ETERM</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1380123824">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">well&comma; since i&apos;m not using &gt; python3.2 i need to use the parent thread join workaround for <a href="http://bugs.python.org/issue1856">http://bugs.python.org/issue1856</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1380123840">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd"><a href="http://stackoverflow.com/a/18099067/804147">http://stackoverflow.com/a/18099067/804147</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1380123916">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">though i suppose i could join my parent thread with a timeout of 0</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1380123929">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">and poll the pair socket</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1380124016">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">is it possible to do a blocking receive with a timeout without implementing polling under the hood&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1380124270">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sure</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1380124282">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">set receive timeout on the socket</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1380124288">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">zmq&UnderBar;rcvtimeo</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1380124568">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">awesome - i can&apos;t believe i missed that</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1380124571">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">thanks</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
