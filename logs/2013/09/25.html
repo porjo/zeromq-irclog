@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380124801">Wednesday September 25th 2013</h3>
+<h3 id="titleDate" data-time="1380126601">Wednesday September 25th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -340,6 +340,22 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1380124571">00:22</span>]</a></td><td class="nicktd">dwilson</td>
 		<td class="msgtd">thanks</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1380124837">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">np</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1380126208">00:22</span>]</a></td><td class="nicktd">dwilson</td>
+		<td class="msgtd">pieterh: so&comma; i&apos;m wondering if this is ill advised - i&apos;d like to open a pair socket in my thread and connect to some random inproc that doesn&apos;t exist and do a blocking read with a timeout ... then instead of signaling the thread to die&comma; i can rely on context.term&lpar;&rpar; to kill my non-connection connection</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1380126380">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you can&apos;t connect to a random inproc that doesn&apos;t exist&semi; that&apos;ll return an error in ZMQ/3.x</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1380126431">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there are examples of thread-to-thread pipes in Python&comma; in the Guide repo</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
