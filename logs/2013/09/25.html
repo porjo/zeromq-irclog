@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Zeromq-irclog : IRC Log repository for ZeroMQ" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/zeromq-irclog/stylesheets/stylesheet.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+
+    <title>Zeromq-irclog</title>
+
+    <style>
+	    #msgtablediv {
+		margin-left: 20px;
+		margin-right: 20px;
+	    }
+	    #msgtable {
+		    width: 100%;
+		    border: 0;
+		    padding: 0;
+	    }
+	    #msgtableHead {
+		    font-weight: bold;
+	    }
+	    #msgtable td {
+		    border: 0;
+		    margin: 0;
+		    padding: 0px 5px 0px 5px;
+	    }
+	    .timetd {
+		    width: 60px;
+	    }
+	    #msgtable td.nicktd {
+		    width: 100px;
+		    text-align: right;
+		    border-right: 1px #555 dashed;
+	    }
+	    .light {
+		    background-color: #ccc;
+	    }
+	    .dark {
+		    background-color: #eee;
+	    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+	  <a href="/zeromq-irclog/index.html"><h1 id="project_title">Zeromq-irclog</h1></a>
+          <h2 id="project_tagline">IRC Log repository for ZeroMQ</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section class="inner">
+
+      <p>These logs have been collected from the <a href="https://webchat.freenode.net/?randomnick=1&amp;channels=%23zeromq&amp;uio=d4" target="_blank">#zeromq</a> IRC channel on Freenode.</p>
+
+      </section>
+<div id="msgtablediv">
+<div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
+<h3 id="titleDate" data-time="1380123001">Wednesday September 25th 2013</h3>
+<table id="msgtable">
+<tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380121271">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">Is there an API to know the local TCP end-point of a Router Socket&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380121309">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">I mean&comma; after the socket is bound to a random port&comma; I would like to know to which port it is bound so I can ask clients to use that port</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380121318">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ramki: yes</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380121327">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">what language are you working in&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380121336">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">Java</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380121374">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">zmq&UnderBar;getsockopt ZMQ&UnderBar;LAST&UnderBar;ENDPOINT </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380121409">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if you bind to a port number &quot;&midast;&quot; that is an ephemeral port</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380121420">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">afair from 0MQ 3.2 onwards</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380121512">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">I am using 2.1.11 of jzmq lib</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380121574">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">I am not sure if the 3.&midast; lib is backward compatible with 2.1.&midast;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380121810">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">&commat;pieterh I can&apos;t find the the ZMQ&UnderBar;LAST&UnderBar;ENDPOINT defined in Java lib</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380121833">00:22</span>]</a></td><td class="nicktd">ramki</td>
+		<td class="msgtd">could you please help me with the value of the constant&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380122443">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">good &lt;whatever time of day it is there&gt;&comma; pieterh </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380122835">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ramki: ask on the zeromq-dev list&semi; there are definitely more recent versions for Java&comma; including JeroMQ</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380122847">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">taotetek: hi there :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380122955">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: so I&apos;m definitely experiencing that ctx not closing if I open an inproc connect to a non existent bind</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380122969">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380122976">00:22</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">pieterh: I&apos;m about to test if the ctx hangs if I start the conn&comma; then actually start the bind&comma; and then exit</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380122984">00:22</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">my workaround atm is to try to bind&comma; and only if that fails&comma; do a connect</td>
+	</tr>
+</table>
+<p id="timeinfo">*Times are in UTC</p>
+</div>
+<script src="/zeromq-irclog/javascripts/time.js"></script>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Zeromq-irclog maintained by <a href="https://github.com/porjo">porjo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
