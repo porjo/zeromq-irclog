@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Zeromq-irclog : IRC Log repository for ZeroMQ" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/zeromq-irclog/stylesheets/stylesheet.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+
+    <title>Zeromq-irclog</title>
+
+    <style>
+	    #msgtablediv {
+		margin-left: 20px;
+		margin-right: 20px;
+	    }
+	    #msgtable {
+		    width: 100%;
+		    border: 0;
+		    padding: 0;
+	    }
+	    #msgtableHead {
+		    font-weight: bold;
+	    }
+	    #msgtable td {
+		    border: 0;
+		    margin: 0;
+		    padding: 0px 5px 0px 5px;
+	    }
+	    .timetd {
+		    width: 60px;
+	    }
+	    #msgtable td.nicktd {
+		    width: 100px;
+		    text-align: right;
+		    border-right: 1px #555 dashed;
+	    }
+	    .light {
+		    background-color: #ccc;
+	    }
+	    .dark {
+		    background-color: #eee;
+	    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+	  <a href="/zeromq-irclog/index.html"><h1 id="project_title">Zeromq-irclog</h1></a>
+          <h2 id="project_tagline">IRC Log repository for ZeroMQ</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section class="inner">
+
+      <p>These logs have been collected from the <a href="https://webchat.freenode.net/?randomnick=1&amp;channels=%23zeromq&amp;uio=d4" target="_blank">#zeromq</a> IRC channel on Freenode.</p>
+
+      </section>
+<div id="msgtablediv">
+<div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
+<h3 id="titleDate" data-time="1380184201">Thursday September 26th 2013</h3>
+<table id="msgtable">
+<tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380182577">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">Hello is anyone here&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380182607">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">I have a question about installing fileMQ using the latest zmq and czmq </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380182654">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">It seems like certain functions were taken out recently in the latest czmq-2.0.1&comma; such as zstr&UnderBar;sendf</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380182658">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">which are used by fileMQ</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380182679">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">Is there a way to bypass this problem&comma; or even am I wrong about this&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380182815">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">Anyone&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380183227">00:23</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">hello there</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380183240">00:23</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">got a very quick question for you :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380183252">00:23</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">why ZMQ is not so ubiquotous</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380183300">00:23</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">If to talk about java world -- JMS and rabbit-mq still rules the world</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380183460">00:23</span>]</a></td><td class="nicktd">artem-v</td>
+		<td class="msgtd">I know that they are far far  far behind ZMQ&comma; they are several lighting years behind&comma; but ... why ppl so suspicious to ZMQ </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380183482">00:23</span>]</a></td><td class="nicktd">hoagieman</td>
+		<td class="msgtd">Id like to know too.</td>
+	</tr>
+</table>
+<p id="timeinfo">*Times are in UTC</p>
+</div>
+<script src="/zeromq-irclog/javascripts/time.js"></script>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Zeromq-irclog maintained by <a href="https://github.com/porjo">porjo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
