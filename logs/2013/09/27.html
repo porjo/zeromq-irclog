@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380276001">Friday September 27th 2013</h3>
+<h3 id="titleDate" data-time="1380277801">Friday September 27th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -340,6 +340,122 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1380275806">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
 		<td class="msgtd">just mailed you the output of czmq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1380276013">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; thanks</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1380276161">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">just mailed you another output form zcmq&comma; the other one had some of the test methods commented</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1380276176">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the only plausible explanation is that you have an old ZMQ installed&comma; which CZMQ ./configure is picking up</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1380276181">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">version 2.1 or earlier</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1380276266">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">same conclusion from the second listing you sent me... those prototypes are defined if ZMQ&UnderBar;VERSION&UnderBar;MAJOR is 4</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1380276300">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">Try adding this into czmq.h:</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1380276314">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">hmm that&apos;s weird I triple checked what versions I had installed and uninstalled everything before rebuild :/</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1380276329">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&num;if ZMQ&UnderBar;VERSION &lt; 40000</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1380276329">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&num;   error &quot;Old version&quot;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1380276329">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&num;endif</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1380276402">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">you&apos;re right</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1380276419">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;ve found some other issues about building without libsodium&comma; have fixed those</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1380276490">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I bet it was zmq 2.1... :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1380276516">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">Probably but I haven&apos;t found where it gets it from</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1380276551">00:24</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">sphaero&UnderBar;z25: tried &quot;sudo updatedb&semi; locate zmq.h&quot; &quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1380276725">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I feel quite stupid now&comma; but I find no versions in the system path&comma; only in some user dirs</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1380277097">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;m not sure how to debug what paths the compiler is using to find header files...</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1380277299">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">It&apos;s a bit hard to debug indeed. I just did a clean clone of czmq and I get a bit further now. It errors on &quot;lt-czmq&UnderBar;selftest: zsockopt.c:445: zsocket&UnderBar;set&UnderBar;curve&UnderBar;secretkey&UnderBar;bin: Assertion &grave;rc &equals;&equals; 0 &VerticalLine;&VerticalLine; zmq&UnderBar;errno &lpar;&rpar; &equals;&equals; &lpar;156384712 &plus; 53&rpar;&apos; failed&quot;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1380277306">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">however a normal make is fine</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1380277333">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">the fail is at: FAIL: czmq&UnderBar;selftest</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1380277423">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes&comma; that&apos;s the error I expected</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1380277431">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">fixed that&comma; sent a pull request</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1380277474">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">libzmq returns -1 when trying to set crypto options if libsodium isn&apos;t installed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1380277481">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and CZMQ wasn&apos;t dealing with that correctly</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1380277621">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">ah</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1380277654">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sphaero&UnderBar;z25: I went and merged that fix&comma; so if you fetch czmq master again&comma; it&apos;ll pass make check without trouble</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1380277669">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">yep it just did</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1380277692">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">nice</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1380277730">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">the same error is still in filemq</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
