@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380274201">Friday September 27th 2013</h3>
+<h3 id="titleDate" data-time="1380276001">Friday September 27th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -192,6 +192,154 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1380273910">00:24</span>]</a></td><td class="nicktd">marijnfs</td>
 		<td class="msgtd">thanks</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1380274706">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sphaero&UnderBar;z25: where are you taking the source from&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1380274719">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">pieterh: github</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1380274725">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">where exactly&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1380274817">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">Fetch URL: <a href="https://github.com/zeromq/czmq.git">https://github.com/zeromq/czmq.git</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1380274829">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">HEAD branch: master</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1380274833">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; and zeromq/libzmq.git as well&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1380274837">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">or an older version of libzmq&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1380274838">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">yep</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1380274849">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">it seems the test methods are broken</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1380274864">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok&comma; make sure you update your clone to the latest</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1380274871">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">then rebuild libzmq&comma; reinstall</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1380274877">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and then re-configure czmq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1380274886">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I commented the test methods in zauth.c and it now errors in the test methods of zbeacon</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1380274903">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you definitely have mismatched versions</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1380274926">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there is full regression testing of the masters &lpar;continuous builds&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1380274936">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">k I&apos;ll see if a clean rebuild of zmq resolves this</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1380274961">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">do you have libsodium installed&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1380274982">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">nope</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1380275014">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that might be causing problems&semi; the continuous integration testing always builds libsodium</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1380275028">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;ll give it a shot without that</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1380275252">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so it all builds fine&comma; but I get a selftest error on zsocket&UnderBar;set&UnderBar;curve&UnderBar;secretkey&lpar;&rpar; in CZMQ</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1380275267">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">pieterh: Just as a note I&apos;m following the instructions of <a href="https://github.com/zeromq/filemq">https://github.com/zeromq/filemq</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1380275314">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I&apos;m still building libzmq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1380275318">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and the compile error is in filemq&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1380275330">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">no czmq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1380275369">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;m going to update those instructions a little</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1380275397">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">can you email me the compiler output&quest; ph&commat;imatix.com</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1380275407">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">it&apos;s indeed building without sodium: &quot;libsodium not installed&comma; skipping CURVE test&quot;  &lpar;&quot;All 41 tests behaved as expected &lpar;1 expected failure&quot;&rpar;&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1380275520">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">nope still errors</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1380275556">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">email me the full output of building&comma; would you&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1380275571">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">also&comma; what platform and OS you are on</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1380275600">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">linux x86&UnderBar;64 ubuntu 13.04</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1380275679">00:24</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ok</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1380275686">00:24</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">sphaero&UnderBar;z25: just as a heads up&comma; I have latest libzmq 4 and czmq built here on ubuntu 12.04 x86&UnderBar;64</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1380275706">00:24</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">I have libsodium installed however</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1380275739">00:24</span>]</a></td><td class="nicktd">taotetek</td>
+		<td class="msgtd">let me git pull and update and see</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1380275806">00:24</span>]</a></td><td class="nicktd">sphaero&UnderBar;z25</td>
+		<td class="msgtd">just mailed you the output of czmq</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
