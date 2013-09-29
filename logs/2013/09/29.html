@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380457801">Sunday September 29th 2013</h3>
+<h3 id="titleDate" data-time="1380459601">Sunday September 29th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -264,6 +264,90 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1380457562">00:27</span>]</a></td><td class="nicktd">Gaby&UnderBar;64</td>
 		<td class="msgtd">am i the only one to have found zmq to be using up ove 50&percnt; of the application cpu time in the eppoll loop&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1380458208">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">hmm</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1380458216">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">hi all</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1380458218">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">I want to understand somthing in zeromq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1380458222">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">I have client that can connect to zeromq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1380458230">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">I send message </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1380458300">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">then I want to do things server side</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1380458309">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">like check file and so</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1380458318">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">dose zeromq can do it&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1380458577">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">DrCode&comma; ZeroMQ is just a messenger.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1380458594">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">A server receives a message and takes care of it.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1380458613">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">A server receives a message from a ZeroMQ socket and takes care of it.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1380458632">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">DrCode&comma; Think of ZeroMQ sockets as TCP sockets with queueing.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1380458697">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">so i need to build also server side that will get the message from client side</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1380458709">00:27</span>]</a></td><td class="nicktd">Gaby&UnderBar;64</td>
+		<td class="msgtd">i was only able to see the libzmq epoll loop profiling using Zoom profiler. oprofile and gprof dont see it&comma; but i found first of all from noticing dramatic performance loss in with libwebsockets </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1380458719">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">I can write python script has server and freepascal client&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1380458765">00:27</span>]</a></td><td class="nicktd">DrCode</td>
+		<td class="msgtd">if I have 10 clients &comma; how can my server know &comma; who send the message&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1380458799">00:27</span>]</a></td><td class="nicktd">Gaby&UnderBar;64</td>
+		<td class="msgtd">im using ROUTER protocol to know the id of sender and to send to specific clients with an id</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1380458815">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">DrCode&comma; There is a python binding for ZeroMQ but no pascal binding for it.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1380458823">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">DrCode&comma; <a href="http://zeromq.org/bindings:&UnderBar;start">http://zeromq.org/bindings:&UnderBar;start</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1380459054">00:27</span>]</a></td><td class="nicktd">Gaby&UnderBar;64</td>
+		<td class="msgtd">i may need to drop zmq and go pure socket</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1380459145">00:27</span>]</a></td><td class="nicktd">crocket</td>
+		<td class="msgtd">Gaby&UnderBar;64&comma; Post a minimal test case to ZeroMQ mailing list.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
