@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380448801">Sunday September 29th 2013</h3>
+<h3 id="titleDate" data-time="1380454201">Sunday September 29th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -88,6 +88,30 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380447398">00:27</span>]</a></td><td class="nicktd">jopie</td>
 		<td class="msgtd">&lpar;error when compiling my application - compiling from the latest stable source: zeromq 3.2.4&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380453314">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">jopie: hang on&comma; taking a look...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380453415">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it thinks zsocket&UnderBar;connect&lpar;&rpar; returns void&quest; </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380453428">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">i assume &quot;make check&quot; works on czmq&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380453455">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you are perhaps compiling your app against an old CZMQ still sitting somewhere</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380453475">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">could have been zsocket&UnderBar;connect&lpar;&rpar; was a void function some time ago</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380453494">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">also&comma; the return value is &quot;int&quot;&comma; not uint32&UnderBar;t&comma; but that&apos;s not significant</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
