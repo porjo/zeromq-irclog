@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380454201">Sunday September 29th 2013</h3>
+<h3 id="titleDate" data-time="1380456001">Sunday September 29th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -112,6 +112,146 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380453494">00:27</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">also&comma; the return value is &quot;int&quot;&comma; not uint32&UnderBar;t&comma; but that&apos;s not significant</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380454364">00:27</span>]</a></td><td class="nicktd">jopie</td>
+		<td class="msgtd">pieterh: thanks&comma; figured it out&comma; for some reason this install needs a newer version of czmq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380454406">00:27</span>]</a></td><td class="nicktd">jopie</td>
+		<td class="msgtd">czmq vs zeromq version compatibility would be helpful to have documented&comma; but part of my struggles I think were due to the older Ubuntu library being installed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380454435">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right&comma; and your app was assuming the slightly revised API</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380454459">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there are a few breaking changes in the API&comma; my fault&comma; in CZMQ/2.0&comma; mostly deprecated functions that I removed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380454472">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if people complain I&apos;ll add them back</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380454505">00:27</span>]</a></td><td class="nicktd">jopie</td>
+		<td class="msgtd">Yeah&comma; CZMQ 1.4.1 seems to be compatible with Zeromq 3.2.4 but not with 2.0 &lpar;ubuntu version&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380454526">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">2.0 is very old now... </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380454544">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">however that could be fixed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380454558">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;ll give it a shot</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380454574">00:27</span>]</a></td><td class="nicktd">jopie</td>
+		<td class="msgtd">Log live old packages - Ubuntu 13.04 &lpar;raring&rpar; &equals; 2.2 and 13.10 also is slated to be 2.2</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380454625">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">pieterh: are the zmq&UnderBar;send/recv functions deprecated in favor of zmq&UnderBar;msg&UnderBar;send/recv&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380454642">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes and no</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1380454672">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">what&apos;s the yes part and what&apos;s the no part&quest; :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1380454676">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">those names were reused in 3.x for newer simpler functions</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1380454689">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so the old functions were deprecated but the new ones are quite useful&comma; and we use them</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1380454731">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;m checking the zmq man page and they&apos;re not listed&comma; which is an error</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1380454751">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; yes&comma; they are there</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1380454784">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and the zmq&UnderBar;send/zmq&UnderBar;recv man pages do not mention &quot;deprecated&quot;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1380454822">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">&lpar;this little mess was the origin of the rule &quot;Thou shalt not reuse deprecated names for new functionality&quot;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1380455288">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">pieterh: so&comma; should a &quot;new&quot; binding use zmq&UnderBar;send/zmq&UnderBar;recv or should it use the zmq&UnderBar;msg&midast; functions instead&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1380455463">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it should expose both IMO</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1380455471">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">they aren&apos;t the same semantics</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1380455502">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">zmq&UnderBar;send/recv works with buffers&comma; not messages... very nice for some cases but copies the data</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1380455512">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">s/should/could/</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1380455547">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">czmq does not expose these&semi; it has a higher level api&semi; that is what I&apos;d do in a new binding</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1380455548">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">ah yes&comma; I see that. Well&comma; in this particular case the binding doesn&apos;t work with raw buffers anyway. It only uses zmq&UnderBar;msg&UnderBar;t so in that situation zmq&UnderBar;msg&UnderBar;&midast; is probably the right one to expose.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1380455557">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1380455583">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">Ok&comma; thanks. I&apos;m going to put some work into this today so I can support the security functionality in 4.x.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1380455597">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">at the minimum it&apos;s just exposing the new socket options</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1380455601">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">I planned to clean up other usage at the same time.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1380455611">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">MinRK has mentioned moving the certificate generation into zmq&UnderBar;utils&comma; which I like</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1380455675">00:27</span>]</a></td><td class="nicktd">cremes</td>
+		<td class="msgtd">I don&apos;t have an opinion on that yet&mldr; I need to play with these new features for a bit. :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1380455728">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for sure</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1380455754">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">one thing to check is the zauth class in czmq&comma; it installs a decent zap handler </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1380455767">00:27</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that is essential to using curve</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
