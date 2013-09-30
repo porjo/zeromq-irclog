@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380546001">Monday September 30th 2013</h3>
+<h3 id="titleDate" data-time="1380547802">Monday September 30th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -608,6 +608,154 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-135">[<span class="ts" data-time="1380545991">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">I wonder</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-136">[<span class="ts" data-time="1380546022">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Shouldn&apos;t there be a way to make sure that even if a username/pw is leaked&comma; it isn&apos;t possible to read a user&apos;s existing connection &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-137">[<span class="ts" data-time="1380546030">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">They&apos;d always be able to create new ones impersonating the user&comma; obviously</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-138">[<span class="ts" data-time="1380546040">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">But existing ones should be able to remain safe&comma; as they use a seperate temporary key&comma; no &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-139">[<span class="ts" data-time="1380546063">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-140">[<span class="ts" data-time="1380546082">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s like using anonymous clients</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-141">[<span class="ts" data-time="1380546099">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">each connection would be fully secure</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-142">[<span class="ts" data-time="1380546105">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">and clients authenticate the server</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-143">[<span class="ts" data-time="1380546116">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so you have one-way security&comma; which can be very useful</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-144">[<span class="ts" data-time="1380546127">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that&apos;s the worst-case scenario in your example</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-145">[<span class="ts" data-time="1380546173">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">let&apos;s say I&apos;m reading a news feed&comma; and it&apos;s absolutely essential that news can&apos;t be faked or modified</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-146">[<span class="ts" data-time="1380546178">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Aye&comma; thought so&comma; that&apos;s quite good.&comma; that flaw is unavoidable in a username/pw model. it&apos;s the same as having a client&apos;s private certificate leaked. Anyone with the leaked cert can impersonate them</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-147">[<span class="ts" data-time="1380546188">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">indeed&comma; it&apos;s exactly the same</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-148">[<span class="ts" data-time="1380546356">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">pieterh: I assume that it&apos;s possible with CurveZMQ for both sides to authenticate each other&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-149">[<span class="ts" data-time="1380546361">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">by pubkey</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-150">[<span class="ts" data-time="1380546388">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">pieterh: It won&apos;t let me create a new spec on the rfc site&comma; possible to grant that permission &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-151">[<span class="ts" data-time="1380546456">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sorry&comma; was away for a second</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-152">[<span class="ts" data-time="1380546477">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">joepie91: the client always talks to a single server &lpar;per socket&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-153">[<span class="ts" data-time="1380546486">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the server can authenticate clients in various ways</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-154">[<span class="ts" data-time="1380546503">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">PSG&UnderBar;Sakari: you have a Wikidot account&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-155">[<span class="ts" data-time="1380546540">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">yeah</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-156">[<span class="ts" data-time="1380546547">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">diego.duclos&commat;palmstonegames.com</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-157">[<span class="ts" data-time="1380546551">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">PSG&UnderBar;Sakari: you do need to register on the site&comma; there&apos;s a page for that</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-158">[<span class="ts" data-time="1380546565">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd"><a href="http://rfc.zeromq.org/main:registration">http://rfc.zeromq.org/main:registration</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-159">[<span class="ts" data-time="1380546589">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Ah</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-160">[<span class="ts" data-time="1380546628">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">pieterh&semi; let&apos;s say that I have a setup where there isn&apos;t really a defined server and client other than who happens to connect to whom first&comma;  and I wish to verify on both sides that the other end is presenting the correct pubkey for the IP &lpar;and/or internal UUID&rpar; it claims to be</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-161">[<span class="ts" data-time="1380546642">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">is that feasible&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-162">[<span class="ts" data-time="1380546644">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">cough cough</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-163">[<span class="ts" data-time="1380546699">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s feasible but you have to think out of the box</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-164">[<span class="ts" data-time="1380546716">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">your basic brick is a client-to-server connection</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-165">[<span class="ts" data-time="1380546734">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">most often&comma; one binding&comma; one connecting</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-166">[<span class="ts" data-time="1380546786">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if you want to create a mesh&comma; with N nodes all interconnected then my best design is the &quot;harmony&quot; pattern from the guide</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-167">[<span class="ts" data-time="1380546806">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">each node has a router socket for incoming connections &lpar;and does authentication on that&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-168">[<span class="ts" data-time="1380546820">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">each node creates a dealer socket for outgoing connections &lpar;and plays client on that&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-169">[<span class="ts" data-time="1380546923">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">PSG&UnderBar;Sakari: note that we work off a GitHub repository&comma; zeromq/rfc</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-170">[<span class="ts" data-time="1380546935">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you should fork that&comma; and make your RFC as a pull request back into it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-171">[<span class="ts" data-time="1380546958">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I didn&apos;t yet find a way to push automatically to the RFC website so that happens manually</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-172">[<span class="ts" data-time="1380546980">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Alright</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
