@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/09/index.html">Sep 2013</a></div>
-<h3 id="titleDate" data-time="1380547802">Monday September 30th 2013</h3>
+<h3 id="titleDate" data-time="1380549601">Monday September 30th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -756,6 +756,166 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-172">[<span class="ts" data-time="1380546980">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">Alright</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-173">[<span class="ts" data-time="1380547940">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">pieterh: sorry&comma; had some things keeping me busy - I&apos;m not really looking to create a mesh</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-174">[<span class="ts" data-time="1380547946">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">just two-way auth :P</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-175">[<span class="ts" data-time="1380547952">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">I probably didn&apos;t explain well enough</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-176">[<span class="ts" data-time="1380547972">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">the overall network structure is already designed/done&comma; it&apos;s just the auth thing that I&apos;m wondering about</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-177">[<span class="ts" data-time="1380548037">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">joepie91: You&apos;ll have to consider one side a client and the other a server as far as authentication is concerned</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-178">[<span class="ts" data-time="1380548056">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">ofcourse both can authenticate eachother&comma; but they&apos;ll have to have shared the relevant keys in advance</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-179">[<span class="ts" data-time="1380548064">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">At least&comma; from what I&apos;ve understood so far</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-180">[<span class="ts" data-time="1380548177">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">that&apos;s fine&comma; each node should be aware of the other keys beforehand</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-181">[<span class="ts" data-time="1380548184">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">part of the network design :P</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-182">[<span class="ts" data-time="1380548204">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">was more wondering how such two-way auth would work in practice</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-183">[<span class="ts" data-time="1380548225">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">The client authenticates the server using the server&apos;s public key&comma; the server authenticate&apos;s the client using the client&apos;s public key.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-184">[<span class="ts" data-time="1380548608">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">joepie91: have you made any zmq apps yet&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-185">[<span class="ts" data-time="1380548635">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">pieterh: not yet&comma; working on one currently</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-186">[<span class="ts" data-time="1380548646">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">haven&apos;t written any zmq code yet though</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-187">[<span class="ts" data-time="1380548648">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">for that project</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-188">[<span class="ts" data-time="1380548659">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">been primarily occupied with configuration file parsers :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-189">[<span class="ts" data-time="1380548660">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so this is the reason for your question&comma; you&apos;ve not really internalized how zmq topologies work</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-190">[<span class="ts" data-time="1380548679">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I would really encourage you to work through as many of the examples in the Guide as you can</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-191">[<span class="ts" data-time="1380548686">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">at least to ch3</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-192">[<span class="ts" data-time="1380548687">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">well&comma; I understand the zmq topologies&comma; I&apos;m just not entirely sure how the curvezmq thing will be implemented</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-193">[<span class="ts" data-time="1380548714">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">I just kind of suck at asking the right questions right now&comma; neighbours are drilling in the wall and it&apos;s really messing up my mental focus</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-194">[<span class="ts" data-time="1380548715">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">:P</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-195">[<span class="ts" data-time="1380548716">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">if you&apos;re speaking of &quot;who happens to connect to who first&quot;&comma; there is a gap</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-196">[<span class="ts" data-time="1380548771">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the roles in a topology are not arbitrary</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-197">[<span class="ts" data-time="1380548784">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">pieterh: am I correct in assuming that any cryptographically strong array of 32 bytes can be used as a secret key with libsodium &quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-198">[<span class="ts" data-time="1380548807">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">PSG&UnderBar;Sakari: for symmetric encryption yes</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-199">[<span class="ts" data-time="1380548819">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">not for curve</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-200">[<span class="ts" data-time="1380548829">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">which uses asymmetric encryption based on keypairs</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-201">[<span class="ts" data-time="1380548849">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Right&comma; obviously those need a specific format.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-202">[<span class="ts" data-time="1380548873">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">think of a 64-byte magic number split into two halves</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-203">[<span class="ts" data-time="1380548905">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">some random 32-byte array is not the same as half a magic number</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-204">[<span class="ts" data-time="1380548945">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Indeed&comma; you should be able to generate the public half from the private half however &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-205">[<span class="ts" data-time="1380548969">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">no</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-206">[<span class="ts" data-time="1380548974">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">No &quest; Ok I see</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-207">[<span class="ts" data-time="1380548974">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s half a number</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-208">[<span class="ts" data-time="1380549013">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you can check out how the libsodium keypair function works if you are interested</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-209">[<span class="ts" data-time="1380549022">00:29</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">I&apos;m doing that right now&comma; in fact</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-210">[<span class="ts" data-time="1380549198">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">pieterh: it&apos;s probably better to continue discussing this when I&apos;m a bit more clear-minded&comma; heh</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-211">[<span class="ts" data-time="1380549206">00:29</span>]</a></td><td class="nicktd">joepie91</td>
+		<td class="msgtd">but&comma; thanks either way :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-212">[<span class="ts" data-time="1380549211">00:29</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">joepie91: np&comma; any time</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
