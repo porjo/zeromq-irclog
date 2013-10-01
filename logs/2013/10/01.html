@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1380628801">Tuesday October 1st 2013</h3>
+<h3 id="titleDate" data-time="1380630601">Tuesday October 1st 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -364,6 +364,254 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1380628489">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">The only disadvantage here is that sent messages will be bigger then with sha256</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1380628516">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">As the output is obviously twice as long&comma; I don&apos;t believe that to be a problem though</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1380628540">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you have to hash every message&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1380628549">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">or is this part of the security handshake&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1380628555">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">It&apos;s part of the handshake&comma; yes</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1380628559">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">then it&apos;s irrelevant</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1380628570">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Thought so &midast;Nods&midast;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1380628587">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">classic cheap &amp; nasty</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1380628595">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">sha512 it is. What about the large prime N &quest; It&apos;s also only used in the handshake&comma; and it&apos;s main purpose is to slow brute-forcing down</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1380628607">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd"><a href="http://hintjens.com/blog:9">http://hintjens.com/blog:9</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1380628626">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">&midast;Checks&midast;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1380628627">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the large prime N&comma; sorry&comma; I don&apos;t know what that signifies</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1380628653">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">basically you can make the handshake as verbose and chatty as necessary&comma; as long as you keep the message flow brutally minimalistic</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1380628714">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Ok&comma; basicly&comma; each mathematical operation in the SRP spec is done&comma; and then its modulo with a large prime is calculated</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1380628733">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">The sole purpose of this is to slow things down to make brute-force attacks to find out the password impossible</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1380628743">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right&comma; so there&apos;s a constant N known to all implementations</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1380628754">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Correct</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1380628758">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">The larger N&comma; the slower everything is</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1380628770">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">is there any upgrade path or way for implementations to negotiate&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1380628782">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">do you e.g. want to allow one peer to downgrade to older known Ns&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1380628795">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Your verifier for the password is generated using a specific N</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1380628814">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">So unless you have several verifiers with different Ns&comma; you don&apos;t really get much choice&comma; you have to use the one you used to generate the verifier with</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1380628850">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sure... so the concern for deployments is&comma; you upgrade part of your network to a new version and it has to still talk to old pieces</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1380628866">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s impossible in many cases to deploy a new N across the whole network in one step</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1380628869">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">thus</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1380628880">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Indeed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1380628893">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">a peer may negotiate downwards&comma; i.e. imitate an older peer if it sees it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1380628908">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">to make that work well&comma; we might leverage the protocol</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1380628923">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">or at least specify the recommended strategy&comma; as we do in ZMTP</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1380628933">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">or&comma; we choose an N that is going to work for 20 years</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1380628961">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">What you&apos;re saying is you&apos;ll probably want to pick a bigger N every few years&comma; as cost gravity pulls the cost of brute forcing down &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-105">[<span class="ts" data-time="1380628962">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">my recommendation is to skip this problem entirely&comma; choose an OK N now&comma; and revisit this later</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-106">[<span class="ts" data-time="1380628966">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-107">[<span class="ts" data-time="1380628987">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">cost of brute forcing falls by 50&percnt; every 18 months</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-108">[<span class="ts" data-time="1380629042">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Agreed on skipping the problem entirely for now. It&apos;ll take quite some years before any brute force attack becomes compationally fesible&comma; at which point it can be revisited</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-109">[<span class="ts" data-time="1380629072">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd"><a href="http://www.ietf.org/rfc/rfc5054.txt">http://www.ietf.org/rfc/rfc5054.txt</a> there&apos;s sample N values about halfway that document&comma; appendix A&comma; page 15</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-110">[<span class="ts" data-time="1380629132">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;d take the largest one and fly with that for the first generation</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-111">[<span class="ts" data-time="1380629139">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">I picked the 8192 one for my dirty implementation test which sits on top of netMQ &lpar;using plain auth&comma; and then negotiating and encrypting myself&rpar;. The handshake takes a good 15 seconds&comma; which is unacceptable as far as I&apos;m concerned</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-112">[<span class="ts" data-time="1380629145">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; ok</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-113">[<span class="ts" data-time="1380629154">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">15 seconds is kind of long... :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-114">[<span class="ts" data-time="1380629167">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">I went with the same logic as you there&comma; until I noticed it was THAT long</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-115">[<span class="ts" data-time="1380629177">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so realistically&comma; to bruteforce the password you have to try over and over and over...</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-116">[<span class="ts" data-time="1380629190">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">You&apos;re counting billions of years for a single password</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-117">[<span class="ts" data-time="1380629229">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">why not use a different strategy... the peer can simply block an IP address that fails more than N times</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-118">[<span class="ts" data-time="1380629237">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Well&comma; ofcourse</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-119">[<span class="ts" data-time="1380629238">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">However</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-120">[<span class="ts" data-time="1380629242">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">If someone steals your verifiers</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-121">[<span class="ts" data-time="1380629243">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">you can&apos;&lpar;t do that</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-122">[<span class="ts" data-time="1380629258">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Which is the main issue here. Bruteforce over the network would be so easely detected.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-123">[<span class="ts" data-time="1380629264">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ah&comma; ok</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-124">[<span class="ts" data-time="1380629333">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">It should be fairly trivial to calculate which N should last another 10 years before being reasonably brute-forceable&comma; no &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-125">[<span class="ts" data-time="1380629361">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">assuming 50&percnt; less cost every 18 months &midast;Counts&midast;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-126">[<span class="ts" data-time="1380629366">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">yes</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-127">[<span class="ts" data-time="1380629404">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">50&percnt; less cost&comma; 6 times over&comma; ends up meaning things can be done at 1.5&percnt; of the cost of today</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-128">[<span class="ts" data-time="1380629420">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-129">[<span class="ts" data-time="1380629438">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">meaning 0.2 seconds per password&comma; with the 8192bit prime</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-130">[<span class="ts" data-time="1380629451">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">per guess&comma; right&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-131">[<span class="ts" data-time="1380629452">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Yes</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-132">[<span class="ts" data-time="1380629460">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">assuming a 7 character password with numbers and letters&comma; that gives ..  </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-133">[<span class="ts" data-time="1380629482">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">52523350144 different combinations to try</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-134">[<span class="ts" data-time="1380629498">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Which clocks you at 10504670028 seconds</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-135">[<span class="ts" data-time="1380629525">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Which is 337 years</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-136">[<span class="ts" data-time="1380629560">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">I think we can reasonable drop to the 1024 bit prime&comma; assuming that&apos;s 8 times as fast to do&comma; that&apos;d still clock you at 42 years </td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
