@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1380632402">Tuesday October 1st 2013</h3>
+<h3 id="titleDate" data-time="1380634201">Tuesday October 1st 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -968,6 +968,106 @@
 	<tr class="light">
 		<td class="timetd"><a href="#msg-225">[<span class="ts" data-time="1380632102">00:30</span>]</a></td><td class="nicktd">pieterh</td>
 		<td class="msgtd">that seems to be complex&comma; for C&num;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-226">[<span class="ts" data-time="1380632115">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Its bothersome&comma; to say the least</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-227">[<span class="ts" data-time="1380632139">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">another option would be to reboot a C&num; binding for ZMQ 4&comma; then do a reference implementation of ZSRP in C&num;&comma; then get a C port of that&comma; plug that into libzmq</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-228">[<span class="ts" data-time="1380632241">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">an API-compatible with netMQ C&num; binding for zmq 4 would be lovely indeed.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-229">[<span class="ts" data-time="1380632242">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Might as well do the reference implementation directly in C then though &quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-230">[<span class="ts" data-time="1380632292">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">that doesn&apos;t really matter</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-231">[<span class="ts" data-time="1380632313">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">the first goal is simply to prove the security protocol</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-232">[<span class="ts" data-time="1380632326">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">C can be nasty for all the wrong reasons</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-233">[<span class="ts" data-time="1380632368">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">True&comma; would a reference implementation sitting directly on top of current NetMQ be acceptable &quest; As in: doing a handshake over the NULL authentication mechanism and manual encryption using the session key after that</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-234">[<span class="ts" data-time="1380632398">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I&apos;d honestly make a reference implementation that does no IO at all</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-235">[<span class="ts" data-time="1380632414">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">you see how the mechanism consists of commands&comma; and messages</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-236">[<span class="ts" data-time="1380632424">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Right&comma; as you said. indeed</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-237">[<span class="ts" data-time="1380632428">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">so you can build a codec around those semantics quite nicely</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-238">[<span class="ts" data-time="1380632462">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s true in my first proofs I used zmq to exchange data between sockets</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-239">[<span class="ts" data-time="1380632478">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for testing the codec</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-240">[<span class="ts" data-time="1380632510">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">ideally the person reading the reference code&comma; and the RFC&comma; doesn&apos;t need to know ZeroMQ</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-241">[<span class="ts" data-time="1380632542">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">&midast;Nods&midast; I can do that&comma; I already have a half finished port of SRP to C&num; anyway. &lpar;Damn you licensing&comma; couldn&apos;t use any of the existing ones&comma; they&apos;re all GPL&apos;d&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-242">[<span class="ts" data-time="1380632614">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">lol</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-243">[<span class="ts" data-time="1380632631">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">I have to reboot my laptop again&comma; recovering from my close brush with Azure</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-244">[<span class="ts" data-time="1380632653">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">conclusion: azure is bad for your laptop&apos;s health :D</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-245">[<span class="ts" data-time="1380632944">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">pieterh: wb&comma; gonna start working on a codec</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-246">[<span class="ts" data-time="1380633136">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">re</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-247">[<span class="ts" data-time="1380633153">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Wb</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-248">[<span class="ts" data-time="1380633634">00:30</span>]</a></td><td class="nicktd">marijnfs</td>
+		<td class="msgtd">hello&comma; i have a raw tcp router taking in packages&comma; and I would like to reroute them through a router-dealer connection to distribute the response handling</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-249">[<span class="ts" data-time="1380633638">00:30</span>]</a></td><td class="nicktd">marijnfs</td>
+		<td class="msgtd">how would i go about doing that/</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-250">[<span class="ts" data-time="1380633843">00:30</span>]</a></td><td class="nicktd">dexter&UnderBar;psg</td>
+		<td class="msgtd">hello everyone&comma; I have a dealer-router architecture with identity option set in the dealer part. When the dealer disconnects and reconnects the router can receive it messages&comma; but it can&apos;t route the responses by using this identity. Do you know what the ROUTER does when a new connection with the same identity appears&quest; Does it overwrite the previous pipe or how long does it take for it to realize the old connection does not exist&quest;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
