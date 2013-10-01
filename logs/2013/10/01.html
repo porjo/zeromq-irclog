@@ -66,7 +66,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1380627001">Tuesday October 1st 2013</h3>
+<h3 id="titleDate" data-time="1380628801">Tuesday October 1st 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -284,6 +284,86 @@
 	<tr class="dark">
 		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1380626667">00:30</span>]</a></td><td class="nicktd">sm0ke</td>
 		<td class="msgtd">pieterh: ah nice.. thanks didnt know zmq could ack message send</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1380626715">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it is for example useful if you have a push socket and want to stop sending when the outgoing queue is full&comma; which might signal a problem.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1380626723">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">there is no individual message send ack</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1380626755">00:30</span>]</a></td><td class="nicktd">sm0ke</td>
+		<td class="msgtd">pieterh: makes sense.. it just tells you wether the receving socket can receive it&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1380626776">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">It doesn&apos;t know that&semi; it only knows when there is space in the outgoing buffer to send more</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1380626789">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">it&apos;s a bit like the TCP EWOULDBLOCK</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1380626929">00:30</span>]</a></td><td class="nicktd">sm0ke</td>
+		<td class="msgtd">pieterh: thanks.. i think i need to read upon reliable message patterns in zguide once more</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1380626936">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">right</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1380628257">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">pieterh: Do you have a few minutes to discuss algorithm choices for ZMQSRP &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1380628263">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">for sure</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1380628292">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Lovely :&rpar; As stated in the current unfinished rfc&comma; I haven&apos;t picked those yet. I agree with you on the fact we should probably leave as little as possible up to the user though</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1380628309">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">agreed&comma; every choice is a problem</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1380628340">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">First things first&comma; is sha1 an option at all&comma; or do we want to stay away from it &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1380628365">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">sha512 seems logical</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1380628384">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">but it depends on the case&semi; is this meant to secure&comma; or just unique&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1380628413">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">It&apos;s ment to secure&comma; the main reason for using the hash is to 1: Make it impossible to retrieve the unhashed version of the data&comma; and 2: Slow the algorithm down to prevent brute-force</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1380628423">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">2 is very secondary here though&comma; as it&apos;s the main point of the large prime N</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1380628428">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">So it&apos;s mostly 1 really</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1380628433">00:30</span>]</a></td><td class="nicktd">pieterh</td>
+		<td class="msgtd">then there seems no benefit in not using sha512</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1380628443">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Agreed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1380628489">00:30</span>]</a></td><td class="nicktd">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">The only disadvantage here is that sent messages will be bigger then with sha256</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
