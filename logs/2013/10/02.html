@@ -67,32 +67,124 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1380684601">Wednesday October 2nd 2013</h3>
+<h3 id="titleDate" data-time="1380708001">Wednesday October 2nd 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380673020">00:31</span>]</a></td><td class="nicktd" style="color: olive">lacrymology</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380673020">00:31</span>]</a></td><td class="nicktd" style="color: navy">lacrymology</td>
 		<td class="msgtd">PSG&UnderBar;Sakari: I don&apos;t expect it&comma; it&apos;s very nice. it just seems.. arbitrary somehow. I mean&comma; why do the other parts of the message pass the filter&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380673957">00:31</span>]</a></td><td class="nicktd" style="color: darkviolet">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380673957">00:31</span>]</a></td><td class="nicktd" style="color: darkblue">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">lacrymology: well&comma; the main thing is it makes little sense to filter on the 5th frame for most people</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380673965">00:31</span>]</a></td><td class="nicktd" style="color: darkviolet">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380673965">00:31</span>]</a></td><td class="nicktd" style="color: darkblue">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">Though I supose the frame to filter on could be a socket option</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380673975">00:31</span>]</a></td><td class="nicktd" style="color: darkviolet">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380673975">00:31</span>]</a></td><td class="nicktd" style="color: darkblue">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">&lpar;and I&apos;m sure a patch for that wouldn&apos;t be denied :P&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380682684">00:31</span>]</a></td><td class="nicktd" style="color: khaki">rao</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380682684">00:31</span>]</a></td><td class="nicktd" style="color: olive">rao</td>
 		<td class="msgtd">is there someone available&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380682759">00:31</span>]</a></td><td class="nicktd" style="color: khaki">rao</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380682759">00:31</span>]</a></td><td class="nicktd" style="color: olive">rao</td>
 		<td class="msgtd">i have some queries about building czmq-2.0.1 on windows enviornment</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380706564">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">Am I mistaken if I say that Push/Pull is more or less the same like Router/Dealer except it&apos;s more strict&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380706580">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">it&apos;s like dealer/dealer but one-way</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380706608">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">you could replace push and/or pull with dealer and it would work identically</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380706640">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">Hmmm &mldr; pipeline pattern misleads me somehow. I always think of a CPU pipeline</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380706649">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">the name isn&apos;t great</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380706687">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">in the guide I used ventilator / sink instead</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380706791">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">For pipelining I expect something like on Push-Socket&comma; several Pull-Sockets which consecutively do something with the incoming data and pass it along to the next Pull-Socket. Similar to a production line in a factory.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380707085">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">hello&comma; are zmq constant values guaranteed to be unique across all versions&comma; or could they conflict&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380707246">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">What do you intent to do with these constants&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380707303">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">use them as normal&comma; but i don&apos;t control the version of zmq my users may have</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380707315">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">i.e. with setsockopt</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380707346">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">calid: I don&apos;t know about guarantees&comma; but they have been consistent so far</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380707355">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">Constants in the code have the purpose to make it easier to reuse the code.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380707392">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">calid: the code that calls the library should be compiled against the correct library header</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380707404">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">if users substitute their own library versions&comma; things may not work</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380707433">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">calid: If you intent to send certain constant accross the network on different host you cannot guarantee they all have the same version&comma; I&apos;d strongly suggest you use your own header with your proper set of constants.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380707516">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">I&apos;m calling zmq via ffi so there&apos;s no compilation.. constants on the network aren&apos;t an issue as it&apos;s for the user to ensure consistency there&comma; this is more for ctx or socket options</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1380707522">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">which are passed directly to the library</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1380707556">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">i&apos;ll go with the assumption constants&comma; even though they get added/removed between versions&comma; maintain their distinct values</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1380707567">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">and deal with it if that ever is no longer the case :&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1380707616">00:31</span>]</a></td><td class="nicktd" style="color: darkred">mhk</td>
+		<td class="msgtd">Well &mldr; as pieterh said: No guarantees &semi;&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1380707659">00:31</span>]</a></td><td class="nicktd" style="color: olive">calid</td>
+		<td class="msgtd">yep&comma; understood.  thanks for your help</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1380707675">00:31</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">calid: I&apos;m pretty sure it will work&comma; it&apos;s just not documented so anyone could break that in future</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
