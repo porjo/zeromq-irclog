@@ -67,68 +67,100 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1380810601">Thursday October 3rd 2013</h3>
+<h3 id="titleDate" data-time="1380814201">Thursday October 3rd 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380769918">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380769918">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">Hello&comma; Does making a subscribe/usubscribe on a sub socket involves a network io&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380769953">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380769953">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">and how sane it is to have 100 thousands of subscriptions on single socket&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380776977">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380776977">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">Is there any way to subscribe to a new topic on the fly&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380777778">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380777778">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">i see zmq sub sockets can subscribe on the fly too cool</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380777866">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380777866">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">i had this faulty test where i was sending all the pubs before the client issues sub for a new topic..a sleep in between worked</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380777895">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380777895">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">which thus tends to make me think the sub/unsub also include a network io&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380777989">00:32</span>]</a></td><td class="nicktd" style="color: darkorchid">pedropenduko</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380777989">00:32</span>]</a></td><td class="nicktd" style="color: darkgreen">pedropenduko</td>
 		<td class="msgtd">hi.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380778577">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380778577">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">so i see that if i make a sub request immediately before any pub req for a topic on the fly..its not guaranteed that the pub will be received</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380778721">00:32</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380778721">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">eh i am confused..i need to sleep</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380784172">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">sm0ke</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380784172">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">hello is it possible to publish single message on multiple topics&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380808265">00:33</span>]</a></td><td class="nicktd" style="color: darkred">lacrymology</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380808265">00:33</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">:&lpar; why are the logs at <a href="http://zero.mq/irc">http://zero.mq/irc</a> 2 years old&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380809417">00:33</span>]</a></td><td class="nicktd" style="color: black">mhk</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380809417">00:33</span>]</a></td><td class="nicktd" style="color: red">mhk</td>
 		<td class="msgtd">Just for the sake of not making bad decisions: I want zeromq to listen on port 80 and then dispatch the traffic to several workers &lpar;threads&rpar;. There&apos;s no other way than passing the messages via inproc sockets to the workers&comma; right&quest; So basically I&apos;ll end up having a bottleneck on my socket listening to port 8080&comma; correct&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380809485">00:33</span>]</a></td><td class="nicktd" style="color: black">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380809485">00:33</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">doing http over &#65533;mq is in deed a bad decision</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380809501">00:33</span>]</a></td><td class="nicktd" style="color: black">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380809501">00:33</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">and you can have workers whereever you want</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380809652">00:33</span>]</a></td><td class="nicktd" style="color: black">mhk</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380809652">00:33</span>]</a></td><td class="nicktd" style="color: red">mhk</td>
 		<td class="msgtd">Basically on port 80 it&apos;ll distribute a JSON-like construct telling where the actuall services are located.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380813060">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
+		<td class="msgtd">guys i am not able to join zeromq mailing list&quest; anyone else facing this&quest; i did not get a confirmation after filling in the form here</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380813064">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
+		<td class="msgtd"><a href="http://lists.zeromq.org/mailman/listinfo/zeromq-dev">http://lists.zeromq.org/mailman/listinfo/zeromq-dev</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380813290">00:33</span>]</a></td><td class="nicktd" style="color: maroon">broo</td>
+		<td class="msgtd">sm0ke: just tried it and it worked for me</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380813308">00:33</span>]</a></td><td class="nicktd" style="color: maroon">broo</td>
+		<td class="msgtd">I received the confirmation email and was able to confirm the subscription</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380813331">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
+		<td class="msgtd">what the..</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380813334">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
+		<td class="msgtd">let me try again</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380813397">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
+		<td class="msgtd">weird nothing in inbox and spam</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380813720">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
+		<td class="msgtd">i am really getting desperate for help..i wish they had a google group instead</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
