@@ -67,208 +67,256 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1380830401">Thursday October 3rd 2013</h3>
+<h3 id="titleDate" data-time="1380832201">Thursday October 3rd 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380769918">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1380769918">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">Hello&comma; Does making a subscribe/usubscribe on a sub socket involves a network io&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380769953">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1380769953">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">and how sane it is to have 100 thousands of subscriptions on single socket&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380776977">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1380776977">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">Is there any way to subscribe to a new topic on the fly&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380777778">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1380777778">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">i see zmq sub sockets can subscribe on the fly too cool</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380777866">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1380777866">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">i had this faulty test where i was sending all the pubs before the client issues sub for a new topic..a sleep in between worked</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380777895">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1380777895">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">which thus tends to make me think the sub/unsub also include a network io&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380777989">00:32</span>]</a></td><td class="nicktd" style="color: darkblue">pedropenduko</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1380777989">00:32</span>]</a></td><td class="nicktd" style="color: navy">pedropenduko</td>
 		<td class="msgtd">hi.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380778577">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1380778577">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">so i see that if i make a sub request immediately before any pub req for a topic on the fly..its not guaranteed that the pub will be received</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380778721">00:32</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1380778721">00:32</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">eh i am confused..i need to sleep</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380784172">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1380784172">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">hello is it possible to publish single message on multiple topics&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380808265">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1380808265">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">:&lpar; why are the logs at <a href="http://zero.mq/irc">http://zero.mq/irc</a> 2 years old&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380809417">00:33</span>]</a></td><td class="nicktd" style="color: magenta">mhk</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1380809417">00:33</span>]</a></td><td class="nicktd" style="color: black">mhk</td>
 		<td class="msgtd">Just for the sake of not making bad decisions: I want zeromq to listen on port 80 and then dispatch the traffic to several workers &lpar;threads&rpar;. There&apos;s no other way than passing the messages via inproc sockets to the workers&comma; right&quest; So basically I&apos;ll end up having a bottleneck on my socket listening to port 8080&comma; correct&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380809485">00:33</span>]</a></td><td class="nicktd" style="color: maroon">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1380809485">00:33</span>]</a></td><td class="nicktd" style="color: fuchsia">guido&UnderBar;g</td>
 		<td class="msgtd">doing http over &#65533;mq is in deed a bad decision</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380809501">00:33</span>]</a></td><td class="nicktd" style="color: maroon">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1380809501">00:33</span>]</a></td><td class="nicktd" style="color: fuchsia">guido&UnderBar;g</td>
 		<td class="msgtd">and you can have workers whereever you want</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380809652">00:33</span>]</a></td><td class="nicktd" style="color: magenta">mhk</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1380809652">00:33</span>]</a></td><td class="nicktd" style="color: black">mhk</td>
 		<td class="msgtd">Basically on port 80 it&apos;ll distribute a JSON-like construct telling where the actuall services are located.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380813060">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1380813060">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">guys i am not able to join zeromq mailing list&quest; anyone else facing this&quest; i did not get a confirmation after filling in the form here</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380813064">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1380813064">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd"><a href="http://lists.zeromq.org/mailman/listinfo/zeromq-dev">http://lists.zeromq.org/mailman/listinfo/zeromq-dev</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380813290">00:33</span>]</a></td><td class="nicktd" style="color: magenta">broo</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1380813290">00:33</span>]</a></td><td class="nicktd" style="color: navy">broo</td>
 		<td class="msgtd">sm0ke: just tried it and it worked for me</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380813308">00:33</span>]</a></td><td class="nicktd" style="color: magenta">broo</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1380813308">00:33</span>]</a></td><td class="nicktd" style="color: navy">broo</td>
 		<td class="msgtd">I received the confirmation email and was able to confirm the subscription</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380813331">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1380813331">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">what the..</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380813334">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1380813334">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">let me try again</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380813397">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1380813397">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">weird nothing in inbox and spam</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380813720">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1380813720">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">i am really getting desperate for help..i wish they had a google group instead</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1380815266">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1380815266">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">whoever writes your docs is my personal hero</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1380815274">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1380815274">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">I mean the guide&comma; specifically</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1380815430">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1380815430">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">yes guide is really helpful..</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1380815513">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1380815513">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">not just that&comma; but it&apos;s funny</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1380815554">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1380815554">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">anyone.. ok&comma; some people.. can write useful guides. But funny is priceless</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1380816303">00:33</span>]</a></td><td class="nicktd" style="color: purple">sm0ke</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1380816303">00:33</span>]</a></td><td class="nicktd" style="color: blue">sm0ke</td>
 		<td class="msgtd">lacrymology: yea i liked &quot;idempotency is not something for which you take a pill&quot;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1380824698">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1380824698">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">should I use zeromq/libzmq&comma; zeromq/zermq3-x&comma; or just pyzmq&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1380824768">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1380824768">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">and where is a map of pyzmq &lt;&lt;&gt;&gt; libzmq compatibilities &lpar;or in other words&comma; where do I get a v4-able pyzmq&quest;&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1380825254">00:33</span>]</a></td><td class="nicktd" style="color: purple">dwilson</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1380825254">00:33</span>]</a></td><td class="nicktd" style="color: maroon">dwilson</td>
 		<td class="msgtd">if you find out let me know &semi;-&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1380825283">00:33</span>]</a></td><td class="nicktd" style="color: purple">dwilson</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1380825283">00:33</span>]</a></td><td class="nicktd" style="color: maroon">dwilson</td>
 		<td class="msgtd">actually i could really use a pyzmq that can install v4 as an extension</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1380825377">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1380825377">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">dwilson: pieterh told us yesterday pyzmq is well on its way of providing v4 support&comma; but I don&apos;t understand if this is in some specific repo / branch&comma; or if the code recognizes the underlying lib version and just works</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1380826296">00:33</span>]</a></td><td class="nicktd" style="color: magenta">broo</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1380826296">00:33</span>]</a></td><td class="nicktd" style="color: navy">broo</td>
 		<td class="msgtd">lacrymology: you need pyzmq 13.x to take advantage of libzmq3</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1380826423">00:33</span>]</a></td><td class="nicktd" style="color: magenta">broo</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1380826423">00:33</span>]</a></td><td class="nicktd" style="color: navy">broo</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/pyzmq/blob/master/README.md">https://github.com/zeromq/pyzmq/blob/master/README.md</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1380826702">00:33</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1380826702">00:33</span>]</a></td><td class="nicktd" style="color: darkviolet">pieterh</td>
 		<td class="msgtd">lacrymology: hi</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1380826727">00:33</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1380826727">00:33</span>]</a></td><td class="nicktd" style="color: darkviolet">pieterh</td>
 		<td class="msgtd">MinRK is afaiu adding V4 support to PyZMQ currently</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1380826741">00:33</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1380826741">00:33</span>]</a></td><td class="nicktd" style="color: darkviolet">pieterh</td>
 		<td class="msgtd">so that means building from GitHub</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1380827681">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1380827681">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">pieterh: but will the version from pip work if I don&apos;t have libzmq in the default directories&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1380827690">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1380827690">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">from pypi&comma; I mean&comma; of course</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1380827702">00:33</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1380827702">00:33</span>]</a></td><td class="nicktd" style="color: darkviolet">pieterh</td>
 		<td class="msgtd">no idea :-&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1380827890">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1380827890">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">figures &equals;P</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1380827958">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1380827958">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">pieterh: it uses a bundled libzmq</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1380827961">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1380827961">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">god knows what version</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1380827990">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1380827990">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">3.2.2</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1380829646">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1380829646">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">is &oslash;mq ipc viable for large bandwidth communication&quest; I&apos;m talking full HD raw video&comma; about 124MBps&comma; or almost 1gbps</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1380829683">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1380829683">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">divided in 30 4MB messages a second</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1380829854">00:33</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes&UnderBar;</td>
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1380829854">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">cremes&UnderBar;</td>
 		<td class="msgtd">lacrymology: depends on the OS. for linux I would say absolutely. For windows &amp; osx&comma; I would recommend testing it first.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1380829897">00:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1380829897">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
 		<td class="msgtd">it&apos;s linux only</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1380830141">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">cremes&UnderBar;</td>
+		<td class="msgtd">lacrymology: then you&apos;re probably okay. linux has some &quot;short circuits&quot; in the kernel for making ipc more efficient.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1380830168">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">cremes&UnderBar;</td>
+		<td class="msgtd">feel free to benchmark it using the built in perf programs and try it with ipc&comma; different message sizes&comma; etc.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1380830302">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
+		<td class="msgtd">cremes&UnderBar;: I&apos;ve got something built using posix&comma; but control comm is becoming burdendome enough that I&apos;m starting to wonder if it&apos;s such a good idea. </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1380830346">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">cremes&UnderBar;</td>
+		<td class="msgtd">the beauty of zeromq is that it helps hide some of the ugliness of hand-rolled socket code.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1380830362">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
+		<td class="msgtd">right now client might die keeping the locks&comma; and then server can timeout on lock wait and restart the locks&comma; but then any other locked clients need to somehow recover from that as well</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1380830363">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">cremes&UnderBar;</td>
+		<td class="msgtd">try typing in and running some of the examples from the guide and let your mind expand &semi;&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1380830376">00:33</span>]</a></td><td class="nicktd" style="color: maroon">lacrymology</td>
+		<td class="msgtd">cremes&UnderBar;: I&apos;m at it</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1380831816">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">hpekdemir</td>
+		<td class="msgtd">hi</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1380831823">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">hpekdemir</td>
+		<td class="msgtd">I tried to run a php script and got this: php: symbol lookup error: /usr/lib/php5/20090626/zmq.so: undefined symbol: zmq&UnderBar;sendmsg</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1380831853">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">hpekdemir</td>
+		<td class="msgtd">the installation went successfully. and the dynamic library is in that directory. called zmq.so</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1380831866">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">hpekdemir</td>
+		<td class="msgtd">my script is exact copy pasted from this: <a href="http://zguide.zeromq.org/php:durasub">http://zguide.zeromq.org/php:durasub</a></td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1380831901">00:33</span>]</a></td><td class="nicktd" style="color: darkorange">hpekdemir</td>
+		<td class="msgtd">so what could be the problem here&quest; is the problem zmq.so&quest;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
