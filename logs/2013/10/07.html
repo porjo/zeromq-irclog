@@ -67,48 +67,52 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381168801">Monday October 7th 2013</h3>
+<h3 id="titleDate" data-time="1381170601">Monday October 7th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381123414">00:38</span>]</a></td><td class="nicktd" style="color: darkred">AshishNagar</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381123414">00:38</span>]</a></td><td class="nicktd" style="color: darkblue">AshishNagar</td>
 		<td class="msgtd">I like to implement dynamic brokerless LAN discovery &lpar;across multiple subnets&rpar; using zeromq.  Can anybody help with example code&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381163326">00:39</span>]</a></td><td class="nicktd" style="color: darkolivegreen">samsoir</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381163326">00:39</span>]</a></td><td class="nicktd" style="color: fuchsia">samsoir</td>
 		<td class="msgtd">I am having some issues with ffi-rzmq 1.0.1. I&apos;m using the Socket.send&UnderBar;string method over a PUSH ipc transport&comma; and the library appears to be getting stuck when it tries to close the message using zmq&UnderBar;msg&UnderBar;close. Has anyone encountered this previously&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381163803">00:39</span>]</a></td><td class="nicktd" style="color: darksalmon">proteneer</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381163803">00:39</span>]</a></td><td class="nicktd" style="color: darkmagenta">proteneer</td>
 		<td class="msgtd">zeromq doesnt&apos; support websockets right&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381163813">00:39</span>]</a></td><td class="nicktd" style="color: darksalmon">proteneer</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381163813">00:39</span>]</a></td><td class="nicktd" style="color: darkmagenta">proteneer</td>
 		<td class="msgtd">is there a good way to deal with firewalls then&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381164544">00:39</span>]</a></td><td class="nicktd" style="color: darkcyan">Raffi</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381164544">00:39</span>]</a></td><td class="nicktd" style="color: red">Raffi</td>
 		<td class="msgtd">hi&comma; when messages accumulate in socket buffer&comma; can I get a count of them&quest; want to check before HWM is exceeded</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381167430">00:39</span>]</a></td><td class="nicktd" style="color: olive">cremes</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381167430">00:39</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">samsoir: I support that gem. That problem doesn&apos;t sound familiar. If you have a piece of code that I can run to duplicate the problem that will help get it fixed &lpar;if indeed it&apos;s a bug in the gem&rpar;.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381167466">00:39</span>]</a></td><td class="nicktd" style="color: olive">cremes</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381167466">00:39</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">proteneer: it doesn&apos;t support websockets directly. Take a look at the &quot;zerogw&quot; project on github. It bridges between them.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381167505">00:39</span>]</a></td><td class="nicktd" style="color: olive">cremes</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381167505">00:39</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">Raffi: I don&apos;t think you can retrieve that number directly. You may want to take a look at some of the new socket monitoring APIs. It may be possible to get some of that information via that mechanism.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381168321">00:39</span>]</a></td><td class="nicktd" style="color: darkcyan">Raffi</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381168321">00:39</span>]</a></td><td class="nicktd" style="color: red">Raffi</td>
 		<td class="msgtd">cremes: Yes&comma; I see that&comma; just not sure what event to monitor to track messages accumulating in send/receive buffer</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381168435">00:39</span>]</a></td><td class="nicktd" style="color: olive">cremes</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381168435">00:39</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">Raffi: I recommend also taking a look at the faq. It discusses why this information isn&apos;t exposed.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381168687">00:39</span>]</a></td><td class="nicktd" style="color: red">Raffi</td>
+		<td class="msgtd">cremes: understood&comma; thanks</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
