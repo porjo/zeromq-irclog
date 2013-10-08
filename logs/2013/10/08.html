@@ -67,60 +67,128 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381208401">Tuesday October 8th 2013</h3>
+<h3 id="titleDate" data-time="1381246201">Tuesday October 8th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381197820">00:39</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381197820">00:39</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">Calling subscribe on a socket in a different thread would violate the one socket per thread rule&comma; so if a SUB socket waiting to receive a message from a publisher&comma; what is the best way add a subscription&quest; Just use a timeout in the receive loop&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381197912">00:39</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381197912">00:39</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">Or is the best way to use a poller&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381198478">00:39</span>]</a></td><td class="nicktd" style="color: darkviolet">smith</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381198478">00:39</span>]</a></td><td class="nicktd" style="color: indigo">smith</td>
 		<td class="msgtd">anyone there&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381198551">00:39</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381198551">00:39</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">It appears that using a poller is the way to go to connect a thread that needs to receive from multiple sockets.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381199949">00:39</span>]</a></td><td class="nicktd" style="color: violet">lacrymology</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381199949">00:39</span>]</a></td><td class="nicktd" style="color: olive">lacrymology</td>
 		<td class="msgtd">wait wat</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381199972">00:39</span>]</a></td><td class="nicktd" style="color: violet">lacrymology</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381199972">00:39</span>]</a></td><td class="nicktd" style="color: olive">lacrymology</td>
 		<td class="msgtd">hadronzoo: whatdo you mean &apos;calling subscribe on a socket in a different thread&apos;&quest; please clarify that question</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381203322">00:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381203322">00:40</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">lacrymology: I have a SUB socket in thread A. It&apos;s blocking on receive. Thread B needs to notify the socket in thread A that it should add a subscription.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381203431">00:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381203431">00:40</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">lacrymology: I think the solution is to setup new sockets on threads A and B&comma; have thread B send a message to A when a new subscription needs to be added&comma; and then use a poller on a to mux between the two sockets it needs to read from.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381203472">00:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381203472">00:40</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">lacrymology: s/poller on a/poller on A/</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381206750">00:40</span>]</a></td><td class="nicktd" style="color: violet">lacrymology</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381206750">00:40</span>]</a></td><td class="nicktd" style="color: olive">lacrymology</td>
 		<td class="msgtd">hadronzoo: yes&comma; you&apos;re right. Setting an inproc B-REQ --&gt; A-REP socket is the simplest way to go for that</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381206831">00:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381206831">00:40</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">lacrymology: Thanks&comma; yes&comma; that makes the most sense.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381206832">00:40</span>]</a></td><td class="nicktd" style="color: violet">lacrymology</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381206832">00:40</span>]</a></td><td class="nicktd" style="color: olive">lacrymology</td>
 		<td class="msgtd">hadronzoo: and you&apos;ll need a poller. The normal poller also locks&comma; by the way&comma; until there&apos;s something to read on any of the sockets&comma; unless you set a timeout for it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381206872">00:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">hadronzoo</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381206872">00:40</span>]</a></td><td class="nicktd" style="color: magenta">hadronzoo</td>
 		<td class="msgtd">lacrymology: It&apos;s OK if it locks. I have those two sockets that are polling on their own thread.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381244774">00:40</span>]</a></td><td class="nicktd" style="color: darkblue">ari&grave;&grave;</td>
+		<td class="msgtd">czmq is pretty fun to work with&excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381245610">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">ari&grave;&grave;: it is&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381245626">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">pieterh: heya&comma; around&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381245638">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">hi taotetek&comma; I am indeed</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381245643">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">just cut a 4.0 stable release</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1381245653">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">oh nice&comma; I should pull</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1381245664">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">I&apos;m finally back home and hacking a bit on czmq bstring ideas</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1381245722">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">so I&apos;ve got a very simple zbstr class that includes bstrlib.h from foreign/bstrlib with a simple self test&comma; that builds and pases</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1381245732">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">but I&apos;m not actually using any bstring functionality yet</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1381245757">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">my advice is to start simple&comma; push that&comma; and improve by multiple pull requests</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1381245769">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">I&apos;m a bit of a neophyte when it comes to autotools &lpar;dammit jim&comma; I&apos;m a data architect &semi;&rpar; &rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1381245771">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">it makes it easier for others to watch and perhaps help</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1381245794">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">I can help&comma; just add the source and I&apos;ll patch up</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1381245800">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">so my one question at this point is where to dive in to get this to actually build and link against bstrlib in foreign/bstrlib</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1381245805">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">I just made a stable release so it&apos;s all clear for making a mess </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1381245860">00:40</span>]</a></td><td class="nicktd" style="color: green">taotetek</td>
+		<td class="msgtd">&lpar; not actually USING any functions from bstrlib yet - initial pass is just a simplified copy of zstr with some things removed&comma; just to make sure I could get it to build and selftest &rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1381245917">00:40</span>]</a></td><td class="nicktd" style="color: purple">pieterh</td>
+		<td class="msgtd">for sure</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
