@@ -67,16 +67,24 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381280401">Wednesday October 9th 2013</h3>
+<h3 id="titleDate" data-time="1381282201">Wednesday October 9th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381279429">00:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">lacrymology</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381279429">00:41</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd"><a href="http://api.zeromq.org/3-2:zmq-socket">http://api.zeromq.org/3-2:zmq-socket</a> seems to imply that SUB sockets don&apos;t send a subscribe message &lpar;as in opposed to XSUB&rpar;&comma; but I&apos;ve looked at it&comma; and it does &lpar;tried it connecting to a ROUTER instead of a PUB socket&rpar;.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381279759">00:41</span>]</a></td><td class="nicktd" style="color: darkorchid">plash</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381279759">00:41</span>]</a></td><td class="nicktd" style="color: darksalmon">plash</td>
 		<td class="msgtd">pretty sure XSUB is manual&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381280419">00:41</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">lacrymology: a regular SUB afaik must send a subscribe message to a PUB since zeromq 3.x added publisher side filtering</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381280431">00:41</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">lacrymology: in 2.x pub/sub was client side filtering</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
