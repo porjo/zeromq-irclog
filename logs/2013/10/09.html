@@ -67,372 +67,468 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381341601">Wednesday October 9th 2013</h3>
+<h3 id="titleDate" data-time="1381343401">Wednesday October 9th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381279429">00:41</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381279429">00:41</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd"><a href="http://api.zeromq.org/3-2:zmq-socket">http://api.zeromq.org/3-2:zmq-socket</a> seems to imply that SUB sockets don&apos;t send a subscribe message &lpar;as in opposed to XSUB&rpar;&comma; but I&apos;ve looked at it&comma; and it does &lpar;tried it connecting to a ROUTER instead of a PUB socket&rpar;.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381279759">00:41</span>]</a></td><td class="nicktd" style="color: darkcyan">plash</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381279759">00:41</span>]</a></td><td class="nicktd" style="color: darkgreen">plash</td>
 		<td class="msgtd">pretty sure XSUB is manual&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381280419">00:41</span>]</a></td><td class="nicktd" style="color: black">taotetek</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381280419">00:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
 		<td class="msgtd">lacrymology: a regular SUB afaik must send a subscribe message to a PUB since zeromq 3.x added publisher side filtering</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381280431">00:41</span>]</a></td><td class="nicktd" style="color: black">taotetek</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381280431">00:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
 		<td class="msgtd">lacrymology: in 2.x pub/sub was client side filtering</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381282130">00:41</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381282130">00:41</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">taotetek: I think it talks about what&apos;s visible to the user&comma; not what gets actually sent through the wire</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381282191">00:41</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381282191">00:41</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">taotetek: about client / server side filtering is actually the other way around. The pub gets told the client subscribed&comma; but not what messages it subscribed to&comma; so it&apos;s just an on/off flag. content-based filtering happens on the client</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381282286">00:41</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381282286">00:41</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">taotetek: disregard that</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381282312">00:41</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381282312">00:41</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">taotetek: the messages still look like that &lpar;I don&apos;t see the subscription string&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381337205">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381337205">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">what happens if multiple sockets have ZMQ&UnderBar;IDENTITY set to the same value&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381337220">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381337220">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">by accident&comma; or maliciously&comma; or however</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381337883">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381337883">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">lacrymology: load balancing of messages will probably screw up. Also&comma; a ROUTER socket will probably route all messages &lpar;for a particular&rpar; identity to one socket and the others &lpar;with same id&rpar; will starve.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381338535">00:42</span>]</a></td><td class="nicktd" style="color: indigo">offby1</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381338535">00:42</span>]</a></td><td class="nicktd" style="color: olive">offby1</td>
 		<td class="msgtd">Dear LazyIRC: what are people using &Oslash;MQ for&quest;  I haven&apos;t yet found a &quot;showcase&quot; web page ...</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381338661">00:42</span>]</a></td><td class="nicktd" style="color: darkgreen">broo</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381338661">00:42</span>]</a></td><td class="nicktd" style="color: fuchsia">broo</td>
 		<td class="msgtd">lacrymology: setting identity can be a pain because of that&comma; you can get starved on a reconnect if the disconnect wasn&apos;t clean and the router thinks it has someone with that identity already</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381338740">00:42</span>]</a></td><td class="nicktd" style="color: darkgreen">broo</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381338740">00:42</span>]</a></td><td class="nicktd" style="color: fuchsia">broo</td>
 		<td class="msgtd">offby1: sensors on a meshed network&comma; basically distributed data collecting&comma; going back to multiple storage points</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381339004">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381339004">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">lacrymology: the first to connect will get that identity&semi; the others will get a random identity as if they&apos;d set none at all</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381339033">00:42</span>]</a></td><td class="nicktd" style="color: indigo">offby1</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381339033">00:42</span>]</a></td><td class="nicktd" style="color: olive">offby1</td>
 		<td class="msgtd">broo: tx</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381339062">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381339062">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">offby1: e.g. <a href="http://zeromq.org/docs:labs">http://zeromq.org/docs:labs</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381339583">00:42</span>]</a></td><td class="nicktd" style="color: indigo">offby1</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381339583">00:42</span>]</a></td><td class="nicktd" style="color: olive">offby1</td>
 		<td class="msgtd">pieterh: ah&comma; thanks&semi; that&apos;s one of the few links on that site that I never followed.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1381339816">00:42</span>]</a></td><td class="nicktd" style="color: indigo">offby1</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1381339816">00:42</span>]</a></td><td class="nicktd" style="color: olive">offby1</td>
 		<td class="msgtd">actually&comma; answering my own question -- I think the &quot;ansible&quot; deployment system uses &Oslash;MQ.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1381339905">00:42</span>]</a></td><td class="nicktd" style="color: indigo">offby1</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1381339905">00:42</span>]</a></td><td class="nicktd" style="color: olive">offby1</td>
 		<td class="msgtd">hmm&comma; apparently I meant &quot;salt&quot;&comma; not &quot;ansible&quot;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1381339971">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1381339971">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">pieterh: that identity behavior must be new. That&apos;s a good idea.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1381339997">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1381339997">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">cremes: I made that change ages ago... before that it would assert &lpar;oh joy&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1381340012">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1381340012">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">ha</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1381340016">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1381340016">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">very ha</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1381340044">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1381340044">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">nonetheless it&apos;s 2&plus; years old&comma; I think 2.1 or 2.2</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1381340095">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1381340095">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">what broo is referring to may affect Zyre&comma; I&apos;ve not tested it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1381340106">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1381340106">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">how is Chicago these days&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1381340129">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1381340129">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">Beautiful. I&apos;m loving it.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1381340175">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1381340175">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">I&apos;m programming quite a bit lately. While I&apos;m interested in doing a pure Ruby port of zeromq&comma; I&apos;m actually &midast;more&midast; interested in writing a distributed game that uses it for transport. :&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1381340187">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1381340187">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">Just as a hobby&mldr; during my free time.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1381340198">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1381340198">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">games are fun to make</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1381340205">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1381340205">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">that was my first ever business</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1381340237">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1381340237">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">The funny part is that I don&apos;t even play any games. I don&apos;t particularly like them. But I do semi-enjoy the brainless &quot;space invaders&quot; style shoot-em-ups</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1381340243">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1381340243">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">a pure ruby game using a pure ruby zmtp stack... it&apos;ll make the rubyists happy bunnies</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1381340262">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1381340262">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">can I suggest something zyre like</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1381340268">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1381340268">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">you may</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1381340285">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1381340285">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">auto discovery on a local network&comma; clusterization and then group messaging and 1-1</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1381340296">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1381340296">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">i&apos;m breaking ground on version 2.0 of my ruby gem for zeromq&comma; so i plan to take lots of good hints from the apis you have grown in these other projects.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1381340305">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1381340305">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">should be easy to make in ruby and makes IMO a nice basis for walk-up-and-play games</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1381340320">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1381340320">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">yes&comma; ease of use is key</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1381340331">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1381340331">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">even if it means more work for the programmer :&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1381340337">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1381340337">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">yes&comma; nice simple APIs</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1381340347">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1381340347">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">pieterh: I don&apos;t know if you remember we asking about auth and selective pub/subbing&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1381340363">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1381340363">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">we: me and luminous </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1381340371">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1381340371">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">i suggested using router-to-dealer</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1381340388">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1381340388">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">pieterh: well&comma; I&apos;m starting to implement the idea&comma; I&apos;m actually using router-to-sub&comma; and it works</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1381340394">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1381340394">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">nooooo</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1381340397">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1381340397">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">you can&apos;t do that :-&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1381340398">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1381340398">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">noooo&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1381340400">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1381340400">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">why</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1381340411">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1381340411">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">zmq 4 will actually refuse to connect the two</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1381340412">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">cremes</td>
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1381340412">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">cremes</td>
 		<td class="msgtd">lacrymology: why would you want it to work&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1381340415">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1381340415">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">aww</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1381340422">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1381340422">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">it&apos;s like connecting a toaster to a water pipe</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1381340438">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1381340438">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">it might be Art but the semantics aren&apos;t compatible</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1381340447">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1381340447">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">cremes: because of semantics&quest; sub is a sub&comma; pub is no longer a pub&comma; but I thought it&apos;d be transparent to the client</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1381340447">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1381340447">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">a sub socket talks a specific protocol to a pub socket</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1381340453">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1381340453">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">router does not understand that protocol</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1381340464">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1381340464">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">oh well</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1381340474">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1381340474">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">it&apos;s an accident that it works&comma; an undocumented accident</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1381340505">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1381340505">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">I feel like sharing what I did&comma; which works&comma; anyways&comma; so I shall &semi;&rpar; When I connect the pub&comma; I get a message on the router: &lsqb;&lt;id&gt;&comma; 1&rsqb; &lpar;a subscribe message&comma; I guess&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1381340506">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1381340506">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">also&comma; there&apos;s no benefit&comma; you&apos;re getting nothing</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1381340520">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1381340520">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">pieterh: I save that &lt;id&gt;&comma; which was manually set&comma; and I parse it</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1381340522">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1381340522">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">ah&comma; yes&comma; you would get that</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1381340547">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1381340547">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">pieterh: don&apos;t worry&comma; now that you told me&comma; I&apos;ll change that sub to a dealer</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1381340587">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1381340587">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">so the worst thing is that you&apos;ve actually found a sane model</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1381340592">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">dwilson</td>
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1381340592">00:42</span>]</a></td><td class="nicktd" style="color: darkorange">dwilson</td>
 		<td class="msgtd">it is a funny concept to be actively doing something you are currently regretting</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1381340596">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1381340596">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">it&apos;s not documented though</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1381340598">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1381340598">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">pieterh: ok&comma; well&comma; then when I want to publish some data to a subset of clients I do something like &grave;for client in filter&lpar;self.clients&rpar;: router.send&UnderBar;multipart&lpar;&lsqb;client.id&comma; message&rsqb;&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1381340621">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1381340621">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">sure</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1381340634">00:42</span>]</a></td><td class="nicktd" style="color: black">taotetek</td>
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1381340634">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
 		<td class="msgtd">pieterh: &quot;It&apos;s like connecting a toaster to a water pipe... it might be Art but the semantics aren&apos;t compatible&quot; &lt;- I&apos;d like a license to be able to use that phrase.  LGPL is acceptable. &semi;&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1381340650">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1381340650">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">taotetek: go for it&comma; I have lots more</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1381340666">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1381340666">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">so it&apos;s a happystance that a SUB socket sends a subscription as it connects</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1381340675">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1381340675">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">otherwise the ROUTER would not know who to talk to</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1381340724">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1381340724">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">&midast;but&midast; I&apos;ve found an issue. If I set the same IDENTITY on two clients&comma; then I get only one subscribe message</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1381340730">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1381340730">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">I don&apos;t get one with a random ID</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1381340760">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1381340760">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">and I haven&apos;t tested it in detail&comma; but I believe the SECOND socket gets sent the packages</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1381340766">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1381340766">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">the second client&comma; I mean</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1381340766">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1381340766">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">you cannot legally set an identity on a sub socket :-&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1381340783">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1381340783">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">pieterh: well&comma; that&apos;s not documented either. And it works&comma; at least in pyzmq</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1381340815">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1381340815">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">yes&comma; and the man pages are in fact wrong</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1381340817">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1381340817">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">I guess it only makes sense for something that can connect to a router</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1381340821">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1381340821">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">precisely</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1381340841">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1381340841">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">WELL ASSUMPTIONS ARE BROKEN</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1381340845">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1381340845">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">&equals;P</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1381340858">00:42</span>]</a></td><td class="nicktd" style="color: darkviolet">lacrymology</td>
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1381340858">00:42</span>]</a></td><td class="nicktd" style="color: red">lacrymology</td>
 		<td class="msgtd">I&apos;ll change that SUB socket first thing tomorrow</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1381341050">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1381341050">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">ffs</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1381341251">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1381341251">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">well&comma; that was fun</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1381341282">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1381341282">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">lacrymology: my advice is to use a dealer socket&comma; and send your client&apos;s information explicitly in a message to the router</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1381341287">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1381341287">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">do not use explicit identities</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1381341317">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">pieterh</td>
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1381341317">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
 		<td class="msgtd">put all id information above the ZMQ layer in your own messages</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1381341375">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">send subscriptions explicitly as messages on connect&comma; instead of relying on the SUB socket&apos;s behaviour</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1381341401">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">the dealer socket will queue the outgoing message until it can connect and deliver it</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-94">[<span class="ts" data-time="1381341420">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">then on top of that&comma; add heartbeating&comma; flow control&comma; etc. as you need it over time</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1381341460">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">you will want most of this for real work&comma; and it&apos;s not doable with SUB sockets&comma; they&apos;re designed for anonymous pub/sub</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1381341470">00:42</span>]</a></td><td class="nicktd" style="color: fuchsia">broo</td>
+		<td class="msgtd">instead of toasted water&comma; you could put a turbine generator in the toaster and use the output from the water pipe to power it</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1381341516">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">now you&apos;re describing a dealer socket</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1381341521">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">haha</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1381341574">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: oh.. haven&apos;t had as much time as I would like to toy with it yet&comma; but I do have a czmq build with some preliminary zbstr class functionality - a recv that returns a bstring&comma; a send that &quot;does the right thing&quot; when given a bstring&comma; etc</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1381341598">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">taotetek: feel free to make pull requests even of little pieces</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1381341600">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: will dive into it some more this weekend during my weekend morning code &amp; coffee time</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1381341618">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">nothing quite like a coding party&comma; if others get involved</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1381341663">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: I have a few things to add to the self test &lpar;like proving zstr / zbstr play nice together&rpar; and then I may be ready for a pull request yeah</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1381341690">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">what do you think of Uli&apos;s threadsafe zctx&apos;s&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-105">[<span class="ts" data-time="1381341730">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">it&apos;s not a trick question&comma; &quot;no clue&excl;&quot; is a valid answer :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-106">[<span class="ts" data-time="1381341744">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: I haven&apos;t looked at them in detail yet - from a czmq perspective I tend to use zthread</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-107">[<span class="ts" data-time="1381341756">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: I haven&apos;t had a case where I felt the need for a threadsafe zctx</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-108">[<span class="ts" data-time="1381341763">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">indeed...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-109">[<span class="ts" data-time="1381341791">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">I am wondering how to allow that without making it easy to use</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-110">[<span class="ts" data-time="1381341812">00:42</span>]</a></td><td class="nicktd" style="color: darkorange">dwilson</td>
+		<td class="msgtd">zguide says &apos;Included page &quot;c:dechat&quot; does not exist&apos; :-&lpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-111">[<span class="ts" data-time="1381341814">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: so long as it doesn&apos;t break anything&comma; I think I&apos;m neutral on it&comma; other than I worry it encourages people to revert to old habits in regards to multithreaded programming</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-112">[<span class="ts" data-time="1381341821">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">maybe spin the zmutex class into a separate project that you have to build first</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-113">[<span class="ts" data-time="1381341843">00:42</span>]</a></td><td class="nicktd" style="color: darkolivegreen">taotetek</td>
+		<td class="msgtd">pieterh: make people have to pass a multiple choice quiz on why they shouldn&apos;t be using it in order to build it &semi;&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-114">[<span class="ts" data-time="1381341860">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">dwilson: let me check that...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-115">[<span class="ts" data-time="1381341920">00:42</span>]</a></td><td class="nicktd" style="color: darkorange">dwilson</td>
+		<td class="msgtd">pieterh: thanks</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
