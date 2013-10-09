@@ -67,48 +67,76 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381338002">Wednesday October 9th 2013</h3>
+<h3 id="titleDate" data-time="1381339801">Wednesday October 9th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381279429">00:41</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381279429">00:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd"><a href="http://api.zeromq.org/3-2:zmq-socket">http://api.zeromq.org/3-2:zmq-socket</a> seems to imply that SUB sockets don&apos;t send a subscribe message &lpar;as in opposed to XSUB&rpar;&comma; but I&apos;ve looked at it&comma; and it does &lpar;tried it connecting to a ROUTER instead of a PUB socket&rpar;.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381279759">00:41</span>]</a></td><td class="nicktd" style="color: brown">plash</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381279759">00:41</span>]</a></td><td class="nicktd" style="color: blue">plash</td>
 		<td class="msgtd">pretty sure XSUB is manual&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381280419">00:41</span>]</a></td><td class="nicktd" style="color: brown">taotetek</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381280419">00:41</span>]</a></td><td class="nicktd" style="color: olive">taotetek</td>
 		<td class="msgtd">lacrymology: a regular SUB afaik must send a subscribe message to a PUB since zeromq 3.x added publisher side filtering</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381280431">00:41</span>]</a></td><td class="nicktd" style="color: brown">taotetek</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381280431">00:41</span>]</a></td><td class="nicktd" style="color: olive">taotetek</td>
 		<td class="msgtd">lacrymology: in 2.x pub/sub was client side filtering</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381282130">00:41</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381282130">00:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">taotetek: I think it talks about what&apos;s visible to the user&comma; not what gets actually sent through the wire</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381282191">00:41</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381282191">00:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">taotetek: about client / server side filtering is actually the other way around. The pub gets told the client subscribed&comma; but not what messages it subscribed to&comma; so it&apos;s just an on/off flag. content-based filtering happens on the client</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381282286">00:41</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381282286">00:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">taotetek: disregard that</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381282312">00:41</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381282312">00:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">taotetek: the messages still look like that &lpar;I don&apos;t see the subscription string&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381337205">00:42</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381337205">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">what happens if multiple sockets have ZMQ&UnderBar;IDENTITY set to the same value&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381337220">00:42</span>]</a></td><td class="nicktd" style="color: green">lacrymology</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381337220">00:42</span>]</a></td><td class="nicktd" style="color: darkmagenta">lacrymology</td>
 		<td class="msgtd">by accident&comma; or maliciously&comma; or however</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381337883">00:42</span>]</a></td><td class="nicktd" style="color: darksalmon">cremes</td>
+		<td class="msgtd">lacrymology: load balancing of messages will probably screw up. Also&comma; a ROUTER socket will probably route all messages &lpar;for a particular&rpar; identity to one socket and the others &lpar;with same id&rpar; will starve.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381338535">00:42</span>]</a></td><td class="nicktd" style="color: darkgreen">offby1</td>
+		<td class="msgtd">Dear LazyIRC: what are people using &Oslash;MQ for&quest;  I haven&apos;t yet found a &quot;showcase&quot; web page ...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381338661">00:42</span>]</a></td><td class="nicktd" style="color: maroon">broo</td>
+		<td class="msgtd">lacrymology: setting identity can be a pain because of that&comma; you can get starved on a reconnect if the disconnect wasn&apos;t clean and the router thinks it has someone with that identity already</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381338740">00:42</span>]</a></td><td class="nicktd" style="color: maroon">broo</td>
+		<td class="msgtd">offby1: sensors on a meshed network&comma; basically distributed data collecting&comma; going back to multiple storage points</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381339004">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">lacrymology: the first to connect will get that identity&semi; the others will get a random identity as if they&apos;d set none at all</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381339033">00:42</span>]</a></td><td class="nicktd" style="color: darkgreen">offby1</td>
+		<td class="msgtd">broo: tx</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381339062">00:42</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="msgtd">offby1: e.g. <a href="http://zeromq.org/docs:labs">http://zeromq.org/docs:labs</a></td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
