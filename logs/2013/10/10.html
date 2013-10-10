@@ -67,156 +67,172 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381411801">Thursday October 10th 2013</h3>
+<h3 id="titleDate" data-time="1381417201">Thursday October 10th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381405210">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381405210">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">are 2.x clients compatible with 3.x clients&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381406327">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381406327">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">phantomcircuit: the final 2.x release should be compatible with 3.2&plus; clients. Use the latest 3.x release. If you discover otherwise&comma; file a bug.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381406445">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381406445">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">ok</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381406459">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381406459">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">cremes&comma; im having issues with the socket per context limit </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381406478">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381406478">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">explain</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381406514">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381406514">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">there&apos;s a hard limit of sockets per context in the stable libzmq in ubuntu</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381406523">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381406523">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">afaict it&apos;s 512 sockets/context</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381406561">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381406561">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">sure&comma; that&apos;s the MAX&UnderBar;SOCKETS constant in zmq.h &lpar;or some similar header&rpar;. If you are able to recompile&comma; obviously that limit can go away &lpar;assuming you also have sufficient headroom at the OS level&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381406604">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381406604">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">cremes&comma; yeah im running into it with sockets that are connected with inproc</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381406605">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381406605">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">:/</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381406630">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381406630">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">do you know if there&apos;s 3.2 packages for ubuntu 12.04</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381406632">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381406632">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">can you recompile with a higher limit&quest; If not&comma; there isn&apos;t anything we can do other than perhaps help with a redesign of your logic</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381406656">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381406656">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">no&comma; I don&apos;t know&comma; sorry. I can&apos;t imagine they are so far behind that they don&apos;t have packages for it. It&apos;s been out for 1&plus; years.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381406672">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381406672">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">the package is from 2011 :/</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381406705">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381406705">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">ridiculous</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381406715">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381406715">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">agreed</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381406785">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381406785">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">If you can&apos;t find a more up-to-date package&comma; can you compile it yourself&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381406803">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381406803">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">yeah</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1381406815">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1381406815">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd"><a href="http://zeromq.org/distro:debian">http://zeromq.org/distro:debian</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1381406822">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1381406822">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">maybe it&apos;ll be easier to switch from inproc to a normal thread queue</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1381406850">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1381406850">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">switching transports doesn&apos;t save you on file descriptors or save you on max sockets</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1381406869">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1381406869">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">no i mean switching away from zmq for inproc communication</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1381406898">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1381406898">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">which would probably be easier and more compatible</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1381406917">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1381406917">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">have you tried googling for &quot;ubuntu zeromq&quot;&quest; I get a lot of hits. Something might be useful and point you to a package.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1381406941">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1381406941">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">I wouldn&apos;t start redesigning just because you can&apos;t find a prebuilt package. Compile your own and move to the latest stable &lpar;4.01&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1381406958">00:43</span>]</a></td><td class="nicktd" style="color: darkred">cremes</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1381406958">00:43</span>]</a></td><td class="nicktd" style="color: brown">cremes</td>
 		<td class="msgtd">anyway&comma; time for breakfast. I&apos;ll be back later.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1381407087">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1381407087">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">cremes&comma; this needs to be deployable by someone who couldn&apos;t build the right zmq version</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1381407093">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1381407093">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">so i&apos;ll just reduce the socket usage</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1381410615">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1381410615">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">phantomcircuit: where is that limit&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1381410660">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1381410660">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">ah&comma; the default limit for a new context is 1024</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1381410680">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1381410680">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">it&apos;s meant to stop people making silly mistakes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1381410693">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1381410693">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">you can change it with an api call</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1381410733">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">phantomcircuit</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1381410733">00:43</span>]</a></td><td class="nicktd" style="color: darkgreen">phantomcircuit</td>
 		<td class="msgtd">pieterh&comma; not in 2.1.11-1ubuntu1</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1381410750">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1381410750">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">ah&comma; missed that</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1381410770">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1381410770">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">stable &midast;in ubuntu&midast;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1381410826">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1381410826">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">if you want to mix 2.x and 3.x&comma; make sure you use 3.2.x stable releases only</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1381410840">00:43</span>]</a></td><td class="nicktd" style="color: darkcyan">pieterh</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1381410840">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
 		<td class="msgtd">unstable releases carry no warranties of any kind</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1381415413">00:43</span>]</a></td><td class="nicktd" style="color: magenta">pixelshuck</td>
+		<td class="msgtd">Hi</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1381415441">00:43</span>]</a></td><td class="nicktd" style="color: magenta">pixelshuck</td>
+		<td class="msgtd">I&apos;ve got an Issue with getting ZeroMQ to work with MSVS 2013</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1381416887">00:43</span>]</a></td><td class="nicktd" style="color: fuchsia">pieterh</td>
+		<td class="msgtd">pixelshuck: hi</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1381416925">00:43</span>]</a></td><td class="nicktd" style="color: magenta">pixelshuck</td>
+		<td class="msgtd">Hello&comma; for some reason I get linker errors&comma; but I&apos;ve already linked libraries everywhere whereas it was possible.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
