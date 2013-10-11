@@ -67,7 +67,7 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381469401">Friday October 11th 2013</h3>
+<h3 id="titleDate" data-time="1381491001">Friday October 11th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
@@ -83,8 +83,88 @@
 		<td class="msgtd">Anybody here&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381468293">00:44</span>]</a></td><td class="nicktd" style="color: darkred">avleen</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381468293">00:44</span>]</a></td><td class="nicktd" style="color: olive">avleen</td>
 		<td class="msgtd">hey guys :&rpar; I have a question. in all of the docs I&apos;ve read about push/pull&comma; the pull side always connects to the push side. Is this a hard design limitation or just a suggestion&quest; can i have the pusher make the outbound connections&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381489772">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">I&apos;m getting this nice error &quot;Assertion failed: buffer&UnderBar;size &equals;&equals; header&UnderBar;size &lpar;stream&UnderBar;engine.cpp:484&rpar;&quot; with the first example from the book</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381489798">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">quite confused with so many version combinations of &Oslash;mq and jzmq</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381489949">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">faq mentions zmq 3.2&comma; downloads mentions 4.2 as stable&comma; then jzmq seems to be 2.2.2 stable but then there&apos;s a 3</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381490442">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">davipt: current stable release is 4.0.1</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381490457">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">davipt: last stable release of v3 is 3.2.4</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381490481">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">davipt: I&apos;m not sure what version jzmq supports off the top of my head because I don&apos;t do java development</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381490493">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">right </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381490494">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">iDavi:zeromq4-x bruno&dollar; sh version.sh </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381490495">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">4.0.1</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381490499">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">davipt: 4.0.1 just came out 3 days ago by the way</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381490617">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">davipt: just to make things more confusing there is also jeromq&comma; which is a pure java implementation of zeromq </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381490634">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">I believe jeromq is 3.2 compatible</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381490646">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">&lpar;ZMTP/2.0&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381490668">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">stream&UnderBar;engine.cpp is inside zeromq&comma; not java bindings&mldr;  :&lpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1381490704">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">davipt: it could be the java bindings passings zeromq something incorrectly&comma; but not certain</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1381490722">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">all I can say is I&apos;ve been using 4 since slightly before the release &lpar;from C&rpar; and haven&apos;t had an assertion failure </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1381490735">00:44</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">I&apos;ll try the 3.x latest stable binding &lpar;3.0.1&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1381490736">00:44</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">davipt: sorry for the many versions... </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1381490753">00:44</span>]</a></td><td class="nicktd" style="color: darkgreen">taotetek</td>
+		<td class="msgtd">hi pieterh &excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1381490759">00:44</span>]</a></td><td class="nicktd" style="color: magenta">pieterh</td>
+		<td class="msgtd">hey taotetek :&rpar;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
