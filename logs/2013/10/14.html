@@ -67,16 +67,60 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381748401">Monday October 14th 2013</h3>
+<h3 id="titleDate" data-time="1381750201">Monday October 14th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381746869">00:49</span>]</a></td><td class="nicktd" style="color: darksalmon">swedishbastard</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381746869">00:49</span>]</a></td><td class="nicktd" style="color: darkred">swedishbastard</td>
 		<td class="msgtd">I&apos;m having trouble with zmq&UnderBar;bind in Linux&comma; works on one machine but not another</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381746902">00:49</span>]</a></td><td class="nicktd" style="color: darksalmon">swedishbastard</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381746902">00:49</span>]</a></td><td class="nicktd" style="color: darkred">swedishbastard</td>
 		<td class="msgtd">Starting to suspect it has something to do with minimum kernel versions</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381749394">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">swedishbastard: check the error codes... could be addresses in use already</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381749398">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">or wrong interfaces</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381749466">00:49</span>]</a></td><td class="nicktd" style="color: darkred">swedishbastard</td>
+		<td class="msgtd">binding with ipc:///tmp/socket&UnderBar;pub - the /tmp directory exists&comma; and socket&UnderBar;pub doesn&apos;t exist when starting sample app</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381749481">00:49</span>]</a></td><td class="nicktd" style="color: darkred">swedishbastard</td>
+		<td class="msgtd">error code is 22: EINVAL</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381749482">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">access rights perhaps&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381749489">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">are you using zmq v4&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381749513">00:49</span>]</a></td><td class="nicktd" style="color: darkred">swedishbastard</td>
+		<td class="msgtd">running as root&comma; so no access problems&mldr; zmq v3&comma; powerpc&comma; kernel 2.6.24</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381749550">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">did zmq pass &quot;make check&quot; on that box&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381749557">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">it does some ipc tests</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381749573">00:49</span>]</a></td><td class="nicktd" style="color: darkred">swedishbastard</td>
+		<td class="msgtd">dunno&mldr; using the debian packages. I&apos;ll check</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381749602">00:49</span>]</a></td><td class="nicktd" style="color: purple">hintjens</td>
+		<td class="msgtd">it&apos;s worth rebuilding from a stable package to check</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
