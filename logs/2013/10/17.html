@@ -67,80 +67,88 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1381984201">Thursday October 17th 2013</h3>
+<h3 id="titleDate" data-time="1382000401">Thursday October 17th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381972184">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1381972184">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">Hello&comma; I&apos;m attempting to debug zmq3 haskell binding on windows which fails with zmq&UnderBar;recvmsg returning -1 and errno &equals;&equals; 0 / no error message</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381972228">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1381972228">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">is someone acquainted with zmq internals and why it would return -1 while errno is 0&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381976239">00:52</span>]</a></td><td class="nicktd" style="color: maroon">cremes</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1381976239">00:52</span>]</a></td><td class="nicktd" style="color: violet">cremes</td>
 		<td class="msgtd">gauthier&UnderBar;: I recommend posting a code snippet that others can run to duplicate your result. It sounds strange that it would return -1 but errno is 0.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381976338">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1381976338">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">cremes: thanks I&apos;m actually troubleshotting further: </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381976350">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1381976350">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">cremes: <a href="https://github.com/twittner/zeromq-haskell/issues/8&num;issuecomment-26474738">https://github.com/twittner/zeromq-haskell/issues/8&num;issuecomment-26474738</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381976378">00:52</span>]</a></td><td class="nicktd" style="color: maroon">cremes</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1381976378">00:52</span>]</a></td><td class="nicktd" style="color: violet">cremes</td>
 		<td class="msgtd">Good. The more information you gather&comma; the easier it will be to pinpoint the issue. OS&comma; patch level&comma; compiler&comma; all of it.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381976386">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1381976386">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">cremes: it seems errno has different values on both sides&comma; due to different C runtime</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381976412">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1381976412">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">now I&apos;m looking at errno&equals;11 &amp; zmq message &equals; &quot;Resource temporarily unavailable&quot;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381976489">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1381976489">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">cremes: that&apos;s all for today&comma; but I&apos;ll definitely investigate further</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381976571">00:52</span>]</a></td><td class="nicktd" style="color: maroon">cremes</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1381976571">00:52</span>]</a></td><td class="nicktd" style="color: violet">cremes</td>
 		<td class="msgtd">a code reproduction is most useful for figuring things out.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381976711">00:52</span>]</a></td><td class="nicktd" style="color: maroon">gauthier&UnderBar;</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1381976711">00:52</span>]</a></td><td class="nicktd" style="color: purple">gauthier&UnderBar;</td>
 		<td class="msgtd">cremes: I&apos;m unsure if people enjoy debugging haskell/c&plus;&plus; on windows&comma; but if things get stuck&comma; I&apos;ll definitely ask for help here or on mailing list&comma; with steps to setup environment</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381976807">00:52</span>]</a></td><td class="nicktd" style="color: maroon">cremes</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1381976807">00:52</span>]</a></td><td class="nicktd" style="color: violet">cremes</td>
 		<td class="msgtd">cool&comma; thanks.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381977286">00:52</span>]</a></td><td class="nicktd" style="color: darkorange">crocket</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1381977286">00:52</span>]</a></td><td class="nicktd" style="color: black">crocket</td>
 		<td class="msgtd">Will ZeroMQ or other messaging libraries be a good base for a light module system&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381977313">00:52</span>]</a></td><td class="nicktd" style="color: darkorange">crocket</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1381977313">00:52</span>]</a></td><td class="nicktd" style="color: black">crocket</td>
 		<td class="msgtd">OSGi is heavy but very useable. And its problem is that it can&apos;t be used well with other JVM languages.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381977325">00:52</span>]</a></td><td class="nicktd" style="color: darkorange">crocket</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1381977325">00:52</span>]</a></td><td class="nicktd" style="color: black">crocket</td>
 		<td class="msgtd">It doesn&apos;t go outside JVM&comma; either.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381981290">00:53</span>]</a></td><td class="nicktd" style="color: darkred">beffbernard</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1381981290">00:53</span>]</a></td><td class="nicktd" style="color: darkolivegreen">beffbernard</td>
 		<td class="msgtd">crocket: What do you want to do with this &quot;light weight&quot; module system&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381983115">00:53</span>]</a></td><td class="nicktd" style="color: darkorange">crocket</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1381983115">00:53</span>]</a></td><td class="nicktd" style="color: black">crocket</td>
 		<td class="msgtd">oh my</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381983119">00:53</span>]</a></td><td class="nicktd" style="color: darkorange">crocket</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1381983119">00:53</span>]</a></td><td class="nicktd" style="color: black">crocket</td>
 		<td class="msgtd">He&apos;s gone.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1382000122">00:53</span>]</a></td><td class="nicktd" style="color: darkgreen">Mindiell</td>
+		<td class="msgtd">Hi there&comma; what kind of socket should I use in order to do some IRC connections &quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1382000146">00:53</span>]</a></td><td class="nicktd" style="color: darkgreen">Mindiell</td>
+		<td class="msgtd">I tried REQ/REP&comma; but since I should be able to do multiple send without any answer&comma; it&apos;s not the good way</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
