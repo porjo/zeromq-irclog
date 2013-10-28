@@ -67,24 +67,40 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
-<h3 id="titleDate" data-time="1382940001">Monday October 28th 2013</h3>
+<h3 id="titleDate" data-time="1382941801">Monday October 28th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1382936843">01:08</span>]</a></td><td class="nicktd" style="color: darkmagenta">minrk1</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1382936843">01:08</span>]</a></td><td class="nicktd" style="color: blue">minrk1</td>
 		<td class="msgtd">Anyone know if there was a change in whether one should call zmq&UnderBar;msg&UnderBar;close after zmq&UnderBar;msg&UnderBar;send&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1382939222">01:08</span>]</a></td><td class="nicktd" style="color: darkmagenta">minrk1</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1382939222">01:08</span>]</a></td><td class="nicktd" style="color: blue">minrk1</td>
 		<td class="msgtd">nevermind&comma; found a bug in ROUTER&UnderBar;RAW</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1382939575">01:08</span>]</a></td><td class="nicktd" style="color: darkgreen">sublee</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1382939575">01:08</span>]</a></td><td class="nicktd" style="color: navy">sublee</td>
 		<td class="msgtd"><a href="http://zguide.zeromq.org/py:syncsub">http://zguide.zeromq.org/py:syncsub</a> why syncclient is REQ socket&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1382939599">01:08</span>]</a></td><td class="nicktd" style="color: darkgreen">sublee</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1382939599">01:08</span>]</a></td><td class="nicktd" style="color: navy">sublee</td>
 		<td class="msgtd">shouldn&apos;t it PUB socket&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1382940085">01:09</span>]</a></td><td class="nicktd" style="color: navy">sublee</td>
+		<td class="msgtd">oh&comma; sorry&comma; i found syncpub</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1382940563">01:09</span>]</a></td><td class="nicktd" style="color: navy">sublee</td>
+		<td class="msgtd">is there an elegant way to synchronize subscription&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1382940619">01:09</span>]</a></td><td class="nicktd" style="color: navy">sublee</td>
+		<td class="msgtd">-cannot recv- &bsol; socket.setsockopt&lpar;zmq.SUBSCRIBE&comma; &apos;&apos;&rpar; &bsol; -can recv-</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1382940648">01:09</span>]</a></td><td class="nicktd" style="color: navy">sublee</td>
+		<td class="msgtd">now i&apos;m using sleep for 0.01 seconds after start subscription</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
