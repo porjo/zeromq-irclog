@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Zeromq-irclog : IRC Log repository for ZeroMQ" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/zeromq-irclog/stylesheets/stylesheet.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+
+    <title>Zeromq-irclog</title>
+
+    <style>
+	    #msgtablediv {
+		margin-left: 20px;
+		margin-right: 20px;
+	    }
+	    #msgtable {
+		    width: 100%;
+		    border: 0;
+		    padding: 0;
+	    }
+	    #msgtableHead {
+		    font-weight: bold;
+	    }
+	    #msgtable td {
+		    border: 0;
+		    margin: 0;
+		    padding: 0px 5px 0px 5px;
+	    }
+	    .timetd {
+		    width: 60px;
+	    }
+	    #msgtable td.nicktd {
+		    width: 100px;
+		    text-align: right;
+		    border-right: 1px #555 dashed;
+		    font-weight: bold;
+	    }
+	    .light {
+		    background-color: #ccc;
+	    }
+	    .dark {
+		    background-color: #eee;
+	    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+	  <a href="/zeromq-irclog/index.html"><h1 id="project_title">Zeromq-irclog</h1></a>
+          <h2 id="project_tagline">IRC Log repository for ZeroMQ</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section class="inner">
+
+      <p>These logs have been collected from the <a href="https://webchat.freenode.net/?randomnick=1&amp;channels=%23zeromq&amp;uio=d4" target="_blank">#zeromq</a> IRC channel on Freenode.</p>
+
+      </section>
+<div id="msgtablediv">
+<div><a href="/zeromq-irclog/logs/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/10/index.html">Oct 2013</a></div>
+<h3 id="titleDate" data-time="1383046201">Tuesday October 29th 2013</h3>
+<table id="msgtable">
+<tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1383045270">01:10</span>]</a></td><td class="nicktd" style="color: indigo">uruviel</td>
+		<td class="msgtd">Hey&excl; Sometimes a message has an extra empty frame on the receiving side &lpar;causing my broker to crash&comma; since it doesn&apos;t fit the protocol&rpar;&semi; it&apos;s really non-deterministic though&semi; as in usually the message conforms &lpar;e.g. &lt;string&gt;&lt;empty&gt;&lt;byte&gt;&comma; but sometimes &lt;string&gt;&lt;empty&gt;&lt;empty&gt;&lt;byte&gt;&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1383045286">01:10</span>]</a></td><td class="nicktd" style="color: indigo">uruviel</td>
+		<td class="msgtd">I&apos;m using router-dealer in this particular instance </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1383045324">01:10</span>]</a></td><td class="nicktd" style="color: indigo">uruviel</td>
+		<td class="msgtd">It&apos;s not the sending side as far as I can tell&comma; the message does constructed properly &lpar;and prepended with an empty byte since it&apos;s router-dealer&rpar; </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1383045462">01:10</span>]</a></td><td class="nicktd" style="color: indigo">uruviel</td>
+		<td class="msgtd">Odd thing is in development I&apos;m using jeromq in which it seems to happen more often than in the JNI &lpar;JZMQ&rpar;&comma; but it also happens there. It really looks like some obscure race condition in my own code but that&apos;d be really odd &lpar;own code is clojure&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1383045800">01:10</span>]</a></td><td class="nicktd" style="color: darkblue">Gopal</td>
+		<td class="msgtd">I am trying to install libzmq4.01  and pyzmq14.0.0  &lpar;which says its compatible with libzmq4.01&rpar;. Using  ubuntu 13.04 64 bit system.  python setup.py  gives  timer&UnderBar;create undefined error.  Apparently lots of other people have also gotten it.  Unable to resolve it.  What should I do or look for &quest; </td>
+	</tr>
+</table>
+<p id="timeinfo">*Times are in UTC</p>
+</div>
+<script src="/zeromq-irclog/javascripts/time.js"></script>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Zeromq-irclog maintained by <a href="https://github.com/porjo">porjo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
