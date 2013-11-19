@@ -67,52 +67,56 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1384822801">Tuesday November 19th 2013</h3>
+<h3 id="titleDate" data-time="1384833601">Tuesday November 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1384819068">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">davipt</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1384819068">01:40</span>]</a></td><td class="nicktd" style="color: blue">davipt</td>
 		<td class="msgtd">hum there is no channel logs available since Nov 2011&quest; :&lpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1384819664">01:40</span>]</a></td><td class="nicktd" style="color: blue">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1384819664">01:40</span>]</a></td><td class="nicktd" style="color: darkgreen">martin&UnderBar;kou</td>
 		<td class="msgtd">hi guys</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1384819672">01:40</span>]</a></td><td class="nicktd" style="color: blue">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1384819672">01:40</span>]</a></td><td class="nicktd" style="color: darkgreen">martin&UnderBar;kou</td>
 		<td class="msgtd">got a question about DEALER / ROUTER sockets</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1384819706">01:40</span>]</a></td><td class="nicktd" style="color: blue">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1384819706">01:40</span>]</a></td><td class="nicktd" style="color: darkgreen">martin&UnderBar;kou</td>
 		<td class="msgtd">I&apos;d like my ROUTER to keep track of the DEALERs that are available to talk to</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1384819726">01:40</span>]</a></td><td class="nicktd" style="color: blue">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1384819726">01:40</span>]</a></td><td class="nicktd" style="color: darkgreen">martin&UnderBar;kou</td>
 		<td class="msgtd">so&comma; I&apos;d need some way for the ROUTER to know whether a DEALER address is still valid</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1384819731">01:40</span>]</a></td><td class="nicktd" style="color: blue">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1384819731">01:40</span>]</a></td><td class="nicktd" style="color: darkgreen">martin&UnderBar;kou</td>
 		<td class="msgtd">is there some way I an do that&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1384820483">01:40</span>]</a></td><td class="nicktd" style="color: green">minrk</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1384820483">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">minrk</td>
 		<td class="msgtd">you can use monitoring events to notice when a peer comes and goes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1384820492">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">davipt</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1384820492">01:40</span>]</a></td><td class="nicktd" style="color: blue">davipt</td>
 		<td class="msgtd">damn irc client. I&apos;ve lost the link pieter sent me about reimplementing pub-sub in a locking manner using dealers</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1384820814">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">davipt</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1384820814">01:40</span>]</a></td><td class="nicktd" style="color: blue">davipt</td>
 		<td class="msgtd">ok so with a router and &apos;n&apos; dealers&comma; by setting the right identities&comma; I can send a message to a specific dealer by prefixing the identity as the first frame</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1384820837">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">davipt</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1384820837">01:40</span>]</a></td><td class="nicktd" style="color: blue">davipt</td>
 		<td class="msgtd">this is good for routing&comma; but not enough for broadcasting </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1384820853">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">davipt</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1384820853">01:40</span>]</a></td><td class="nicktd" style="color: blue">davipt</td>
 		<td class="msgtd">and router still drops frames I think</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1384833432">01:40</span>]</a></td><td class="nicktd" style="color: darkorchid">Dr&lcub;Who&rcub;</td>
+		<td class="msgtd">Anyone here grok the node.js wrapper&quest; I dont see where the events are created for &apos;message&apos; and such. I want to see all of the event emitter types but cant seem to find them in the code. </td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
