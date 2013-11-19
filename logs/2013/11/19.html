@@ -67,163 +67,163 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1384880401">Tuesday November 19th 2013</h3>
+<h3 id="titleDate" data-time="1384882202">Tuesday November 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1384819068">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1384819068">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">hum there is no channel logs available since Nov 2011&quest; :&lpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1384819664">01:40</span>]</a></td><td class="nicktd" style="color: maroon">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1384819664">01:40</span>]</a></td><td class="nicktd" style="color: red">martin&UnderBar;kou</td>
 		<td class="msgtd">hi guys</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1384819672">01:40</span>]</a></td><td class="nicktd" style="color: maroon">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1384819672">01:40</span>]</a></td><td class="nicktd" style="color: red">martin&UnderBar;kou</td>
 		<td class="msgtd">got a question about DEALER / ROUTER sockets</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1384819706">01:40</span>]</a></td><td class="nicktd" style="color: maroon">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1384819706">01:40</span>]</a></td><td class="nicktd" style="color: red">martin&UnderBar;kou</td>
 		<td class="msgtd">I&apos;d like my ROUTER to keep track of the DEALERs that are available to talk to</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1384819726">01:40</span>]</a></td><td class="nicktd" style="color: maroon">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1384819726">01:40</span>]</a></td><td class="nicktd" style="color: red">martin&UnderBar;kou</td>
 		<td class="msgtd">so&comma; I&apos;d need some way for the ROUTER to know whether a DEALER address is still valid</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1384819731">01:40</span>]</a></td><td class="nicktd" style="color: maroon">martin&UnderBar;kou</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1384819731">01:40</span>]</a></td><td class="nicktd" style="color: red">martin&UnderBar;kou</td>
 		<td class="msgtd">is there some way I an do that&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1384820483">01:40</span>]</a></td><td class="nicktd" style="color: violet">minrk</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1384820483">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">minrk</td>
 		<td class="msgtd">you can use monitoring events to notice when a peer comes and goes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1384820492">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1384820492">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">damn irc client. I&apos;ve lost the link pieter sent me about reimplementing pub-sub in a locking manner using dealers</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1384820814">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1384820814">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ok so with a router and &apos;n&apos; dealers&comma; by setting the right identities&comma; I can send a message to a specific dealer by prefixing the identity as the first frame</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1384820837">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1384820837">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">this is good for routing&comma; but not enough for broadcasting </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1384820853">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1384820853">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and router still drops frames I think</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1384833432">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">Dr&lcub;Who&rcub;</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1384833432">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">Dr&lcub;Who&rcub;</td>
 		<td class="msgtd">Anyone here grok the node.js wrapper&quest; I dont see where the events are created for &apos;message&apos; and such. I want to see all of the event emitter types but cant seem to find them in the code. </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1384843271">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1384843271">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">shancat: hi there</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1384843291">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1384843291">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">morning :&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1384843307">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1384843307">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">good afternoon</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1384843347">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1384843347">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I think we usually use the builds/android directory to prepare the stack&comma; there&apos;s a script there &apos;build.sh&apos;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1384843392">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1384843392">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">the current one is taken from czmq &lpar;generated&comma; but I&apos;ll switch that off so we can modify it by hand&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1384843557">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1384843557">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">keep in mind that because the paths are hardcoded in Android.mk we can&apos;t build differently for Travis</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1384843577">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1384843577">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">so if we put the deps into another directory the travis file will have to do it too</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1384843582">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1384843582">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ack&comma; so I suggest we do all that work in builds/android&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1384843593">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1384843593">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">then the travis script can call that build.sh</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1384843597">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1384843597">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">sure</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1384843616">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1384843616">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">it&apos;ll make the travis script cleaner which is a bonus</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1384843620">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1384843620">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">yes</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1384843638">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1384843638">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it should really be builds/jni I think but hey</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1384843676">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1384843676">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I can&apos;t actually see where the jni toolchain comes into play</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1384843693">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1384843693">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">what do you mean&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1384843730">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1384843730">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">i&apos;m confused&comma; it&apos;s a single step to build for Android&comma; I thought it was two steps &lpar;jni&comma; then android&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1384843752">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1384843752">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">it is two steps</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1384843753">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1384843753">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I know we can also build and test on linux / jni without android but it&apos;s a separate make process</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1384843755">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1384843755">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it is&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1384843764">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1384843764">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">ndk-build builds the JNI part</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1384843775">01:40</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1384843775">01:40</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">ant builds the android part and links the JNI lib</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1384843784">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1384843784">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">aha claro</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1384854888">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1384854888">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">re</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1384858296">01:40</span>]</a></td><td class="nicktd" style="color: green">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1384858296">01:40</span>]</a></td><td class="nicktd" style="color: navy">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">Hi folks&comma; I use zeromq for most of my networking needs&comma; however&comma; for a small part of it&comma; I need udp. Are there any good udp based libs around &quest; &lpar;Note: I&apos;m using C&num;&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1384859095">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1384859095">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">morning pieterh </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1384859118">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1384859118">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">PSG&UnderBar;Sakari: there is some sample Windows UDP code in C&comma; in CZMQ/zbeacon</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1384859124">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1384859124">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: hi there</td>
 	</tr>
 	<tr class="dark">
@@ -231,215 +231,215 @@
 		<td class="msgtd">hi gang :&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1384859165">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1384859165">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">you were looking for something to do with pub-sub&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1384859178">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1384859178">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">taotetek: hi there :&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1384859243">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1384859243">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">pieter: I&apos;m trying to mix the best of pub-sub with push-pull&comma; meaning trying to get the clients subscribing to parts of the stream&comma; having the messages going to multiple destinations&comma; but trying to loose as little as possible&comma; even if it means blocking the socket</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1384859314">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1384859314">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">may need to duplicate the subsribe/unsubscripe messages&comma; as well as the &quot;hold&quot; from push&comma; with two dealer endpoints it seems</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1384859428">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1384859428">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: I&apos;d look at the Harmony pattern from Ch8</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1384859496">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1384859496">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it&apos;s not really what you&apos;re describing but it&apos;s close</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1384859544">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1384859544">01:40</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">pieterh: i&apos;ve read your article on ZMQ and TIPC and it&apos;s excellent&comma; i have it up and running. however i&apos;ve a quick question if you know - i didn&apos;t have much time to read everything about tipc but what caught my eye was max. message size</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1384859570">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1384859570">01:40</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">does that mean TIPC is limited ~64kb or is it some internal mechanism that has the limitation&gt;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1384859580">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1384859580">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">the push pull is amazing&comma; just performs great &lpar;even in jero&rpar;&comma; and guarantees me the messages aren&apos;t dropped unnecessary</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1384859608">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1384859608">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">yes&comma; but the routing pattern is rotation&comma; not duplication</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1384859608">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1384859608">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">it&apos;s ok to loose some messages though</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1384859622">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1384859622">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I&apos;ve moved to the mesh pattern you told me</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1384859633">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1384859633">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">mechro: 66000&NonBreakingSpace;bytes&comma; it&apos;s hard coded but as the article says you can fragment larger messages</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1384859644">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1384859644">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and until I get the control messages&comma; it even works brute-force style</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1384859676">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1384859676">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">the push connects to a lot of ip/ports&comma; then the pull workers just start or stop in one or more of those ports</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1384859681">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1384859681">01:40</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">so basically i can use ZMQ to send multiple frames over TIPC if they don&apos;t exceed 66000 bytes&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1384859699">01:40</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1384859699">01:40</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">of course I&apos;d loose the hwm of the non connected ports&comma; but that is the kind of acceptable drop</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1384859714">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1384859714">01:40</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">reason i&apos;m asking is because i haven&apos;t tried it yet&comma; will do it within a few hours so sorry if it seems kinda dumb of a question :&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1384859776">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1384859776">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">mechro: actually I don&apos;t see the article discussing max message size at all... strange</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1384859826">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1384859826">01:40</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">well&comma; it wasn&apos;t the article that mentioned it. there was a mention of message limitation in the TIPC protocol docs that my colleague caught</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1384859865">01:40</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1384859865">01:40</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">and naturally&comma; i haven&apos;t confirmed whether that means &quot;you can&apos;t send messages that are over 66000 bytes&quot; or something else. basically i&apos;d like to try to use TIPC to stream a file of unknown size and i don&apos;t know at this point whether i can do it or not :&lpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1384859880">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1384859880">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">indeed... well&comma; seems unspecified in the zmq&UnderBar;tipc manpage</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1384859906">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1384859906">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">however and in any case to stream a file over any protocol at all you have to do some kind of flow control</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1384859922">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1384859922">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">multipart data isn&apos;t an answer&semi; the whole message is held in memory</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1384859941">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1384859941">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">there is an explanation of how to send files in Ch7 of the Guide</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1384859965">01:40</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1384859965">01:40</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: sounds right</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1384860033">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1384860033">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">now if I switch to pub/sub&comma; the pub will grow up to the max speed of the machine bus&comma; or the mmaped file&comma; or jeromq&comma; or whatever&comma; well above 4Gbps&comma; but the sub will only see slightly less than those 2.5Gbps</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1384860051">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1384860051">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and as soon as I get more subs&comma; it just keeps on decreasing</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1384860089">01:41</span>]</a></td><td class="nicktd" style="color: darksalmon">mechro</td>
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1384860089">01:41</span>]</a></td><td class="nicktd" style="color: indigo">mechro</td>
 		<td class="msgtd">pieterh:  thanks&comma; i&apos;ll re-read the Ch7 and test it out later</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1384860155">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1384860155">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: you were looking at the performance of the zmq&UnderBar;proxy function&comma; right&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1384860165">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1384860165">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yeah</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1384860183">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1384860183">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">did you find anything&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1384860183">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1384860183">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">still haven&apos;t understood what the problem is... or better&comma; it&apos;s surely something with the polling</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1384860213">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1384860213">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I&apos;ve implemented the proxy as stated on the code connected 1 book</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1384860221">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1384860221">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">in straight c</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1384860223">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1384860223">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">using the zmq&UnderBar;proxy&lpar;fronted&comma; backend&comma; null&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1384860235">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1384860235">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ah&comma; that calls the internal loop</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1384860245">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1384860245">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">then picked the example of the proxy from the book&comma; the whole while&lpar;true&rpar; &lcub; poll both sockets&comma; copy from one to the other</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1384860256">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1384860256">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">right</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1384860262">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1384860262">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">which is literally the code inside the zmq&UnderBar;proxy&comma; except the capture and controller part</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1384860272">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1384860272">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">then I&apos;ve tried a one-way proxy</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1384860290">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1384860290">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">just receiving from one side and pushing to the other</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1384860296">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1384860296">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">right&comma; without a poll at all</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1384860307">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1384860307">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">loosing the hold on control from push&comma; or faking the subscribe for pub</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1384860311">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1384860311">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and it flies</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1384860330">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1384860330">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">then I tried to outsmart the system by creating two threads&comma; each reading from one side and writing to the other</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1384860334">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1384860334">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">didn&apos;t like me</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1384860335">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1384860335">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">:D</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1384860337">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1384860337">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">heh</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1384860342">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1384860342">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">socket sharing</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1384860373">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1384860373">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yeah&comma; but I had some hope that because one thread would &midast;only&midast; read and the other would &midast;only&midast; write&comma; it could work</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1384860387">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1384860387">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">hehe... if only</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1384860399">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1384860399">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">so using zmq&UnderBar;poll seems to interfere with batching</td>
 	</tr>
 	<tr class="dark">
@@ -447,71 +447,71 @@
 		<td class="msgtd">&quot;don&apos;t cross the streams&excl;&quot; - ghost busters &semi;&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1384860513">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-95">[<span class="ts" data-time="1384860513">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://github.com/davipt/libzmq/tree/fix-002-proxy&UnderBar;lat&UnderBar;thr">https://github.com/davipt/libzmq/tree/fix-002-proxy&UnderBar;lat&UnderBar;thr</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1384860582">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-96">[<span class="ts" data-time="1384860582">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I&apos;ve tweaked local&UnderBar;thr and remote&UnderBar;thr to also accept pub/sub&comma; to allow both to connect instead of binding&comma; to send a counter on the message so the other can check if all is ok&comma; and a proxy.cpp version</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1384860623">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-97">[<span class="ts" data-time="1384860623">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">so this way I can compare the C performance of push/pull&comma; pub/sub&comma; and then check via proxy</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1384861159">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-98">[<span class="ts" data-time="1384861159">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">right... and jeromq doesn&apos;t have this issue as far as you can tell&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1384861257">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-99">[<span class="ts" data-time="1384861257">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">nope</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1384861282">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-100">[<span class="ts" data-time="1384861282">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">this is both interesting and somewhat freaky</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1384861302">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-101">[<span class="ts" data-time="1384861302">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I mean&comma; it has some possible optimizations to improve the polling and memory copying - hence why it gives me 2.5Gbps whilst the C code gives me 5Gbps</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1384861374">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-102">[<span class="ts" data-time="1384861374">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">grab my branch&comma; compile &lpar;don&apos;t install&rpar;&comma; and run:</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1384861385">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-103">[<span class="ts" data-time="1384861385">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I can&apos;t read C&plus;&plus; well enough to follow the libzmq core but this deserves more attention on the list</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1384861404">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-104">[<span class="ts" data-time="1384861404">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">presumably its on output batching</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-105">[<span class="ts" data-time="1384861407">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-105">[<span class="ts" data-time="1384861407">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">./proxy tcp://127.0.0.1:5555 tcp://127.0.0.1:5556 &amp; ./local&UnderBar;thr tcp://127.0.0.1:5556 500 1000000 32 &amp; ./remote&UnderBar;thr tcp://127.0.0.1:5555 500 1000000 &amp;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-106">[<span class="ts" data-time="1384861434">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-106">[<span class="ts" data-time="1384861434">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">could you create an issue&comma; and put your test code into the issues repo for that&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-107">[<span class="ts" data-time="1384861435">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-107">[<span class="ts" data-time="1384861435">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">uh&quest; /me confused isn&apos;t the libzmq your code&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-108">[<span class="ts" data-time="1384861440">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-108">[<span class="ts" data-time="1384861440">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">moi&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-109">[<span class="ts" data-time="1384861447">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-109">[<span class="ts" data-time="1384861447">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I just help cut the grass</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-110">[<span class="ts" data-time="1384861452">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-110">[<span class="ts" data-time="1384861452">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">lol</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-111">[<span class="ts" data-time="1384861544">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-111">[<span class="ts" data-time="1384861544">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">accurately the code is the work of quite a few people&comma; see <a href="https://github.com/zeromq/libzmq/graphs/contributors">https://github.com/zeromq/libzmq/graphs/contributors</a></td>
 	</tr>
 	<tr class="dark">
@@ -519,23 +519,23 @@
 		<td class="msgtd">back&excl;  had to finish a blog post so my marketing guy won&apos;t hound me.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-113">[<span class="ts" data-time="1384861642">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-113">[<span class="ts" data-time="1384861642">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I get that a lot too...</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-114">[<span class="ts" data-time="1384861652">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-114">[<span class="ts" data-time="1384861652">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">damn colloquy crashes if I move the cursor back to fix text :&lpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-115">[<span class="ts" data-time="1384861658">01:41</span>]</a></td><td class="nicktd" style="color: darkorchid">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-115">[<span class="ts" data-time="1384861658">01:41</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
 		<td class="msgtd">pieterh: but you have to accept that you&apos;re the front man of the band  :&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-116">[<span class="ts" data-time="1384861689">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-116">[<span class="ts" data-time="1384861689">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">was saying - already sent the email to the list&comma; already made my github fork to test it&comma; now I need to concentrate on what really matters &semi;&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-117">[<span class="ts" data-time="1384861709">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-117">[<span class="ts" data-time="1384861709">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">guido&UnderBar;g: I reject that totally&comma; I&apos;m the guy sitting in the front row with a large whiskey&comma; watching the party from a safe distance</td>
 	</tr>
 	<tr class="dark">
@@ -543,11 +543,11 @@
 		<td class="msgtd">so we are discussing zmq&UnderBar;poll in libzmq having interesting performance characteristics&quest;  Just catching up.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-119">[<span class="ts" data-time="1384861733">01:41</span>]</a></td><td class="nicktd" style="color: darkorchid">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-119">[<span class="ts" data-time="1384861733">01:41</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
 		<td class="msgtd">sure... that&apos;s exactly what you do...  &semi;&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-120">[<span class="ts" data-time="1384861746">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-120">[<span class="ts" data-time="1384861746">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">taotetek: yes</td>
 	</tr>
 	<tr class="light">
@@ -555,15 +555,15 @@
 		<td class="msgtd">I... I think from empirical observation that is a lot of what he does...</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-122">[<span class="ts" data-time="1384861754">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-122">[<span class="ts" data-time="1384861754">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://github.com/davipt/libzmq/compare/fix-002-proxy&UnderBar;lat&UnderBar;thr">https://github.com/davipt/libzmq/compare/fix-002-proxy&UnderBar;lat&UnderBar;thr</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-123">[<span class="ts" data-time="1384861768">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-123">[<span class="ts" data-time="1384861768">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">taotetek: seems that in a heavy poll loop&comma; batching stops working on sent data</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-124">[<span class="ts" data-time="1384861784">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-124">[<span class="ts" data-time="1384861784">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I mean <a href="https://github.com/davipt/libzmq/tree/fix-002-proxy&UnderBar;lat&UnderBar;thr">https://github.com/davipt/libzmq/tree/fix-002-proxy&UnderBar;lat&UnderBar;thr</a></td>
 	</tr>
 	<tr class="light">
@@ -571,11 +571,11 @@
 		<td class="msgtd">interesting - I don&apos;t normally dig into the guts of libzmq itself &lpar;C&plus;&plus; is not a strength of mine would be an understatement&rpar; ...</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-126">[<span class="ts" data-time="1384861883">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-126">[<span class="ts" data-time="1384861883">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but but but</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-127">[<span class="ts" data-time="1384861892">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-127">[<span class="ts" data-time="1384861892">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">nobody uses the proxy patterns anymore&quest;</td>
 	</tr>
 	<tr class="dark">
@@ -583,7 +583,7 @@
 		<td class="msgtd">I do&excl; Hah.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-129">[<span class="ts" data-time="1384861907">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-129">[<span class="ts" data-time="1384861907">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">half of the code connected 1 book is outdated then&quest; :P</td>
 	</tr>
 	<tr class="dark">
@@ -591,23 +591,23 @@
 		<td class="msgtd">I recently added the zproxy class to czmq&comma; which is a wrapper for zmq&UnderBar;proxy</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-131">[<span class="ts" data-time="1384861932">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-131">[<span class="ts" data-time="1384861932">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">because I kind of assume that every binding should be wrapping the zmq&UnderBar;proxy C code&comma; so everybody is affected</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-132">[<span class="ts" data-time="1384861945">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-132">[<span class="ts" data-time="1384861945">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: indeed though I suspect it&apos;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-133">[<span class="ts" data-time="1384861948">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-133">[<span class="ts" data-time="1384861948">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">or of course I&apos;m doing something wrong&comma; which then I&apos;ll blame who wrote the book</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-134">[<span class="ts" data-time="1384861957">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-134">[<span class="ts" data-time="1384861957">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">let me put a README on my branch</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-135">[<span class="ts" data-time="1384861965">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-135">[<span class="ts" data-time="1384861965">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it&apos;s been a while since people were hammering the proxy patterns in low latency cases over tcp</td>
 	</tr>
 	<tr class="dark">
@@ -615,15 +615,15 @@
 		<td class="msgtd">I think the thing is that the polling hit I&apos;ve personally seen is along the lines of &quot;I was getting 4 million messages a second and I&apos;m now getting 2 million a second&quot;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-137">[<span class="ts" data-time="1384861983">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-137">[<span class="ts" data-time="1384861983">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">no</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-138">[<span class="ts" data-time="1384862011">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-138">[<span class="ts" data-time="1384862011">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I get 5Gbps p2p&comma; I expect to see worst case half or one quarter over a proxy&comma; hence 2.5 or above 1Gbps</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-139">[<span class="ts" data-time="1384862015">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-139">[<span class="ts" data-time="1384862015">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">it gives me 300Mbps</td>
 	</tr>
 	<tr class="dark">
@@ -631,27 +631,27 @@
 		<td class="msgtd">this is an anecdotal statement on my part - I haven&apos;t dug into the hit from polling in a scientific manner.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-141">[<span class="ts" data-time="1384862039">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-141">[<span class="ts" data-time="1384862039">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: have you tried on older versions of zmq&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-142">[<span class="ts" data-time="1384862046">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-142">[<span class="ts" data-time="1384862046">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">nope</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-143">[<span class="ts" data-time="1384862053">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-143">[<span class="ts" data-time="1384862053">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it used to be called zmq&UnderBar;device but with much the same API</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-144">[<span class="ts" data-time="1384862054">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-144">[<span class="ts" data-time="1384862054">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I like bleeding edge</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-145">[<span class="ts" data-time="1384862074">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-145">[<span class="ts" data-time="1384862074">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">me too yet it&apos;s good for comparison to see if this is a recent problem</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-146">[<span class="ts" data-time="1384862090">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-146">[<span class="ts" data-time="1384862090">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">my colleague tried the nodejs binding&comma; and it seems to require zmq 3&comma; and crashes everywhere&comma; so we &quot;hacked it&quot; to run over zmq4 and now it works</td>
 	</tr>
 	<tr class="light">
@@ -659,19 +659,19 @@
 		<td class="msgtd">I&apos;m going to make a note for myself to play around with testing some of this - if I don&apos;t get to it before the weekend I can do it then.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-148">[<span class="ts" data-time="1384862099">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-148">[<span class="ts" data-time="1384862099">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">not enough time to debug bugs on older versions</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-149">[<span class="ts" data-time="1384862133">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-149">[<span class="ts" data-time="1384862133">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: in any case we need to make a minimal self-contained test case</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-150">[<span class="ts" data-time="1384862167">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-150">[<span class="ts" data-time="1384862167">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yes I&apos;m putting it on the branch. I can&apos;t make a unit test&comma; I can only use the standard performance tests and tweak them</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-151">[<span class="ts" data-time="1384862189">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-151">[<span class="ts" data-time="1384862189">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">give me a second&comma; then i&apos;ll ask you feedback from the instructions &lpar;which I sent on the email anyway&comma; but it&apos;s better to stay next to the code&rpar;</td>
 	</tr>
 	<tr class="dark">
@@ -679,31 +679,31 @@
 		<td class="msgtd">davipt: from C my anecdotal back of the napkin figure has been ~ 50&percnt; hit when polling - this weekend if not before I&apos;ll throw together some test cases in my lab around this and see what I see.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-153">[<span class="ts" data-time="1384862210">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-153">[<span class="ts" data-time="1384862210">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">would you make an issue so we can give this thing a number&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-154">[<span class="ts" data-time="1384862233">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-154">[<span class="ts" data-time="1384862233">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: hang on... random idea</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-155">[<span class="ts" data-time="1384862253">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-155">[<span class="ts" data-time="1384862253">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">shancat suggested we should be using the github issue tracker</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-156">[<span class="ts" data-time="1384862287">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-156">[<span class="ts" data-time="1384862287">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/libzmq/issues">https://github.com/zeromq/libzmq/issues</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-157">[<span class="ts" data-time="1384862297">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-157">[<span class="ts" data-time="1384862297">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I&apos;ve enabled this and will define the usual tags</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-158">[<span class="ts" data-time="1384862297">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-158">[<span class="ts" data-time="1384862297">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yes I&apos;ll also add it to jira if I recall where it iss</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-159">[<span class="ts" data-time="1384862353">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-159">[<span class="ts" data-time="1384862353">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">k</td>
 	</tr>
 	<tr class="dark">
@@ -711,55 +711,55 @@
 		<td class="msgtd">back in a little bit - taking-kids-to-school-walking-dogs-time here&excl;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-161">[<span class="ts" data-time="1384862602">01:41</span>]</a></td><td class="nicktd" style="color: darkorange">flarion</td>
+		<td class="timetd"><a href="#msg-161">[<span class="ts" data-time="1384862602">01:41</span>]</a></td><td class="nicktd" style="color: black">flarion</td>
 		<td class="msgtd">hey guys&comma; </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-162">[<span class="ts" data-time="1384862656">01:41</span>]</a></td><td class="nicktd" style="color: darkorange">flarion</td>
+		<td class="timetd"><a href="#msg-162">[<span class="ts" data-time="1384862656">01:41</span>]</a></td><td class="nicktd" style="color: black">flarion</td>
 		<td class="msgtd">i want to stream real-time data from my server to one or many android devices. the data needs to be ordered. minor package loss is tolerable. is zeromq the right choice for it&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-163">[<span class="ts" data-time="1384863031">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-163">[<span class="ts" data-time="1384863031">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/libzmq/issues/757">https://github.com/zeromq/libzmq/issues/757</a> good enough&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-164">[<span class="ts" data-time="1384863068">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-164">[<span class="ts" data-time="1384863068">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://raw.github.com/davipt/libzmq/fix-002-proxy&UnderBar;lat&UnderBar;thr/perf/README.txt">https://raw.github.com/davipt/libzmq/fix-002-proxy&UnderBar;lat&UnderBar;thr/perf/README.txt</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-165">[<span class="ts" data-time="1384863128">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-165">[<span class="ts" data-time="1384863128">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">flarion: pub-sub would be great for that&comma; but that kind of pattern always implies some packet loss somewhere &lpar;I&apos;m currently struggling with that&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-166">[<span class="ts" data-time="1384863290">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-166">[<span class="ts" data-time="1384863290">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">now back to my jeromq flying machine</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-167">[<span class="ts" data-time="1384863346">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-167">[<span class="ts" data-time="1384863346">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">had a very nice scary moment this morning... don&apos;t do code at 1am :D</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-168">[<span class="ts" data-time="1384863371">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-168">[<span class="ts" data-time="1384863371">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">was testing a pub-sub version with less drops&comma; via dealer&comma; and for tests had set my regular push/pull pub/sub code with HWM&equals;1</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-169">[<span class="ts" data-time="1384863390">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-169">[<span class="ts" data-time="1384863390">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">so this morning ran the equivalent of local&UnderBar;thr and remote&UnderBar;thr and instead of 3Gbps&comma; was getting.... 30Mbps</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-170">[<span class="ts" data-time="1384863422">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-170">[<span class="ts" data-time="1384863422">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">&gt;:&rpar; damn how one line can screw so much</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-171">[<span class="ts" data-time="1384863971">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-171">[<span class="ts" data-time="1384863971">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">:&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-172">[<span class="ts" data-time="1384864044">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-172">[<span class="ts" data-time="1384864044">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I just realized&comma; the issue numbering in GitHub is already at 757&comma; thanks to all the pull requests</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-173">[<span class="ts" data-time="1384864068">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-173">[<span class="ts" data-time="1384864068">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">the highest issue in Jira is 586</td>
 	</tr>
 	<tr class="dark">
@@ -767,7 +767,7 @@
 		<td class="msgtd">davipt: bookmarked that issue&comma; if some hypothesis I want to test this week reveals anything interesting I&apos;ll add the info and test methodology there</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-175">[<span class="ts" data-time="1384864439">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-175">[<span class="ts" data-time="1384864439">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">btw&comma; just for fun &semi;&rpar; I&apos;ve also added some java code over here <a href="https://github.com/davipt/zeromq-samples">https://github.com/davipt/zeromq-samples</a> with similar case. There is a jeromq&plus;java proxy Streamer and Forwarder&comma; and a code to push messages and one to consume them :D It&apos;s nice because I can run the same C test but instead of running the C proxy&comma; run the java proxy&comma; and the performance goes back to above 1Gbps instead of the 300Mbps</td>
 	</tr>
 	<tr class="dark">
@@ -775,11 +775,11 @@
 		<td class="msgtd">davipt: which version of libzmq are you testing against by the way&quest; 4.x/head&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-177">[<span class="ts" data-time="1384864636">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-177">[<span class="ts" data-time="1384864636">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">head</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-178">[<span class="ts" data-time="1384864650">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-178">[<span class="ts" data-time="1384864650">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">my branch is fully synchronized with head</td>
 	</tr>
 	<tr class="light">
@@ -787,11 +787,11 @@
 		<td class="msgtd">davipt: I&apos;m asking because I know some functionality was added to zmq&UnderBar;proxy to have the proxy listen for command messages for doing things like pause / restart </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-180">[<span class="ts" data-time="1384864671">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-180">[<span class="ts" data-time="1384864671">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yes</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-181">[<span class="ts" data-time="1384864680">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-181">[<span class="ts" data-time="1384864680">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but it doesn&apos;t affect</td>
 	</tr>
 	<tr class="dark">
@@ -799,11 +799,11 @@
 		<td class="msgtd">davipt: ok cool </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-183">[<span class="ts" data-time="1384864710">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-183">[<span class="ts" data-time="1384864710">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">that&apos;s why I&apos;ve copied the code from the book&comma; which is exactly the same on the zmq&UnderBar;proxy implementation&comma; except the capture and control part</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-184">[<span class="ts" data-time="1384864718">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-184">[<span class="ts" data-time="1384864718">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I&apos;ve double checked it line by line</td>
 	</tr>
 	<tr class="light">
@@ -811,7 +811,7 @@
 		<td class="msgtd">I still don&apos;t recall seeing this much of a hit with proxy last time I did a real test which was with 3 - so I might do a little test matrix of using zproxy in czmq against a few different versions of libzmq out of curiosity.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-186">[<span class="ts" data-time="1384864756">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-186">[<span class="ts" data-time="1384864756">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">on my perf/proxy.cpp&comma; commenting out the zmq&UnderBar;proxy &lpar;attempt 1&rpar; and uncommenting the next block &lpar;attempt 2&rpar; will use the loop poll version&comma; same performance</td>
 	</tr>
 	<tr class="light">
@@ -819,95 +819,95 @@
 		<td class="msgtd">I could be remembering incorrectly so I&apos;ll get numbers this week when I&apos;m able.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-188">[<span class="ts" data-time="1384864798">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-188">[<span class="ts" data-time="1384864798">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">as attempt4 is while&lpar;true&rpar; backend.send&lpar;frontend.read&rpar;&rpar; &lpar;plus the more&rpar; and this one scales&comma; it must be related to the poller of the proxy</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-189">[<span class="ts" data-time="1384867382">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-189">[<span class="ts" data-time="1384867382">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: IO&apos;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-190">[<span class="ts" data-time="1384867386">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-190">[<span class="ts" data-time="1384867386">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I&apos;ve made a test case</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-191">[<span class="ts" data-time="1384867394">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-191">[<span class="ts" data-time="1384867394">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/issues/tree/master/757">https://github.com/zeromq/issues/tree/master/757</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-192">[<span class="ts" data-time="1384867451">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-192">[<span class="ts" data-time="1384867451">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">damn forgot to launch irssi in screen. brb</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-193">[<span class="ts" data-time="1384867784">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-193">[<span class="ts" data-time="1384867784">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">pieterh: did we decide on builds/android&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-194">[<span class="ts" data-time="1384867800">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-194">[<span class="ts" data-time="1384867800">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I think that makes sense&comma; yes</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-195">[<span class="ts" data-time="1384867815">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-195">[<span class="ts" data-time="1384867815">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">there&apos;s already build.sh and clean.sh there&comma; </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-196">[<span class="ts" data-time="1384867864">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-196">[<span class="ts" data-time="1384867864">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">just manually modify them&comma; yes&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-197">[<span class="ts" data-time="1384867866">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-197">[<span class="ts" data-time="1384867866">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I&apos;d probably use three scripts&comma; update&comma; build&comma; and clean</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-198">[<span class="ts" data-time="1384867879">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-198">[<span class="ts" data-time="1384867879">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">update clones and/or pulls latest master from github</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-199">[<span class="ts" data-time="1384867907">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-199">[<span class="ts" data-time="1384867907">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">feel free to modify these... I will look at generating them later</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-200">[<span class="ts" data-time="1384867961">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-200">[<span class="ts" data-time="1384867961">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">okie dokie :&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-201">[<span class="ts" data-time="1384867968">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-201">[<span class="ts" data-time="1384867968">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">k :&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-202">[<span class="ts" data-time="1384868076">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-202">[<span class="ts" data-time="1384868076">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">oh and could you look at drops build failing for me because it&apos;s trying to make docs&quest; thanks</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-203">[<span class="ts" data-time="1384868173">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-203">[<span class="ts" data-time="1384868173">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">what is it saying&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-204">[<span class="ts" data-time="1384868249">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-204">[<span class="ts" data-time="1384868249">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">/usr/bin/install: cannot stat &grave;./drops.7&apos;: No such file or directory</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-205">[<span class="ts" data-time="1384868252">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-205">[<span class="ts" data-time="1384868252">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">on make install</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-206">[<span class="ts" data-time="1384868276">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-206">[<span class="ts" data-time="1384868276">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">Just made a pull request&comma; that should fix it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-207">[<span class="ts" data-time="1384868281">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-207">[<span class="ts" data-time="1384868281">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ah hang on</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-208">[<span class="ts" data-time="1384868284">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-208">[<span class="ts" data-time="1384868284">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">make install...</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-209">[<span class="ts" data-time="1384868298">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-209">[<span class="ts" data-time="1384868298">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">yeah&comma; that should work</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-210">[<span class="ts" data-time="1384868343">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-210">[<span class="ts" data-time="1384868343">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">alright I&apos;ll check it out</td>
 	</tr>
 	<tr class="light">
@@ -915,716 +915,752 @@
 		<td class="msgtd">Su-Shee: coffee&quest; :&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-212">[<span class="ts" data-time="1384868414">01:41</span>]</a></td><td class="nicktd" style="color: darkcyan">Su-Shee</td>
+		<td class="timetd"><a href="#msg-212">[<span class="ts" data-time="1384868414">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">Su-Shee</td>
 		<td class="msgtd">taotetek: INDEED.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-213">[<span class="ts" data-time="1384869080">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-213">[<span class="ts" data-time="1384869080">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">pieterh:  compiling. what are your results&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-214">[<span class="ts" data-time="1384869094">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-214">[<span class="ts" data-time="1384869094">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I posted them in the issue</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-215">[<span class="ts" data-time="1384869121">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-215">[<span class="ts" data-time="1384869121">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">tested with 1-byte messages to highlight any problem with batching</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-216">[<span class="ts" data-time="1384869152">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-216">[<span class="ts" data-time="1384869152">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">2-3x slower with a poll</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-217">[<span class="ts" data-time="1384869176">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-217">[<span class="ts" data-time="1384869176">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">uhm</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-218">[<span class="ts" data-time="1384869187">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-218">[<span class="ts" data-time="1384869187">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">1 byte</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-219">[<span class="ts" data-time="1384869191">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-219">[<span class="ts" data-time="1384869191">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">makes sense</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-220">[<span class="ts" data-time="1384869279">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-220">[<span class="ts" data-time="1384869279">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">czmq... heck</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-221">[<span class="ts" data-time="1384869310">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-221">[<span class="ts" data-time="1384869310">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yeah remember now why I didn&apos;t use it</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-222">[<span class="ts" data-time="1384869311">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-222">[<span class="ts" data-time="1384869311">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">configure: error: cannot link with -lzmq&comma; install libzmq.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-223">[<span class="ts" data-time="1384869313">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-223">[<span class="ts" data-time="1384869313">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">grrr</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-224">[<span class="ts" data-time="1384869347">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-224">[<span class="ts" data-time="1384869347">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">where did you install zmq to&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-225">[<span class="ts" data-time="1384869364">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-225">[<span class="ts" data-time="1384869364">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">q</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-226">[<span class="ts" data-time="1384869372">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-226">[<span class="ts" data-time="1384869372">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">just /usr/local/lib&comma; standard ./configure</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-227">[<span class="ts" data-time="1384869382">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-227">[<span class="ts" data-time="1384869382">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">every other dependency finds the libs</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-228">[<span class="ts" data-time="1384869438">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-228">[<span class="ts" data-time="1384869438">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">checking for zmq&UnderBar;init in -lzmq... no</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-229">[<span class="ts" data-time="1384869440">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-229">[<span class="ts" data-time="1384869440">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">ran ldconfig&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-230">[<span class="ts" data-time="1384869451">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-230">[<span class="ts" data-time="1384869451">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">don&apos;t need that on the mac :P</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-231">[<span class="ts" data-time="1384869455">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-231">[<span class="ts" data-time="1384869455">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">which version of zmq&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-232">[<span class="ts" data-time="1384869498">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-232">[<span class="ts" data-time="1384869498">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">even with this command it can&apos;t find it iDavi:czmq bruno&dollar; ./configure --with-libzmq-lib-dir&equals;/usr/local/lib/ --with-libzmq-include-dir&equals;/usr/local/include/</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-233">[<span class="ts" data-time="1384869607">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-233">[<span class="ts" data-time="1384869607">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">never got this to compile</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-234">[<span class="ts" data-time="1384869610">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-234">[<span class="ts" data-time="1384869610">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">using the latest czmq and libzmq yes&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-235">[<span class="ts" data-time="1384869616">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-235">[<span class="ts" data-time="1384869616">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-236">[<span class="ts" data-time="1384869686">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-236">[<span class="ts" data-time="1384869686">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">gonna install libsodium first&comma; just in case the error is misleading</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-237">[<span class="ts" data-time="1384869696">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-237">[<span class="ts" data-time="1384869696">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: there&apos;s a script I have&comma; called &apos;c&apos;&comma; sitting in czmq root </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-238">[<span class="ts" data-time="1384869715">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-238">[<span class="ts" data-time="1384869715">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">that might help</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-239">[<span class="ts" data-time="1384869748">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-239">[<span class="ts" data-time="1384869748">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">with a few defines&comma; you can just do ./c -l issue</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-240">[<span class="ts" data-time="1384869760">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-240">[<span class="ts" data-time="1384869760">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">without even compiling czmq&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-241">[<span class="ts" data-time="1384869823">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-241">[<span class="ts" data-time="1384869823">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">:-&rpar; compile and install libzmq&comma; libczmq to default locations</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-242">[<span class="ts" data-time="1384869869">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-242">[<span class="ts" data-time="1384869869">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">define INCDIR&equals;/usr/local/include and LIBDIR&equals;/usr/local/lib and it should do the rest</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-243">[<span class="ts" data-time="1384870076">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-243">[<span class="ts" data-time="1384870076">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">nope&comma; same error :&lpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-244">[<span class="ts" data-time="1384870119">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-244">[<span class="ts" data-time="1384870119">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I wonder how can jzmq and the nodejs find the library without any changes but this module doesn&apos;t :&lpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-245">[<span class="ts" data-time="1384870155">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-245">[<span class="ts" data-time="1384870155">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">checking for zmq.h... yes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-246">[<span class="ts" data-time="1384870156">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-246">[<span class="ts" data-time="1384870156">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">checking for zmq&UnderBar;init in -lzmq... yes</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-247">[<span class="ts" data-time="1384870337">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-247">[<span class="ts" data-time="1384870337">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">isn&apos;t zmq&UnderBar;init&lpar;&rpar; deprecated&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-248">[<span class="ts" data-time="1384870424">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-248">[<span class="ts" data-time="1384870424">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">both projects do the same check for zmq.h and try to compile code with zmq-init</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-249">[<span class="ts" data-time="1384870513">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-249">[<span class="ts" data-time="1384870513">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">I&apos;m not seeing zmq&UnderBar;init&lpar;&rpar; in ctx.cpp</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-250">[<span class="ts" data-time="1384871131">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-250">[<span class="ts" data-time="1384871131">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/czmq/issues/319">https://github.com/zeromq/czmq/issues/319</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-251">[<span class="ts" data-time="1384871215">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-251">[<span class="ts" data-time="1384871215">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">anything else I could post on the issue&quest; config.log doesn&apos;t show anything about the zmq&UnderBar;init</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-252">[<span class="ts" data-time="1384871438">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-252">[<span class="ts" data-time="1384871438">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">That should be alright&comma; thanks. I&apos;ll look into it whenever I can.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-253">[<span class="ts" data-time="1384871547">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-253">[<span class="ts" data-time="1384871547">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ah config.log now shows it</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-254">[<span class="ts" data-time="1384871549">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-254">[<span class="ts" data-time="1384871549">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">iDavi:czmq bruno&dollar; gcc -o conftest -g -O2   conftest.c -lzmq  -lcrypto -lpthread</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-255">[<span class="ts" data-time="1384871549">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-255">[<span class="ts" data-time="1384871549">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ld: library not found for -lzmq</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-256">[<span class="ts" data-time="1384871555">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-256">[<span class="ts" data-time="1384871555">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but iDavi:czmq bruno&dollar; gcc -o conftest -g -O2   conftest.c -lzmq  -lcrypto -lpthread -L /usr/local/lib/</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-257">[<span class="ts" data-time="1384871572">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-257">[<span class="ts" data-time="1384871572">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">so now I can check why the --with-zmq-lib or the LIBDIR is not reaching that command</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-258">[<span class="ts" data-time="1384872201">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-258">[<span class="ts" data-time="1384872201">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">shancat: czmq checks for zmq&UnderBar;init in configure.ac&semi; since it aims to work over libzmq/2.x and onwards</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-259">[<span class="ts" data-time="1384872210">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-259">[<span class="ts" data-time="1384872210">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ok on linux it works because the sudo ldconfig caches the names of everything also on /usr/local/lib</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-260">[<span class="ts" data-time="1384872242">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-260">[<span class="ts" data-time="1384872242">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but the mac seems to not &quot;export&quot; that folder by default&comma; and any attempt to add that folder via standard environment variables is ignored by configure</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-261">[<span class="ts" data-time="1384872624">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-261">[<span class="ts" data-time="1384872624">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">geese the Mac is becoming third world people</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-262">[<span class="ts" data-time="1384872625">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-262">[<span class="ts" data-time="1384872625">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/jzmq/issues/267">https://github.com/zeromq/jzmq/issues/267</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-263">[<span class="ts" data-time="1384872695">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-263">[<span class="ts" data-time="1384872695">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">problem is most of the contributors are running linux and can&apos;t test on Windows/Mac</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-264">[<span class="ts" data-time="1384872805">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-264">[<span class="ts" data-time="1384872805">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">well in this case I thought there was a standard way to derive the JAVA&UnderBar;HOME.... and in this case it&apos;s a regression&comma; as the JAVA&UnderBar;HOME stuff was working before</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-265">[<span class="ts" data-time="1384872917">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-265">[<span class="ts" data-time="1384872917">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">on the other hand this project finds out the libzmq without problems&comma; hence why I&apos;m trying to compare both</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-266">[<span class="ts" data-time="1384873591">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-266">[<span class="ts" data-time="1384873591">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">pull request prepared for jzmq... czmq will follow</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-267">[<span class="ts" data-time="1384873660">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-267">[<span class="ts" data-time="1384873660">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">agh... let me solve the jni&UnderBar;md.h first</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-268">[<span class="ts" data-time="1384873814">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-268">[<span class="ts" data-time="1384873814">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">done <a href="https://github.com/zeromq/jzmq/pull/268">https://github.com/zeromq/jzmq/pull/268</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-269">[<span class="ts" data-time="1384873818">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-269">[<span class="ts" data-time="1384873818">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">back to czmq</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-270">[<span class="ts" data-time="1384874664">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-270">[<span class="ts" data-time="1384874664">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">uhhhmmmmm</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-271">[<span class="ts" data-time="1384874673">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-271">[<span class="ts" data-time="1384874673">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">pull in some minutes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-272">[<span class="ts" data-time="1384874961">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-272">[<span class="ts" data-time="1384874961">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">it compiiillleeess&excl;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-273">[<span class="ts" data-time="1384874994">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-273">[<span class="ts" data-time="1384874994">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">woo&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-274">[<span class="ts" data-time="1384875214">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-274">[<span class="ts" data-time="1384875214">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/czmq/pull/320">https://github.com/zeromq/czmq/pull/320</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-275">[<span class="ts" data-time="1384875216">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-275">[<span class="ts" data-time="1384875216">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ufff</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-276">[<span class="ts" data-time="1384875226">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-276">[<span class="ts" data-time="1384875226">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">now I can finally compile and check the issue.c from pieter</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-277">[<span class="ts" data-time="1384875232">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-277">[<span class="ts" data-time="1384875232">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">how many hours did it take&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-278">[<span class="ts" data-time="1384875266">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-278">[<span class="ts" data-time="1384875266">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">aghhhhhhh</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-279">[<span class="ts" data-time="1384875300">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-279">[<span class="ts" data-time="1384875300">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">pieterh: s&UnderBar;proxy&UnderBar;simple is the one to test&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-280">[<span class="ts" data-time="1384875309">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-280">[<span class="ts" data-time="1384875309">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">this doesn&apos;t work</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-281">[<span class="ts" data-time="1384875315">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-281">[<span class="ts" data-time="1384875315">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">it doesn&apos;t proxy the traffic to the other side</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-282">[<span class="ts" data-time="1384875326">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-282">[<span class="ts" data-time="1384875326">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">please read the code</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-283">[<span class="ts" data-time="1384875326">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-283">[<span class="ts" data-time="1384875326">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I&apos;ve seen the same mistake on the nodejs code</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-284">[<span class="ts" data-time="1384875336">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-284">[<span class="ts" data-time="1384875336">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it&apos;s doing a one-way test</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-285">[<span class="ts" data-time="1384875343">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-285">[<span class="ts" data-time="1384875343">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I did</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-286">[<span class="ts" data-time="1384875344">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-286">[<span class="ts" data-time="1384875344">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">not a full proxy obviously</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-287">[<span class="ts" data-time="1384875359">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-287">[<span class="ts" data-time="1384875359">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I test 3 cases to see where the behaviour changes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-288">[<span class="ts" data-time="1384875362">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-288">[<span class="ts" data-time="1384875362">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">1. recv/send</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-289">[<span class="ts" data-time="1384875364">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-289">[<span class="ts" data-time="1384875364">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but that one works perfectly on the C proxy</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-290">[<span class="ts" data-time="1384875425">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-290">[<span class="ts" data-time="1384875425">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">what mistake are you seeing&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-291">[<span class="ts" data-time="1384875439">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-291">[<span class="ts" data-time="1384875439">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">how can you test s&UnderBar;proxy&UnderBar;simple&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-292">[<span class="ts" data-time="1384875448">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-292">[<span class="ts" data-time="1384875448">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it is part of a whole test case</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-293">[<span class="ts" data-time="1384875450">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-293">[<span class="ts" data-time="1384875450">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">on the proxy.c&comma; copy from the book and the libzmq codebase&comma; I&apos;ve also implemented a simple loop that reads from frontend and writes to backend&comma; ignoring the control messages coming back</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-294">[<span class="ts" data-time="1384875455">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-294">[<span class="ts" data-time="1384875455">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and that one performs well</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-295">[<span class="ts" data-time="1384875476">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-295">[<span class="ts" data-time="1384875476">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">sure</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-296">[<span class="ts" data-time="1384875477">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-296">[<span class="ts" data-time="1384875477">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">what I&apos;d like to see is a proxy that reads from both sockets and writes to the other one</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-297">[<span class="ts" data-time="1384875493">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-297">[<span class="ts" data-time="1384875493">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">or else the subscribe/unsubscribes from xpub/xsub and the holdons from push pull are gone</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-298">[<span class="ts" data-time="1384875495">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-298">[<span class="ts" data-time="1384875495">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">let me restate the goal of the test</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-299">[<span class="ts" data-time="1384875501">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-299">[<span class="ts" data-time="1384875501">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">sure</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-300">[<span class="ts" data-time="1384875512">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-300">[<span class="ts" data-time="1384875512">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it is to demonstrate the problem with the minimal code</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-301">[<span class="ts" data-time="1384875518">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-301">[<span class="ts" data-time="1384875518">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it is not to make a proxy</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-302">[<span class="ts" data-time="1384875538">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-302">[<span class="ts" data-time="1384875538">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">the problem is&comma; afaics&comma; that using zmq&UnderBar;poll&lpar;&rpar; kills performance</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-303">[<span class="ts" data-time="1384875554">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-303">[<span class="ts" data-time="1384875554">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">a little yes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-304">[<span class="ts" data-time="1384875567">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-304">[<span class="ts" data-time="1384875567">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">now you can take issue.c and add more test cases to it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-305">[<span class="ts" data-time="1384875571">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-305">[<span class="ts" data-time="1384875571">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">sure</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-306">[<span class="ts" data-time="1384875596">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-306">[<span class="ts" data-time="1384875596">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">if you want to poll on two sockets&comma; make two-way streams&comma; etc.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-307">[<span class="ts" data-time="1384875708">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-307">[<span class="ts" data-time="1384875708">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ok first I need to check why proxies push-to-poll hangs forever randomly :P</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-308">[<span class="ts" data-time="1384875726">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-308">[<span class="ts" data-time="1384875726">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">in your test case or mine&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-309">[<span class="ts" data-time="1384875732">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-309">[<span class="ts" data-time="1384875732">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">your</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-310">[<span class="ts" data-time="1384875751">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-310">[<span class="ts" data-time="1384875751">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ah&comma; that happens sometimes&comma; I did not figure out why</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-311">[<span class="ts" data-time="1384875771">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-311">[<span class="ts" data-time="1384875771">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">every time I looked into it&comma; the problem went away :-&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-312">[<span class="ts" data-time="1384875830">01:41</span>]</a></td><td class="nicktd" style="color: darkolivegreen">shancat</td>
+		<td class="timetd"><a href="#msg-312">[<span class="ts" data-time="1384875830">01:41</span>]</a></td><td class="nicktd" style="color: darkmagenta">shancat</td>
 		<td class="msgtd">heisenbug</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-313">[<span class="ts" data-time="1384875875">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-313">[<span class="ts" data-time="1384875875">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ok then quick help zpoller&UnderBar;new with two sockets&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-314">[<span class="ts" data-time="1384875920">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-314">[<span class="ts" data-time="1384875920">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">zpoller&UnderBar;new &lpar;sock1&comma; sock2&comma; sockn&comma; NULL&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-315">[<span class="ts" data-time="1384877575">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-315">[<span class="ts" data-time="1384877575">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">uhm</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-316">[<span class="ts" data-time="1384877579">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-316">[<span class="ts" data-time="1384877579">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">something&apos;s wrong</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-317">[<span class="ts" data-time="1384877682">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-317">[<span class="ts" data-time="1384877682">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">do you mean in a specific technical sense&comma; or a vaguer metaphysical &quot;this isn&apos;t the same universe I remember from yesterday&quot; sense&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-318">[<span class="ts" data-time="1384877702">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-318">[<span class="ts" data-time="1384877702">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">what am I doing wrong here &quest; <a href="https://gist.github.com/davipt/7547859">https://gist.github.com/davipt/7547859</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-319">[<span class="ts" data-time="1384877719">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-319">[<span class="ts" data-time="1384877719">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">to compare oranges to oranges&comma; I&apos;ve set the message size configurable</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-320">[<span class="ts" data-time="1384877740">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-320">[<span class="ts" data-time="1384877740">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and takes aaaagggggeeeessssss</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-321">[<span class="ts" data-time="1384877751">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-321">[<span class="ts" data-time="1384877751">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">the push-pull... I can&apos;t even reach the proxy versions</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-322">[<span class="ts" data-time="1384877817">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-322">[<span class="ts" data-time="1384877817">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">well&comma; first MSG&UnderBar;SIZE 500 is deceptive&comma; you&apos;re sending 1-byte messages but using a 500-byte buffer to hold them</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-323">[<span class="ts" data-time="1384877834">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-323">[<span class="ts" data-time="1384877834">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">if it blocks&comma; add puts statements to see where it blocks</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-324">[<span class="ts" data-time="1384877837">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-324">[<span class="ts" data-time="1384877837">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">am I&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-325">[<span class="ts" data-time="1384877850">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-325">[<span class="ts" data-time="1384877850">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ah</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-326">[<span class="ts" data-time="1384877857">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-326">[<span class="ts" data-time="1384877857">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">I thought I had changed all zmq&UnderBar;send and zmq&UnderBar;recv 1 to MSG&UnderBar;SIZE</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-327">[<span class="ts" data-time="1384877862">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-327">[<span class="ts" data-time="1384877862">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">yes&comma; you did&comma; sorry</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-328">[<span class="ts" data-time="1384877867">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-328">[<span class="ts" data-time="1384877867">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">the comment is misleading</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-329">[<span class="ts" data-time="1384877893">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-329">[<span class="ts" data-time="1384877893">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">no&comma; doesn&apos;t take ages</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-330">[<span class="ts" data-time="1384877900">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-330">[<span class="ts" data-time="1384877900">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">just stops at recv count&equals;999617 read&equals;500</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-331">[<span class="ts" data-time="1384877968">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-331">[<span class="ts" data-time="1384877968">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">so</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-332">[<span class="ts" data-time="1384877988">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-332">[<span class="ts" data-time="1384877988">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it is possible that the old sockets are not being destroyed quite when you expect</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-333">[<span class="ts" data-time="1384878027">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-333">[<span class="ts" data-time="1384878027">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">possibly... that old pull sockets remain just long enough to divert some of the messages</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-334">[<span class="ts" data-time="1384878031">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-334">[<span class="ts" data-time="1384878031">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">it&apos;s failing on the first test... forget the other ones. just the direct pull-push</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-335">[<span class="ts" data-time="1384878043">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-335">[<span class="ts" data-time="1384878043">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">hmm</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-336">[<span class="ts" data-time="1384878065">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-336">[<span class="ts" data-time="1384878065">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ok&comma; bind is unsafe</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-337">[<span class="ts" data-time="1384878080">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-337">[<span class="ts" data-time="1384878080">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I mean&comma; sending immediately after bind is unsafe</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-338">[<span class="ts" data-time="1384878098">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-338">[<span class="ts" data-time="1384878098">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">yes sure&comma; I&apos;m expecting the number of messages to be lower</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-339">[<span class="ts" data-time="1384878107">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-339">[<span class="ts" data-time="1384878107">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but I&apos;m not expecting the &apos;Z&apos; to never arrive</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-340">[<span class="ts" data-time="1384878138">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-340">[<span class="ts" data-time="1384878138">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">updated gist</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-341">[<span class="ts" data-time="1384878147">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-341">[<span class="ts" data-time="1384878147">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">commented out everything except the first test</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-342">[<span class="ts" data-time="1384878148">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-342">[<span class="ts" data-time="1384878148">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it should block on full HWM</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-343">[<span class="ts" data-time="1384878158">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-343">[<span class="ts" data-time="1384878158">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">exactly</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-344">[<span class="ts" data-time="1384878162">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-344">[<span class="ts" data-time="1384878162">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">you are getting into the rabbit hole here...</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-345">[<span class="ts" data-time="1384878249">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-345">[<span class="ts" data-time="1384878249">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: I&apos;ll play a little with that&comma; I think I was seeing the same</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-346">[<span class="ts" data-time="1384878257">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-346">[<span class="ts" data-time="1384878257">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">send never returns -1&comma; which is good</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-347">[<span class="ts" data-time="1384878287">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-347">[<span class="ts" data-time="1384878287">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">and this is why it sometimes hanged... the &apos;Z&apos; never arrived</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-348">[<span class="ts" data-time="1384878301">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-348">[<span class="ts" data-time="1384878301">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">wait</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-349">[<span class="ts" data-time="1384878341">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-349">[<span class="ts" data-time="1384878341">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">my C is rusty</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-350">[<span class="ts" data-time="1384878360">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-350">[<span class="ts" data-time="1384878360">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">on the pusher&comma; it&apos;s not a good idea to send the same 500 bytes pointer for each message&comma; is it&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-351">[<span class="ts" data-time="1384878385">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-351">[<span class="ts" data-time="1384878385">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">what is the proper way to allocate memory for the message and pass it and let zmq free it&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-352">[<span class="ts" data-time="1384878391">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-352">[<span class="ts" data-time="1384878391">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">can I just malloc it and send&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-353">[<span class="ts" data-time="1384878451">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-353">[<span class="ts" data-time="1384878451">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">nope&comma; that&apos;s not the problem</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-354">[<span class="ts" data-time="1384878482">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-354">[<span class="ts" data-time="1384878482">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it&apos;s not a fault in your C</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-355">[<span class="ts" data-time="1384878495">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-355">[<span class="ts" data-time="1384878495">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I get the same problem randomly&comma; maybe 1 in 5 tests</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-356">[<span class="ts" data-time="1384878505">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-356">[<span class="ts" data-time="1384878505">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">sleep before the send&lpar;pipe&comma; done&rpar; &quest;&excl;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-357">[<span class="ts" data-time="1384878508">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-357">[<span class="ts" data-time="1384878508">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">delaying the pull thread doesn&apos;t make it worse</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-358">[<span class="ts" data-time="1384878519">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-358">[<span class="ts" data-time="1384878519">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ah&comma; yes</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-359">[<span class="ts" data-time="1384878541">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-359">[<span class="ts" data-time="1384878541">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">nice call&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-360">[<span class="ts" data-time="1384878666">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-360">[<span class="ts" data-time="1384878666">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">ok&comma; adding zclock&UnderBar;sleep&lpar;200&rpar; in pusher after signaling &quot;done&quot; solves it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-361">[<span class="ts" data-time="1384878749">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-361">[<span class="ts" data-time="1384878749">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">        rc &equals; zmq&UnderBar;msg&UnderBar;init&UnderBar;size &lpar;&amp;msg&comma; message&UnderBar;size&rpar;&semi; will malloc the msg.data &quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-362">[<span class="ts" data-time="1384878942">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-362">[<span class="ts" data-time="1384878942">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">updated gist... does those malloc make any sense&quest; what is the right way to do it&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-363">[<span class="ts" data-time="1384879002">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-363">[<span class="ts" data-time="1384879002">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: it&apos;s simpler here just to use zmq&UnderBar;send and zmq&UnderBar;recv and the same buffer over and over</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-364">[<span class="ts" data-time="1384879016">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-364">[<span class="ts" data-time="1384879016">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">is it safe&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-365">[<span class="ts" data-time="1384879031">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-365">[<span class="ts" data-time="1384879031">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">the recv is ok&comma; I do the same trick on java</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-366">[<span class="ts" data-time="1384879034">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-366">[<span class="ts" data-time="1384879034">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but the send</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-367">[<span class="ts" data-time="1384879042">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-367">[<span class="ts" data-time="1384879042">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it&apos;s safe</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-368">[<span class="ts" data-time="1384879046">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-368">[<span class="ts" data-time="1384879046">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">you&apos;re giving the same pointer to several messages</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-369">[<span class="ts" data-time="1384879054">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-369">[<span class="ts" data-time="1384879054">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">will the zmq&UnderBar;send use the pointer&comma; or copy the buffer&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-370">[<span class="ts" data-time="1384879091">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-370">[<span class="ts" data-time="1384879091">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">what if the first message is queued&comma; and we&apos;re changing the data of the same buffer</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-371">[<span class="ts" data-time="1384879194">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-371">[<span class="ts" data-time="1384879194">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">zmq&UnderBar;send copies the buffer&comma; yes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-372">[<span class="ts" data-time="1384879197">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-372">[<span class="ts" data-time="1384879197">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">it&apos;s safe</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-373">[<span class="ts" data-time="1384879231">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-373">[<span class="ts" data-time="1384879231">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">ok</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-374">[<span class="ts" data-time="1384879437">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-374">[<span class="ts" data-time="1384879437">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">I would though use 1 byte messages to highlight any effect</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-375">[<span class="ts" data-time="1384879466">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-375">[<span class="ts" data-time="1384879466">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">sure&comma; at the moment I&apos;m just verifying the values from one case to the other</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-376">[<span class="ts" data-time="1384879497">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-376">[<span class="ts" data-time="1384879497">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">updated gist</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-377">[<span class="ts" data-time="1384879717">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-377">[<span class="ts" data-time="1384879717">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">done</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-378">[<span class="ts" data-time="1384879733">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-378">[<span class="ts" data-time="1384879733">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">the poll slowing down is expected</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-379">[<span class="ts" data-time="1384879769">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-379">[<span class="ts" data-time="1384879769">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">but then how can a proxy be made&quest; we need to pass messages both ways&comma; and I&apos;ve tried to split two threads&comma; one reading from each side&comma; and it doesn&apos;t work&comma; so now what&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-380">[<span class="ts" data-time="1384879778">01:41</span>]</a></td><td class="nicktd" style="color: fuchsia">davipt</td>
+		<td class="timetd"><a href="#msg-380">[<span class="ts" data-time="1384879778">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
 		<td class="msgtd">brb Kaffee&excl;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-381">[<span class="ts" data-time="1384879942">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-381">[<span class="ts" data-time="1384879942">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">davipt: first step is just to reproduce the issue cleanly&comma; second step is to see if someone on zeromq-dev wants to dig into the code</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-382">[<span class="ts" data-time="1384879995">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-382">[<span class="ts" data-time="1384879995">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">woa... hang on&comma; you got very strange results </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-383">[<span class="ts" data-time="1384880058">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-383">[<span class="ts" data-time="1384880058">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">didn&apos;t you see my test results on the polling proxy&quest; There was no need to do more IMO</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-384">[<span class="ts" data-time="1384880072">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-384">[<span class="ts" data-time="1384880072">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">here&apos;s what I get:</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-385">[<span class="ts" data-time="1384880073">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-385">[<span class="ts" data-time="1384880073">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">Starting straight push-to-pull test... 107 msec Starting simple proxied push-to-pull test... 199 msec Starting polling proxied push-to-pull test... 452 msec</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-386">[<span class="ts" data-time="1384880084">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-386">[<span class="ts" data-time="1384880084">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">here&apos;s what you get:</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-387">[<span class="ts" data-time="1384880086">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-387">[<span class="ts" data-time="1384880086">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">Starting straight push-to-pull test... 161 msec 49.689 Mbps</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-388">[<span class="ts" data-time="1384880086">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-388">[<span class="ts" data-time="1384880086">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">Starting simple proxied push-to-pull test... 380 msec 21.053 Mbps</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-389">[<span class="ts" data-time="1384880086">01:41</span>]</a></td><td class="nicktd" style="color: blue">pieterh</td>
+		<td class="timetd"><a href="#msg-389">[<span class="ts" data-time="1384880086">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
 		<td class="msgtd">Starting polling proxied push-to-pull test... 4302 msec 1.860 Mbps</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-390">[<span class="ts" data-time="1384881286">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-391">[<span class="ts" data-time="1384881344">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="msgtd">davipt: you are back&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-392">[<span class="ts" data-time="1384881351">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">yep</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-393">[<span class="ts" data-time="1384881365">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">will repeat the tests on linux&comma; to split any issue on mac with the core issue</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-394">[<span class="ts" data-time="1384881387">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="msgtd">look at the result of my test case &lpar;simple poller proxy&rpar; </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-395">[<span class="ts" data-time="1384881430">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="msgtd">it&apos;s 2-3 times slower than the straight recv/send proxy</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-396">[<span class="ts" data-time="1384881471">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="msgtd">your figures put it at 10x slower</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-397">[<span class="ts" data-time="1384881495">01:41</span>]</a></td><td class="nicktd" style="color: violet">pieterh</td>
+		<td class="msgtd">11x to be accurate</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-398">[<span class="ts" data-time="1384881595">01:41</span>]</a></td><td class="nicktd" style="color: darkred">davipt</td>
+		<td class="msgtd">give me a sec to recompile it all on linux</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
