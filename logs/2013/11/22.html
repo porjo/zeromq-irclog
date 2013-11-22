@@ -67,28 +67,52 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385123401">Friday November 22nd 2013</h3>
+<h3 id="titleDate" data-time="1385137801">Friday November 22nd 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385109091">01:45</span>]</a></td><td class="nicktd" style="color: violet">mhk</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385109091">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">mhk</td>
 		<td class="msgtd">Morning&comma; quick question: Is it possible to retrieve in a server-side 0mq socket the IP:Port from the remote host connecting&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385111952">01:45</span>]</a></td><td class="nicktd" style="color: darkolivegreen">totosc</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385111952">01:45</span>]</a></td><td class="nicktd" style="color: navy">totosc</td>
 		<td class="msgtd">hi folks&comma;   i have a short question: Is there a pattern in zmq to send out a single request to a broker&comma; the broker send the request to a set of workers. Each of the workers should send a reply and the broker should pack all replys together and send out a single reply message to the requester&quest; </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385112968">01:45</span>]</a></td><td class="nicktd" style="color: violet">mhk</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385112968">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">mhk</td>
 		<td class="msgtd">totosc: Have a look at zguide.zeromq.org IIRC it&apos;s called the pirate pattern</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385113295">01:45</span>]</a></td><td class="nicktd" style="color: darkolivegreen">totosc</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385113295">01:45</span>]</a></td><td class="nicktd" style="color: navy">totosc</td>
 		<td class="msgtd">I build this example yesterday&comma; but it works with a load balancing pattern. I want to aks a set of workers at the same time..</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385121993">01:45</span>]</a></td><td class="nicktd" style="color: darkorange">davipt</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385121993">01:45</span>]</a></td><td class="nicktd" style="color: brown">davipt</td>
 		<td class="msgtd">totosc: to send to all worker you&apos;ll need either a PUB socket or a ROUTER and manually route to the workers you want</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385137353">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">jasind</td>
+		<td class="msgtd">hi</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385137369">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">jasind</td>
+		<td class="msgtd">hello</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385137426">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">jasind</td>
+		<td class="msgtd">anybody here i can ask doubts</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385137481">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">cremes</td>
+		<td class="msgtd">jasind: if you have a question about zeromq&comma; just ask it.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385137559">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">jasind</td>
+		<td class="msgtd">well i have two machines connect through zmq REQ/REP but my REP server is not receving the message send by tthe REQ client</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1385137630">01:45</span>]</a></td><td class="nicktd" style="color: darkgreen">jasind</td>
+		<td class="msgtd">the two machines are in a private network with different ips</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
