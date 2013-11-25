@@ -67,28 +67,72 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385380801">Monday November 25th 2013</h3>
+<h3 id="titleDate" data-time="1385382601">Monday November 25th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385351691">01:49</span>]</a></td><td class="nicktd" style="color: navy">BW&Hat;-</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385351691">01:49</span>]</a></td><td class="nicktd" style="color: red">BW&Hat;-</td>
 		<td class="msgtd">is routing typically over TCP/IP &lpar;even if does not extend beyond localhost&rpar;&comma;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385351727">01:49</span>]</a></td><td class="nicktd" style="color: navy">BW&Hat;-</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385351727">01:49</span>]</a></td><td class="nicktd" style="color: red">BW&Hat;-</td>
 		<td class="msgtd">or are techniques for sharing memory between 0MQ OS processes used extensively for zero-copying or alike communication&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385351743">01:49</span>]</a></td><td class="nicktd" style="color: navy">BW&Hat;-</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385351743">01:49</span>]</a></td><td class="nicktd" style="color: red">BW&Hat;-</td>
 		<td class="msgtd">can routing be done over a network out of the box/without additional configuration&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385353107">01:49</span>]</a></td><td class="nicktd" style="color: navy">BW&Hat;-</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385353107">01:49</span>]</a></td><td class="nicktd" style="color: red">BW&Hat;-</td>
 		<td class="msgtd">&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385380400">01:49</span>]</a></td><td class="nicktd" style="color: magenta">jasind</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385380400">01:49</span>]</a></td><td class="nicktd" style="color: fuchsia">jasind</td>
 		<td class="msgtd"> </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385382271">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">I&apos;m wondering: what happens to messages on a pull socket when I detect a SIG&UnderBar;INT / SIG&UnderBar;TERM call and stop my while &lpar;&dollar;notStopped&rpar; loop&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385382285">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">Will those messages be lost</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385382306">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">or does something else happen to them&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385382321">01:49</span>]</a></td><td class="nicktd" style="color: darkolivegreen">guido&UnderBar;g</td>
+		<td class="msgtd">something else happens to them</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385382339">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">That&apos;s good news :-&rpar; Would you mind explaining me what&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1385382358">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">I can&apos;t seem to find it in the guide &lpar;although I&apos;m sure it&apos;s in there somewhere&rpar;.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1385382431">01:49</span>]</a></td><td class="nicktd" style="color: darkolivegreen">guido&UnderBar;g</td>
+		<td class="msgtd">messages are queued up to hwm</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1385382443">01:49</span>]</a></td><td class="nicktd" style="color: darkolivegreen">guido&UnderBar;g</td>
+		<td class="msgtd">plus other buffers</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1385382458">01:49</span>]</a></td><td class="nicktd" style="color: darkolivegreen">guido&UnderBar;g</td>
+		<td class="msgtd">so better keep reading</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1385382478">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">ok. Allow me to do a better job at explaining my situation.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1385382496">01:49</span>]</a></td><td class="nicktd" style="color: navy">Marijn</td>
+		<td class="msgtd">I have a web app that is producing lot&apos;s of messages</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
