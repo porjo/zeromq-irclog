@@ -67,20 +67,36 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385454601">Tuesday November 26th 2013</h3>
+<h3 id="titleDate" data-time="1385456402">Tuesday November 26th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385445008">01:50</span>]</a></td><td class="nicktd" style="color: magenta">Paolo</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385445008">01:50</span>]</a></td><td class="nicktd" style="color: darkolivegreen">Paolo</td>
 		<td class="msgtd">hi guys</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385453190">01:50</span>]</a></td><td class="nicktd" style="color: olive">kalminjo</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385453190">01:50</span>]</a></td><td class="nicktd" style="color: black">kalminjo</td>
 		<td class="msgtd">Hey everybody&comma; i have the following problem:  One cient&comma; one broker and multiple servers. The client should send out one single REQEUST&comma; the broker should push this to each server. Each Server answer with a REPLY and the broker should pack all the REPLYs together and send this single paket back to the client. in short: CLIENT -&gt; &lpar;one req&rpar; -&gt; BROKER -&gt; &lpar;N req&rpar; -&gt; SERVERS -&gt; &lpar;N rep&rpar; -&gt; BROKER -&gt; &lpar;one rep&rpar; . Can anyone help me&comma; which </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385453619">01:50</span>]</a></td><td class="nicktd" style="color: red">jasind</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385453619">01:50</span>]</a></td><td class="nicktd" style="color: violet">jasind</td>
 		<td class="msgtd">no idea</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385455916">01:50</span>]</a></td><td class="nicktd" style="color: brown">guido&UnderBar;g</td>
+		<td class="msgtd">pub/sub comes to mind</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385455952">01:50</span>]</a></td><td class="nicktd" style="color: brown">guido&UnderBar;g</td>
+		<td class="msgtd">pub sends request out to all &lpar;subscribed&rpar; servers</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385455970">01:50</span>]</a></td><td class="nicktd" style="color: brown">guido&UnderBar;g</td>
+		<td class="msgtd">responsen can be directed back via push/pull</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385456144">01:50</span>]</a></td><td class="nicktd" style="color: black">kalminjo</td>
+		<td class="msgtd">There is no REP/REQ/ROUTER/DEALER combination which can to this&quest; </td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
