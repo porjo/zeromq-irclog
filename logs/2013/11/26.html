@@ -67,92 +67,116 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385460001">Tuesday November 26th 2013</h3>
+<h3 id="titleDate" data-time="1385472601">Tuesday November 26th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385445008">01:50</span>]</a></td><td class="nicktd" style="color: brown">Paolo</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385445008">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">Paolo</td>
 		<td class="msgtd">hi guys</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385453190">01:50</span>]</a></td><td class="nicktd" style="color: darkred">kalminjo</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385453190">01:50</span>]</a></td><td class="nicktd" style="color: darkolivegreen">kalminjo</td>
 		<td class="msgtd">Hey everybody&comma; i have the following problem:  One cient&comma; one broker and multiple servers. The client should send out one single REQEUST&comma; the broker should push this to each server. Each Server answer with a REPLY and the broker should pack all the REPLYs together and send this single paket back to the client. in short: CLIENT -&gt; &lpar;one req&rpar; -&gt; BROKER -&gt; &lpar;N req&rpar; -&gt; SERVERS -&gt; &lpar;N rep&rpar; -&gt; BROKER -&gt; &lpar;one rep&rpar; . Can anyone help me&comma; which </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385453619">01:50</span>]</a></td><td class="nicktd" style="color: navy">jasind</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385453619">01:50</span>]</a></td><td class="nicktd" style="color: black">jasind</td>
 		<td class="msgtd">no idea</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385455916">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385455916">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">pub/sub comes to mind</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385455952">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385455952">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">pub sends request out to all &lpar;subscribed&rpar; servers</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385455970">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385455970">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">responsen can be directed back via push/pull</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385456144">01:50</span>]</a></td><td class="nicktd" style="color: darkred">kalminjo</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385456144">01:50</span>]</a></td><td class="nicktd" style="color: darkolivegreen">kalminjo</td>
 		<td class="msgtd">There is no REP/REQ/ROUTER/DEALER combination which can to this&quest; </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385457425">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385457425">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">what do you want&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385457800">01:50</span>]</a></td><td class="nicktd" style="color: darkred">kalminjo</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385457800">01:50</span>]</a></td><td class="nicktd" style="color: darkolivegreen">kalminjo</td>
 		<td class="msgtd">CLIENT -&gt; &lpar;one req&rpar; -&gt; BROKER -&gt; &lpar;N req&rpar; -&gt; SERVERS -&gt; &lpar;N rep&rpar; -&gt; BROKER -&gt; &lpar;one rep&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385458206">01:50</span>]</a></td><td class="nicktd" style="color: indigo">mechro&VerticalLine;2</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385458206">01:50</span>]</a></td><td class="nicktd" style="color: blue">mechro&VerticalLine;2</td>
 		<td class="msgtd">why would you push to each server if it&apos;s sane to publish and then each server subscribes&quest; they can&comma; in turn&comma; publish and broker can subscribe to messages</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1385458217">01:50</span>]</a></td><td class="nicktd" style="color: indigo">mechro&VerticalLine;2</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1385458217">01:50</span>]</a></td><td class="nicktd" style="color: blue">mechro&VerticalLine;2</td>
 		<td class="msgtd">that way you&apos;re messaging each peer </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1385458219">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1385458219">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">i didn&apos;t say push</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1385458221">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1385458221">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">read again</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1385458259">01:50</span>]</a></td><td class="nicktd" style="color: indigo">mechro&VerticalLine;2</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1385458259">01:50</span>]</a></td><td class="nicktd" style="color: blue">mechro&VerticalLine;2</td>
 		<td class="msgtd">guido&UnderBar;g: i don&apos;t know why you assumed i was referring to you&comma; since it&apos;s kalminjo who mentioned work push in his question. </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1385458277">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1385458277">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">oh sorry&comma; same nick color &semi;&rpar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1385458283">01:50</span>]</a></td><td class="nicktd" style="color: indigo">mechro&VerticalLine;2</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1385458283">01:50</span>]</a></td><td class="nicktd" style="color: blue">mechro&VerticalLine;2</td>
 		<td class="msgtd">:&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1385458442">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1385458442">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">obviously the op has lost interest</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1385458754">01:50</span>]</a></td><td class="nicktd" style="color: darkred">kalminjo</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1385458754">01:50</span>]</a></td><td class="nicktd" style="color: darkolivegreen">kalminjo</td>
 		<td class="msgtd">Ok&comma; but if i have multiple clients&comma; every client would see the &quot;REPLYS&quot;&comma; right&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1385458971">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1385458971">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">no</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1385459003">01:50</span>]</a></td><td class="nicktd" style="color: olive">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1385459003">01:50</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">the replys would go directly to the requesting broker via push/pull</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1385459658">01:50</span>]</a></td><td class="nicktd" style="color: darkred">kalminjo</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1385459658">01:50</span>]</a></td><td class="nicktd" style="color: darkolivegreen">kalminjo</td>
 		<td class="msgtd">Ok&comma; thanks&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1385472042">01:51</span>]</a></td><td class="nicktd" style="color: purple">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">A subscriber can connect to many publishers right &quest; Do I need to call subscribe after every connect or is once beforehand fine &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1385472269">01:51</span>]</a></td><td class="nicktd" style="color: black">pieterh</td>
+		<td class="msgtd">PSG&UnderBar;Sakari: once before you do all connects is fine</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1385472295">01:51</span>]</a></td><td class="nicktd" style="color: black">pieterh</td>
+		<td class="msgtd">multiple subscribes will result in duplicate copies of the message</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1385472342">01:51</span>]</a></td><td class="nicktd" style="color: purple">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Alright&comma; cheers</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1385472389">01:51</span>]</a></td><td class="nicktd" style="color: magenta">taotetek</td>
+		<td class="msgtd">hi pieterh &excl;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1385472442">01:51</span>]</a></td><td class="nicktd" style="color: magenta">taotetek</td>
+		<td class="msgtd">pieterh: the &quot;steerable proxy&quot; in the &commat;discuss of zproxy - is that referring to the control socket / commands in zmq&UnderBar;proxy in libzmq now&quest;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
