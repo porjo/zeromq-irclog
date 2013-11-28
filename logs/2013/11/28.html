@@ -67,48 +67,52 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385622001">Thursday November 28th 2013</h3>
+<h3 id="titleDate" data-time="1385631001">Thursday November 28th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385596923">01:53</span>]</a></td><td class="nicktd" style="color: indigo">nicdex</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385596923">01:53</span>]</a></td><td class="nicktd" style="color: green">nicdex</td>
 		<td class="msgtd">using zeromq 3.0 push socket with .net bindings. is it normal that setting the linger option to 0 changes the behavior of send&quest; if I don&apos;t set it&comma; sending message on the socket blocks when it&apos;s not yet connected &lpar;connect called but remote server don&apos;t exists&rpar;&comma; when linger set to 0 it doesn&apos;t block anymore.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385609476">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385609476">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">pieterh&semi; pong</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385621560">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385621560">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">Does the following configure check for libsodium library prefix seem odd to anyone else&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385621561">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385621561">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">    if test -r &quot;&dollar;&lcub;with&UnderBar;libsodium&UnderBar;include&UnderBar;dir&rcub;/sodium.h&quot;&semi; then</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385621561">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385621561">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">        CPPFLAGS&equals;&quot;-I&dollar;&lcub;with&UnderBar;libsodium&UnderBar;include&UnderBar;dir&rcub;/include &dollar;&lcub;CPPFLAGS&rcub;&quot;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385621652">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385621652">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">If i pass --with&UnderBar;libsodium&UnderBar;include&UnderBar;dir&equals;/usr/local/include&comma; the test succeeds&comma; but the -I location ends up /usr/local/include/include&comma; if i pass with&UnderBar;libsodium&UnderBar;include&UnderBar;dir&equals;/usr/local&comma; the test fails</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385621694">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385621694">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">same for with&UnderBar;libsodium&UnderBar;lib&UnderBar;dir</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385621821">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385621821">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">Note this is not an issue with --with-sodium&equals; &lpar;which sets both -I and -L&rpar;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385621826">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385621826">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">    if test -r &quot;&dollar;&lcub;with&UnderBar;libsodium&rcub;/include/sodium.h&quot;&semi; then</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385621826">01:53</span>]</a></td><td class="nicktd" style="color: blue">koobs</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385621826">01:53</span>]</a></td><td class="nicktd" style="color: red">koobs</td>
 		<td class="msgtd">        CPPFLAGS&equals;&quot;-I&dollar;&lcub;with&UnderBar;libsodium&rcub;/include &dollar;&lcub;CPPFLAGS&rcub;&quot;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1385629174">01:53</span>]</a></td><td class="nicktd" style="color: black">sappo</td>
+		<td class="msgtd">hi guys&comma; can anyone tell me how to install czmq man pages from github master&quest; &quot;sudo make install&quot; does not work.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
