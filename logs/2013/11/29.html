@@ -67,24 +67,72 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385722801">Friday November 29th 2013</h3>
+<h3 id="titleDate" data-time="1385724601">Friday November 29th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385684835">01:54</span>]</a></td><td class="nicktd" style="color: fuchsia">vipconsult</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385684835">01:54</span>]</a></td><td class="nicktd" style="color: black">vipconsult</td>
 		<td class="msgtd">hi &comma; all . I have a front end portal  in php . This is a portal for subscriptions. when I create a new subscription I need to tell he system to create new vhost file&comma; reload server &comma; new mysql databse . Im I correct to choose zeromq as the backend and then use python or php to send system commands to the linux OS to complete the tasks &quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385694584">01:54</span>]</a></td><td class="nicktd" style="color: red">minaguib</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385694584">01:54</span>]</a></td><td class="nicktd" style="color: blue">minaguib</td>
 		<td class="msgtd">Hey folks. I&apos;m trying to debug a piece of software &lpar;salt&rpar; that uses zmq &lpar;python&rpar;. On 3 particular servers&comma; it simply doesn&apos;t work.  I&apos;ve added debug statements and can clearly see the following:  1. with tcpdump&comma; the TCP is handshaked properly 2. In python&comma; a payload is send via socket.send&lpar;&rpar; 3. I do not see that payload in tcpdump 4. On the server&comma; socket.recv&lpar;&rpar; returns an empty string &apos;&apos; </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385694632">01:54</span>]</a></td><td class="nicktd" style="color: red">minaguib</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385694632">01:54</span>]</a></td><td class="nicktd" style="color: blue">minaguib</td>
 		<td class="msgtd">To make things even more awkward&comma; I&apos;m not even going cross-network - both endpoints are on the same server and communicating over localhost</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385721704">01:55</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385721704">01:55</span>]</a></td><td class="nicktd" style="color: blue">sphaero&UnderBar;z25</td>
 		<td class="msgtd">hey all&comma; I&apos;m seeing some name changing in zyre again&comma; are there anymore such changes to be expected&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385723562">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">sphaero&UnderBar;z25: hi... that was the only name changing planned</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385723588">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">the api wasn&apos;t clean&comma; mix of internal and external classes&comma; and not ready for stable release</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385723957">01:55</span>]</a></td><td class="nicktd" style="color: blue">sphaero&UnderBar;z25</td>
+		<td class="msgtd">pieterh: okay</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385724006">01:55</span>]</a></td><td class="nicktd" style="color: blue">sphaero&UnderBar;z25</td>
+		<td class="msgtd">what about the agent&UnderBar;&midast; calls in zyre&UnderBar;node</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385724023">01:55</span>]</a></td><td class="nicktd" style="color: blue">sphaero&UnderBar;z25</td>
+		<td class="msgtd">should that get different names&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1385724419">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">you shouldn&apos;t be seeing them from the outside</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1385724445">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">the public class is just zyre.c/h&semi; there&apos;s also zyre&UnderBar;event added as a layer on top</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1385724457">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">are there compile issues in zyre&UnderBar;node&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1385724461">01:55</span>]</a></td><td class="nicktd" style="color: blue">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I know&comma; just trying to sync pyre :&rpar;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1385724470">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">ah. sorry... of course :-&rpar;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1385724490">01:55</span>]</a></td><td class="nicktd" style="color: violet">hintjens</td>
+		<td class="msgtd">how are you constructing the node class&comma; is it also with a backend thread&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1385724514">01:55</span>]</a></td><td class="nicktd" style="color: blue">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I&apos;m keeping the internal logic exactly the same as zyre</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
