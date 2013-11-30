@@ -65,42 +65,27 @@
       <p>These logs have been collected from the <a href="https://webchat.freenode.net/?randomnick=1&amp;channels=%23zeromq&amp;uio=d4" target="_blank">#zeromq</a> IRC channel on Freenode.</p>
 
       </section>
-<div class="inner">
-<div><a href="/zeromq-irclog/index.html">Home</a></div>
-<h3>November 2013</h3>
-<ul>
-<li><a href="01.html">Friday 1st</a></li>
-<li><a href="02.html">Saturday 2nd</a></li>
-<li><a href="03.html">Sunday 3rd</a></li>
-<li><a href="04.html">Monday 4th</a></li>
-<li><a href="05.html">Tuesday 5th</a></li>
-<li><a href="06.html">Wednesday 6th</a></li>
-<li><a href="07.html">Thursday 7th</a></li>
-<li><a href="08.html">Friday 8th</a></li>
-<li><a href="09.html">Saturday 9th</a></li>
-<li><a href="10.html">Sunday 10th</a></li>
-<li><a href="11.html">Monday 11th</a></li>
-<li><a href="12.html">Tuesday 12th</a></li>
-<li><a href="13.html">Wednesday 13th</a></li>
-<li><a href="14.html">Thursday 14th</a></li>
-<li><a href="15.html">Friday 15th</a></li>
-<li><a href="16.html">Saturday 16th</a></li>
-<li><a href="17.html">Sunday 17th</a></li>
-<li><a href="18.html">Monday 18th</a></li>
-<li><a href="19.html">Tuesday 19th</a></li>
-<li><a href="20.html">Wednesday 20th</a></li>
-<li><a href="21.html">Thursday 21st</a></li>
-<li><a href="22.html">Friday 22nd</a></li>
-<li><a href="23.html">Saturday 23rd</a></li>
-<li><a href="24.html">Sunday 24th</a></li>
-<li><a href="25.html">Monday 25th</a></li>
-<li><a href="26.html">Tuesday 26th</a></li>
-<li><a href="27.html">Wednesday 27th</a></li>
-<li><a href="28.html">Thursday 28th</a></li>
-<li><a href="29.html">Friday 29th</a></li>
-<li><a href="30.html">Saturday 30th</a></li>
-</ul>
+<div id="msgtablediv">
+<div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
+<h3 id="titleDate" data-time="1385771402">Saturday November 30th 2013</h3>
+<table id="msgtable">
+<tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385770038">01:56</span>]</a></td><td class="nicktd" style="color: brown">Dr&lcub;Who&rcub;</td>
+		<td class="msgtd">ok I think the issue they are referring to is the SYNC nature of the socket type and how it can effect performance in some cases. also improper use of contexts can be a performance issue. I agree that an async router dealer model is has advantages on this point.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385770062">01:56</span>]</a></td><td class="nicktd" style="color: brown">Dr&lcub;Who&rcub;</td>
+		<td class="msgtd">So it sounds like an issue of use for scale not stability.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385770246">01:56</span>]</a></td><td class="nicktd" style="color: brown">Dr&lcub;Who&rcub;</td>
+		<td class="msgtd">I guess I would not suggest using REQ/REP for processing large volumes of data. A push socket or dealer socket is better for that. But IMHO REQ/REP is perfect for command and control especially when you add an additional socket say a PUSH for sending responses back.</td>
+	</tr>
+</table>
+<p id="timeinfo">*Times are in UTC</p>
 </div>
+<script src="/zeromq-irclog/javascripts/time.js"></script>
     </div>
 
 
