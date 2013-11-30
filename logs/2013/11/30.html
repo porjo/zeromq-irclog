@@ -67,20 +67,44 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/11/index.html">Nov 2013</a></div>
-<h3 id="titleDate" data-time="1385771402">Saturday November 30th 2013</h3>
+<h3 id="titleDate" data-time="1385814602">Saturday November 30th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385770038">01:56</span>]</a></td><td class="nicktd" style="color: brown">Dr&lcub;Who&rcub;</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1385770038">01:56</span>]</a></td><td class="nicktd" style="color: black">Dr&lcub;Who&rcub;</td>
 		<td class="msgtd">ok I think the issue they are referring to is the SYNC nature of the socket type and how it can effect performance in some cases. also improper use of contexts can be a performance issue. I agree that an async router dealer model is has advantages on this point.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385770062">01:56</span>]</a></td><td class="nicktd" style="color: brown">Dr&lcub;Who&rcub;</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1385770062">01:56</span>]</a></td><td class="nicktd" style="color: black">Dr&lcub;Who&rcub;</td>
 		<td class="msgtd">So it sounds like an issue of use for scale not stability.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385770246">01:56</span>]</a></td><td class="nicktd" style="color: brown">Dr&lcub;Who&rcub;</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1385770246">01:56</span>]</a></td><td class="nicktd" style="color: black">Dr&lcub;Who&rcub;</td>
 		<td class="msgtd">I guess I would not suggest using REQ/REP for processing large volumes of data. A push socket or dealer socket is better for that. But IMHO REQ/REP is perfect for command and control especially when you add an additional socket say a PUSH for sending responses back.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1385814025">01:56</span>]</a></td><td class="nicktd" style="color: navy">sphaero&UnderBar;z25</td>
+		<td class="msgtd">pieterh: u here&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1385814044">01:56</span>]</a></td><td class="nicktd" style="color: navy">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I think you forgot one call in zyre&UnderBar;node.c yesterday</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1385814064">01:56</span>]</a></td><td class="nicktd" style="color: navy">sphaero&UnderBar;z25</td>
+		<td class="msgtd">there&apos;s still agent&UnderBar;ping&UnderBar;peer</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1385814083">01:56</span>]</a></td><td class="nicktd" style="color: navy">sphaero&UnderBar;z25</td>
+		<td class="msgtd">I can commit a change te rename this if you want&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1385814364">01:56</span>]</a></td><td class="nicktd" style="color: indigo">pieterh</td>
+		<td class="msgtd">sphaero&UnderBar;z25: hi there</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1385814373">01:56</span>]</a></td><td class="nicktd" style="color: indigo">pieterh</td>
+		<td class="msgtd">sure go ahead</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
