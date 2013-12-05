@@ -66,28 +66,60 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1386244801">Thursday December 5th 2013</h3>
+<h3 id="titleDate" data-time="1386246601">Thursday December 5th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386209155">02:03</span>]</a></td><td class="nicktd" style="color: darkgreen">avleen</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386209155">02:03</span>]</a></td><td class="nicktd" style="color: black">avleen</td>
 		<td class="msgtd">hi guys.  in a pushpull configuration, is there some way to limit the amount of memory the receiving side can use to buffer messages&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386209189">02:03</span>]</a></td><td class="nicktd" style="color: darkgreen">avleen</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386209189">02:03</span>]</a></td><td class="nicktd" style="color: black">avleen</td>
 		<td class="msgtd">i have a system where the sender is blasting messages as fast as it can, and the application on the remote side can&apos;t read the messages fast enough.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386209218">02:03</span>]</a></td><td class="nicktd" style="color: darkgreen">avleen</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386209218">02:03</span>]</a></td><td class="nicktd" style="color: black">avleen</td>
 		<td class="msgtd">I can&apos;t figure out how to make the receiver block when there are N messages in the queue (like HWM, which doesn&apos;t seem to apply to the pull side).</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386243435">02:04</span>]</a></td><td class="nicktd" style="color: black">taotetek</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386243435">02:04</span>]</a></td><td class="nicktd" style="color: darkblue">taotetek</td>
 		<td class="msgtd"><strong>pieterh:</strong> hi(&quest;) :)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386243649">02:04</span>]</a></td><td class="nicktd" style="color: black">taotetek</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386243649">02:04</span>]</a></td><td class="nicktd" style="color: darkblue">taotetek</td>
 		<td class="msgtd"><strong>pieterh:</strong> hope the conference is going well&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386245397">02:04</span>]</a></td><td class="nicktd" style="color: fuchsia">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Is it safe to bind a socket on an arbitrary thread &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386245996">02:04</span>]</a></td><td class="nicktd" style="color: darkblue">taotetek</td>
+		<td class="msgtd"><strong>PSG&UnderBar;Sakari:</strong> not sure what you mean by &quot;arbitrary&quot; in this case</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386246211">02:04</span>]</a></td><td class="nicktd" style="color: fuchsia">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Literally, I don&apos;t know</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386246217">02:04</span>]</a></td><td class="nicktd" style="color: fuchsia">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">I have a threadpool and any thread might decide to bind the socket</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1386246219">02:04</span>]</a></td><td class="nicktd" style="color: fuchsia">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">Is that safe &quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1386246222">02:04</span>]</a></td><td class="nicktd" style="color: fuchsia">PSG&UnderBar;Sakari</td>
+		<td class="msgtd">I&apos;m assuming it isn&apos;t</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1386246303">02:04</span>]</a></td><td class="nicktd" style="color: darkblue">taotetek</td>
+		<td class="msgtd"><strong>PSG&UnderBar;Sakari:</strong> in general, passing zeromq sockets between threads is not a good thing</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1386246329">02:04</span>]</a></td><td class="nicktd" style="color: darkblue">taotetek</td>
+		<td class="msgtd"><strong>PSG&UnderBar;Sakari:</strong> if what you&apos;re trying to do is a creat a socket on one thread, then pass it to another thread, and bind it there... on a technical level there may be a way to accomplish that</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
