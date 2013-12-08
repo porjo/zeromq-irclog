@@ -66,260 +66,268 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1386540001">Sunday December 8th 2013</h3>
+<h3 id="titleDate" data-time="1386541801">Sunday December 8th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386467778">02:07</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386467778">02:07</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">uh...</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386467784">02:07</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386467784">02:07</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">I think I just broke zmq&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386467785">02:07</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386467785">02:07</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">Assertion failed: buffer&UnderBar;size &equals;&equals; header&UnderBar;size (stream&UnderBar;engine.cpp:487)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386467785">02:07</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386467785">02:07</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">Aborted</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386527474">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386527474">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">hi all. Does anybody know if using regular select calls on pyzmq sockets is supported&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386527655">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386527655">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">that&apos;s what the event fd is for</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386527704">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386527704">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd"><strong>guido&UnderBar;g:</strong> you mean getsockopt(zmq.FD)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386527710">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386527710">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">jepp</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386527724">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386527724">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">then select on that for read, not write, not error</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1386527751">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1386527751">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">if it signals, read the events for the socket</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1386527785">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1386527785">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">but i would rather put the others fd into the &#65533;mq poll</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1386527786">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1386527786">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">I&apos;m trying to get zmq socket polling into the urwid loop. But urwid uses regular select and accepts a callback</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1386527831">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1386527831">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">however I only get one event and it freezes after that</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1386527844">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1386527844">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">if it selects the fd for write, you&apos;ll get a busy loop</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1386527862">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1386527862">02:08</span>]</a></td><td class="nicktd" style="color: darkred">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">Heh, I&apos;m confused</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1386527878">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1386527878">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd"><strong>sphaero&UnderBar;z25:</strong> as usual, show code on paste-bin</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1386527914">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1386527914">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">will do... first checking what select call urwid does exactly</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1386527945">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1386527945">02:08</span>]</a></td><td class="nicktd" style="color: darkred">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">I&apos;m using NetMQ across several threads in a threadpool without caring</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1386527945">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1386527945">02:08</span>]</a></td><td class="nicktd" style="color: darkred">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">I totally expected it to explode</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1386527945">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">PSG&UnderBar;Sakari</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1386527945">02:08</span>]</a></td><td class="nicktd" style="color: darkred">PSG&UnderBar;Sakari</td>
 		<td class="msgtd">It didn&apos;t :s</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1386527996">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1386527996">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">ready, w, err &equals; select.select(fds, &lsqb;&rsqb;, fds) </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1386528012">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1386528012">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">so no write signals</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1386528310">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1386528310">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd"><strong>guido&UnderBar;g:</strong> <a href="http://pastebin.com/2HbapY5X">http://pastebin.com/2HbapY5X</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1386528338">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1386528338">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">it&apos;s not complete but it shows the logic</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1386528386">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1386528386">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">zocp is a zmq inherited class</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1386528425">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1386528425">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">don&apos;t poll, just get the events</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1386528449">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1386528449">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">and see the getsockopt docs for &#65533;mq</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1386528519">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1386528519">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">the ZMQ&UnderBar;FD &amp; ZMQ&UnderBar;EVENTS part</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1386528722">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1386528722">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">Ah like this: ret &equals; z.get&UnderBar;socket().getsockopt(zmq.EVENTS) instead of the poll</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1386528737">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1386528737">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">yes</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1386528771">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1386528771">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">then read w/ DONTWAIT til all messages are read</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1386528857">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1386528857">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">if not all messages would be read the select call would fire again, not&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1386528889">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1386528889">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">no</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1386529314">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1386529314">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">okay, to get it straight... my select callback would then do a ret &equals; z.get&UnderBar;socket().getsockopt(zmq.EVENTS)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1386529335">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1386529335">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">check that to POLLIN: if (ret &equals;&equals; zmq.POLLIN):</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1386529346">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1386529346">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">no</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1386529385">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1386529385">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">i was about to say recv&UnderBar;multipart... &midast;splash&midast; </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1386529385">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1386529385">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">first, you might want to use the attribute way to get the events, see the pyzmq docs</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1386529406">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1386529406">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">second, when testing for bit-flags always mask for the flags you really want</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1386529439">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1386529439">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">and yes, recv&UnderBar;mutipart would save a lot of work</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1386529642">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1386529642">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">with mask you mean something like zmq.EVENTS &VerticalLine; zmq.POLLIN</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1386529730">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1386529730">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">and, use and</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1386529733">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1386529733">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">not or</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1386530215">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1386530215">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">got it: while (z.get&UnderBar;socket().getsockopt(zmq.EVENTS) &amp; zmq.POLLIN):</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1386530273">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1386530273">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">thanks a lot&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1386530286">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1386530286">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">did you read the thing about edge triggered&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1386530317">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1386530317">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">probably not (yet&quest;)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1386530603">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1386530603">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">I read it but to be honest it&apos;s bit zmq-foo. But it means you always have to do the getsockopt(zmq.EVENTS) before reading...</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1386530672">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1386530672">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">yes</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1386530924">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1386530924">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">was the first time I didn&apos;t use the native pollers :)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1386530974">02:08</span>]</a></td><td class="nicktd" style="color: darkorange">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1386530974">02:08</span>]</a></td><td class="nicktd" style="color: darkgreen">guido&UnderBar;g</td>
 		<td class="msgtd">and now you know that this is a bad idea &semi;)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1386531053">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1386531053">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">better make a urwid.ZmqEventLoop :D</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1386533236">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1386533236">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">I&apos;m having a very strange issue...</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1386533252">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1386533252">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">when I try to run my zeromq-using application on a particular Debian 6 VPS</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1386533256">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1386533256">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">the following happens:</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1386533257">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1386533257">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd"><strong>Warn:</strong> Linux kernel reports no Time Stamp Counter (TSC).</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1386533257">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1386533257">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">Floating point exception</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1386533263">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1386533263">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">followed by the process being dead</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1386533280">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1386533280">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">on another Debian 6 VPS with identical packages and modules installed, the problem does not occur</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1386533286">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1386533286">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">Googling turned up pretty much nothing</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1386533301">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1386533301">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">any ideas&quest; the package version is 2.2.0&plus;dfsg-2~bpo60&plus;1</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1386533324">02:08</span>]</a></td><td class="nicktd" style="color: darksalmon">joepie91&UnderBar;</td>
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1386533324">02:08</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
 		<td class="msgtd">(it&apos;s from squeeze-backports)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1386537255">02:08</span>]</a></td><td class="nicktd" style="color: brown">sphaero&UnderBar;z25</td>
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1386537255">02:08</span>]</a></td><td class="nicktd" style="color: olive">sphaero&UnderBar;z25</td>
 		<td class="msgtd">n</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1386541073">02:09</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
+		<td class="msgtd">well wtf</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1386541077">02:09</span>]</a></td><td class="nicktd" style="color: green">joepie91&UnderBar;</td>
+		<td class="msgtd">running into multiple issues now...</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
