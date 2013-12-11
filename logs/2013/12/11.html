@@ -66,16 +66,44 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1386752401">Wednesday December 11th 2013</h3>
+<h3 id="titleDate" data-time="1386759601">Wednesday December 11th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386723708">02:12</span>]</a></td><td class="nicktd" style="color: green">offby1</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386723708">02:12</span>]</a></td><td class="nicktd" style="color: purple">offby1</td>
 		<td class="msgtd">sloooowwwwly starting to get the hang of it :-)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386750768">02:12</span>]</a></td><td class="nicktd" style="color: darkorange">solarradiation</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386750768">02:12</span>]</a></td><td class="nicktd" style="color: navy">solarradiation</td>
 		<td class="msgtd">when should I use libzmq directly, instead of libczmq&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386758406">02:12</span>]</a></td><td class="nicktd" style="color: purple">pompa</td>
+		<td class="msgtd">hi. does anyone have a good method to handle concurrent requests and make sure the request made is actually the one that should be sent back&quest; I&apos;m using flask to create requests via HTTP and I want to get back the correct result, but concurrent requests can be mixed up since I fetch the first request I get back with recv(). (I&apos;m using pyzmq)</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386758852">02:12</span>]</a></td><td class="nicktd" style="color: indigo">guido&UnderBar;g</td>
+		<td class="msgtd">how about using an id for the request&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386758907">02:12</span>]</a></td><td class="nicktd" style="color: purple">pompa</td>
+		<td class="msgtd"><strong>guido&UnderBar;g:</strong> yea. i&apos;ve tried creating a queue with pollling</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386758951">02:12</span>]</a></td><td class="nicktd" style="color: purple">pompa</td>
+		<td class="msgtd">so when the flask app does the request, it polls the &quot;master&quot; to for a specific id. however, it still seems like some messages can go out to the wrong user.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386759157">02:12</span>]</a></td><td class="nicktd" style="color: purple">pompa</td>
+		<td class="msgtd"><strong>http:</strong>//pastebin.com/LNFC8M3y</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386759172">02:12</span>]</a></td><td class="nicktd" style="color: purple">pompa</td>
+		<td class="msgtd">the &quot;queue&quot; is a normal list</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386759229">02:12</span>]</a></td><td class="nicktd" style="color: indigo">guido&UnderBar;g</td>
+		<td class="msgtd">no clue what you want to achieve</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
