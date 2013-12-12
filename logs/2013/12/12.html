@@ -66,164 +66,176 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1386820801">Thursday December 12th 2013</h3>
+<h3 id="titleDate" data-time="1386846001">Thursday December 12th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386807634">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386807634">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">crap, socket.disconnect returns true</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386807656">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386807656">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">maybe I need to change the code to panic mode - if send fails, kill process</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386807687">02:13</span>]</a></td><td class="nicktd" style="color: black">Toba</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386807687">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">Toba</td>
 		<td class="msgtd">maybe</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386807749">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386807749">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">agh</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386807751">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386807751">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">send&UnderBar;term</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386807811">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386807811">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">the disconnect return code is only for internal zmqsocket commands</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386807814">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386807814">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">then it&apos;s async</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386807825">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386807825">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">and the other thread tries to send data to say bye</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386807828">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386807828">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">which will</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1386807840">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1386807840">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">result in nothing (damn enter key)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1386807875">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1386807875">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">linger time... re-reading the manual</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1386807933">02:13</span>]</a></td><td class="nicktd" style="color: black">Toba</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1386807933">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">Toba</td>
 		<td class="msgtd">yeah...</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1386807939">02:13</span>]</a></td><td class="nicktd" style="color: black">Toba</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1386807939">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">Toba</td>
 		<td class="msgtd">having to read the manual gets fun</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1386807945">02:13</span>]</a></td><td class="nicktd" style="color: black">Toba</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1386807945">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">Toba</td>
 		<td class="msgtd">before i figured out that timeout thing you helped with</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1386807949">02:13</span>]</a></td><td class="nicktd" style="color: black">Toba</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1386807949">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">Toba</td>
 		<td class="msgtd">i was stracing python :(</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1386807957">02:13</span>]</a></td><td class="nicktd" style="color: black">Toba</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1386807957">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">Toba</td>
 		<td class="msgtd">which is not a good time, anyone will tell you</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1386808041">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1386808041">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">can&apos;t be worse than debugging c code</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1386808071">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1386808071">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">I mean, can&apos;t be worse than debugging c code and ending at the poll() system command. No I refuse to debug the mac kernel</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1386808108">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1386808108">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">which reminds me there was a mail from the list about polls I wanted to answer</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1386808456">02:13</span>]</a></td><td class="nicktd" style="color: red">taotetek</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1386808456">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">taotetek</td>
 		<td class="msgtd">hi Toba , davipt </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1386808492">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1386808492">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">hey, the guy I was looking for &semi;)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1386808516">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1386808516">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">how can I convince zmq to really really really disconnect a socket&quest; linger&equals;0&quest; (am trying this now)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1386808599">02:13</span>]</a></td><td class="nicktd" style="color: red">taotetek</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1386808599">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">taotetek</td>
 		<td class="msgtd">linger&equals;0 is something you&apos;ll need yeah</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1386808613">02:13</span>]</a></td><td class="nicktd" style="color: red">taotetek</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1386808613">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">taotetek</td>
 		<td class="msgtd">that will tell it to not care about pending messages</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1386808643">02:13</span>]</a></td><td class="nicktd" style="color: red">taotetek</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1386808643">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">taotetek</td>
 		<td class="msgtd">linger also impacts context termination</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1386808675">02:13</span>]</a></td><td class="nicktd" style="color: darkgreen">minrk</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1386808675">02:13</span>]</a></td><td class="nicktd" style="color: violet">minrk</td>
 		<td class="msgtd">linger&equals;anything non-negative will work, if you want it to wait a bit to deliver messages</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1386808709">02:13</span>]</a></td><td class="nicktd" style="color: red">taotetek</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1386808709">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">taotetek</td>
 		<td class="msgtd">hi minrk &excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1386808759">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1386808759">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">my problem is that the tcp is hanged</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1386808774">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1386808774">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">as in</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1386808787">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1386808787">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">even if the zmq term command passes, it can be hanged on FIN&UnderBar;WAIT1</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1386808798">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1386808798">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">to show how bad the network is</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1386808810">02:13</span>]</a></td><td class="nicktd" style="color: red">taotetek</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1386808810">02:13</span>]</a></td><td class="nicktd" style="color: darksalmon">taotetek</td>
 		<td class="msgtd">so it&apos;s not so much a zeromq problem as it is a lingering tcp socket after zeromq exits&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1386808868">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1386808868">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">no, during the process. I have 1 or more push-pull sockets from A to B. When send fails, it means all sockets are dead, so I do a socket.disconnect() of all, and reconnect. messages flow again. But now I see dozens of ESTABLISHED on netstat</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1386808870">02:13</span>]</a></td><td class="nicktd" style="color: darkgreen">minrk</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1386808870">02:13</span>]</a></td><td class="nicktd" style="color: violet">minrk</td>
 		<td class="msgtd">hi</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1386808897">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1386808897">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">it&apos;s not a zeromq problem though, I&apos;m just trying to mitigate it somehow. hence the joke of killing the process and restarting it</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1386808959">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1386808959">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">I assume it&apos;s a nat in the middle that keeps the connection open on one side but closes on the other side, and for the same reason in this particular case prevents the connections from flowing data, or from closing </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1386809000">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1386809000">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">unfortunately I can&apos;t unbind from the other side to kill those connections :(</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1386809051">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1386809051">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">no idea at all how to clean those up.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1386809129">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1386809129">02:13</span>]</a></td><td class="nicktd" style="color: maroon">davipt</td>
 		<td class="msgtd">let&apos;s say a working network. The bind side wants to kill clients if there is no traffic coming in for some seconds. let&apos;s say the bind is a router, so it can identify each connection. I have no way to kill them, do I&quest; (besides sending a message to the client asking politely for it to go away) </td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1386845339">02:14</span>]</a></td><td class="nicktd" style="color: darkblue">mmalecki</td>
+		<td class="msgtd">hi&excl; I&apos;m writing a parser for ZMTP in Node.js and I ran into a problem: my parser only ever receives the &apos;signature&apos; part of the message, as defined here: <a href="http://rfc.zeromq.org/spec:15">http://rfc.zeromq.org/spec:15</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1386845379">02:14</span>]</a></td><td class="nicktd" style="color: darkblue">mmalecki</td>
+		<td class="msgtd">I&apos;m connecting using a node.js binding (which works with other clients, just not mine)</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1386845405">02:14</span>]</a></td><td class="nicktd" style="color: darkblue">mmalecki</td>
+		<td class="msgtd">and since I&apos;m not really fully clear on the protocol yet, is this expected&quest; should I respond to the &apos;signature&apos; with something&quest;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
