@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Zeromq-irclog : IRC Log repository for ZeroMQ" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/zeromq-irclog/stylesheets/stylesheet.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+
+    <title>Zeromq-irclog</title>
+
+    <style>
+	    #msgtablediv {
+		margin-left: 20px;
+		margin-right: 20px;
+	    }
+	    #msgtable {
+		    width: 100%;
+		    border: 0;
+		    padding: 0;
+	    }
+	    #msgtableHead {
+		    font-weight: bold;
+	    }
+	    #msgtable td {
+		    border: 0;
+		    margin: 0;
+		    padding: 0px 5px 0px 5px;
+	    }
+	    .timetd {
+		    width: 60px;
+	    }
+	    #msgtable td.nicktd {
+		    text-align: right;
+		    border-right: 1px #555 dashed;
+		    font-weight: bold;
+	    }
+	    .light {
+		    background-color: #ccc;
+	    }
+	    .dark {
+		    background-color: #eee;
+	    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+	  <a href="/zeromq-irclog/index.html"><h1 id="project_title">Zeromq-irclog</h1></a>
+          <h2 id="project_tagline">IRC Log repository for ZeroMQ</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section class="inner">
+
+      <p>These logs have been collected from the <a href="https://webchat.freenode.net/?randomnick=1&amp;channels=%23zeromq&amp;uio=d4" target="_blank">#zeromq</a> IRC channel on Freenode.</p>
+
+      </section>
+<div id="msgtablediv">
+<div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
+<h3 id="titleDate" data-time="1386808201">Thursday December 12th 2013</h3>
+<table id="msgtable">
+<tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1386807634">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">crap, socket.disconnect returns true</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1386807656">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">maybe I need to change the code to panic mode - if send fails, kill process</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1386807687">02:13</span>]</a></td><td class="nicktd" style="color: darkviolet">Toba</td>
+		<td class="msgtd">maybe</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1386807749">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">agh</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1386807751">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">send&UnderBar;term</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1386807811">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">the disconnect return code is only for internal zmqsocket commands</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1386807814">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">then it&apos;s async</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1386807825">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">and the other thread tries to send data to say bye</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1386807828">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">which will</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1386807840">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">result in nothing (damn enter key)</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1386807875">02:13</span>]</a></td><td class="nicktd" style="color: indigo">davipt</td>
+		<td class="msgtd">linger time... re-reading the manual</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1386807933">02:13</span>]</a></td><td class="nicktd" style="color: darkviolet">Toba</td>
+		<td class="msgtd">yeah...</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1386807939">02:13</span>]</a></td><td class="nicktd" style="color: darkviolet">Toba</td>
+		<td class="msgtd">having to read the manual gets fun</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1386807945">02:13</span>]</a></td><td class="nicktd" style="color: darkviolet">Toba</td>
+		<td class="msgtd">before i figured out that timeout thing you helped with</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1386807949">02:13</span>]</a></td><td class="nicktd" style="color: darkviolet">Toba</td>
+		<td class="msgtd">i was stracing python :(</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1386807957">02:13</span>]</a></td><td class="nicktd" style="color: darkviolet">Toba</td>
+		<td class="msgtd">which is not a good time, anyone will tell you</td>
+	</tr>
+</table>
+<p id="timeinfo">*Times are in UTC</p>
+</div>
+<script src="/zeromq-irclog/javascripts/time.js"></script>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Zeromq-irclog maintained by <a href="https://github.com/porjo">porjo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
