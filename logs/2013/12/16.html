@@ -66,295 +66,295 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1387171801">Monday December 16th 2013</h3>
+<h3 id="titleDate" data-time="1387173601">Monday December 16th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1387163259">02:19</span>]</a></td><td class="nicktd" style="color: darkred">meretrix</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1387163259">02:19</span>]</a></td><td class="nicktd" style="color: indigo">meretrix</td>
 		<td class="msgtd">Hi, I have a basic pub-sub, with a single sub binding and multiple pubs connecting.  It works fine, but if the sub restarts, the pubs will not reconnect automatically.  I was expecting that they would. Is my expectation incorrect&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1387163353">02:19</span>]</a></td><td class="nicktd" style="color: darkred">meretrix</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1387163353">02:19</span>]</a></td><td class="nicktd" style="color: indigo">meretrix</td>
 		<td class="msgtd">The pubs are all using an older version of zeromq (2.1.1). </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1387166426">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1387166426">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">if you can&apos;t share a zmq socket with multiple threads, how do you both send and receive at the same time bidirectionally&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1387167010">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1387167010">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd"><strong>kellabyte:</strong> make a socket in each thread, all bound to the same endpoint</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1387167029">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1387167029">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd"><strong>meretrix:</strong> that sounds odd.  Can you paste a (possibly simplified) version&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1387167148">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1387167148">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>offby1:</strong> does that create new OS level sockets each time or is that a ZMQ abstraction&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1387167272">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1387167272">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">ZMQ abstraction for sharing 1 OS socket I mean</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1387167278">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1387167278">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">&Oslash;MQ abstraction</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1387167293">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1387167293">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">Try It And See&trade;.  I haven&apos;t done it myself but I seem to recall reading about that technique in the docs.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1387167314">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1387167314">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>offby1:</strong> hmm ok. what if you really want to create a unique socket connection multiple times though&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1387167324">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1387167324">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">not sure what that means tbh </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1387167360">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1387167360">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">well sockets are full duplex I believe, you can communicate in either direction</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1387167378">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1387167378">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">mm ... I think that&apos;d depend on the flavor.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1387167387">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1387167387">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">but ZMQ has blocking calls, but zmq sockets can&apos;t be shared among threads, so I&apos;m a little confused how the full duplex is achievable</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1387167392">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1387167392">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">the only ones I&apos;ve used are PUB and SUB, and I&apos;m pretty sure they&apos;re &UnderBar;unidirectional&UnderBar;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1387167404">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1387167404">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">I&apos;m talking real sockets, not ZMQ sockets</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1387167407">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1387167407">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">oh.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1387167411">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1387167411">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">sorry :)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1387167436">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1387167436">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">dealer &plus; router pattern lets you communicate in either direction</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1387167453">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1387167453">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">but all the examples I see, still do so in a blocking fashion with request/reply like semantics or forward only examples</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1387167457">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1387167457">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">lemme look at the docs</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1387167465">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1387167465">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">not clear how to do a regular socket like relationship where you can receive as you&apos;re sending</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1387167485">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1387167485">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">well. I&apos;m pretty sure you don&apos;t want to send and receive at the same time on the same socket with &Oslash;MQ.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1387167529">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1387167529">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">perhaps, but if creating a ZMQ socket &equals; creating a real socket, I don&apos;t want 2 TCP connections</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1387167544">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1387167544">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">thats where the abstraction is blurry for me, what distinguishes a TCP connection</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1387167550">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1387167550">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">pertty sure that one &Oslash;MQ socket &excl;&equals; one real socket</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1387167570">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1387167570">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>offby1:</strong> could be :) but something has to allow you to determine if you want a new real socket</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1387167585">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1387167585">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">I&apos;m also pretty sure that you&apos;re not supposed to worry about real sockets.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1387167639">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1387167639">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">well I&apos;m speaking real sockets because I know how that stuff works, and the behaviour of ZMQ isn&apos;t totally clear to me</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1387167651">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1387167651">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">but I&apos;m trying to design a protocol, so the real socket behaviour matters to me</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1387167691">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1387167691">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">all I can say is, just like the guide predicted: it took me days to figure out how to do what I wanted :-)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1387167701">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">offby1</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1387167701">02:19</span>]</a></td><td class="nicktd" style="color: darkblue">offby1</td>
 		<td class="msgtd">maybe you haven&apos;t yet put in your two days of struggle </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1387167810">02:19</span>]</a></td><td class="nicktd" style="color: darkred">meretrix</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1387167810">02:19</span>]</a></td><td class="nicktd" style="color: indigo">meretrix</td>
 		<td class="msgtd"><strong>offby1:</strong> Here&apos;s the basic setup: <a href="http://pastebin.com/C48uzm6R">http://pastebin.com/C48uzm6R</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1387168178">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1387168178">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> I&apos;m a little late in the convo but what problem you are trying to solve&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1387168246">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1387168246">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> I want a bidirectional communication between two peers, so it needs to receive and send at the same time</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1387168292">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1387168292">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> since receive blocks, I&apos;m not sure how that can happen</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1387168309">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1387168309">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> I&apos;m totally guessing I&apos;m missing something somewhere :)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1387168447">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1387168447">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> Seems you are stuck thinking in posix sockets. Just a little impedance mismatch is all.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1387168510">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1387168510">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> hehe. can you clarify what I&apos;ve misunderstood&quest; that would be wonderful&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1387168516">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1387168516">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> can you take a step back and explain what &quot;meat space&quot; problem you are trying to solve&quest; Then we can start getting into the how</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1387168592">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1387168592">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> both ends can be communicating at an independent rate, but as I said, receive blocks so that stalls the ability to send at the same time</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1387168652">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1387168652">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> Are you using REQ/REP&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1387168672">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1387168672">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">no, router &plus; dealer</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1387168680">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1387168680">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">ok</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1387168720">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1387168720">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">You can use a Poller, <a href="http://api.zeromq.org/3-2:zmq-poll">http://api.zeromq.org/3-2:zmq-poll</a>, to multiplex your data</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1387168728">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1387168728">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">i.e. One thread</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1387168865">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1387168865">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">hmm, I saw a poller example but it showed polling multiple receives, not a combination of receive and send</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1387168869">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1387168869">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">it can do both&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1387168880">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1387168880">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">You can do both</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1387168894">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1387168894">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">ah&excl;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1387168897">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1387168897">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">just register POLLIN and POLLOUT on that socket</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1387169001">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1387169001">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> Are you sending work downstream and listening for acks&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1387169039">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1387169039">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> part of the traffic is acks but there&apos;s a whole other part of the protocol that is just two way stuff</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1387169150">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1387169150">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">using poller, how do you actually send data&quest; lol</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1387169156">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1387169156">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">I get the registering part</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1387169235">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1387169235">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">just send data on the omq socket</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1387169334">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1387169334">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">or when the POLLOUT mask is set on revents if you want to do it using the poller</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1387169393">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1387169393">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">hmm but poll is a blocking call isn&apos;t it&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1387169406">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1387169406">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">it has a timeout so seems like it is</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1387169417">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1387169417">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">so still unclear how you send without being blocked :P</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1387169473">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1387169473">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">blocked by poll/receive I mean</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1387169612">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1387169612">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> <a href="https://www.refheap.com/21957">https://www.refheap.com/21957</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1387169781">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1387169781">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> hmm, totally not what I expected haha. okay lemme digest that :) thanks so much</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1387169885">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1387169885">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd"><strong>kellabyte:</strong> <a href="https://github.com/imatix/zguide/tree/master/examples">https://github.com/imatix/zguide/tree/master/examples</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1387169915">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1387169915">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">all the zguide examples in a bunch of different languages</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1387169985">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1387169985">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd"><strong>beffbernard:</strong> yeah I&apos;ve been looking at a bunch of those, especially the router/dealer one :)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1387170094">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1387170094">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">When in doubt, read the zguide... 2 or 3 times to grok it</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1387170166">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1387170166">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">hehe :)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1387170178">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1387170178">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">ok bedtime, I&apos;ll take some further look into poll, thanks so much for the help</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1387170182">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1387170182">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">I might have some more questions :P</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1387170193">02:19</span>]</a></td><td class="nicktd" style="color: darksalmon">kellabyte</td>
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1387170193">02:19</span>]</a></td><td class="nicktd" style="color: green">kellabyte</td>
 		<td class="msgtd">thanks again&excl; goodnight&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1387170197">02:19</span>]</a></td><td class="nicktd" style="color: black">beffbernard</td>
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1387170197">02:19</span>]</a></td><td class="nicktd" style="color: darkmagenta">beffbernard</td>
 		<td class="msgtd">no worries, take care</td>
 	</tr>
 </table>
