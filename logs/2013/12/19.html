@@ -66,88 +66,92 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1387420201">Thursday December 19th 2013</h3>
+<h3 id="titleDate" data-time="1387423801">Thursday December 19th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1387411047">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1387411047">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">it was a problem in my code</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1387411495">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1387411495">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">ok, then...now I&apos;m trying to bind two sockets to the same host and port but different resources and I&apos;m getting &quot;zmq.error.ZMQError: Address already in use&quot;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1387411507">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1387411507">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">how is this done properly&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1387412352">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1387412352">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd">you can&apos;t bind two sockets to the same host</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1387412359">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1387412359">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd">oh, sorry, missed the resources part</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1387412388">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1387412388">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">ZMTP/3.0 is specifically supposed to allow this</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1387412402">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1387412402">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">and I&apos;m using libzmq 4.0.3</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1387412520">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1387412520">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd">hm, works here</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1387412537">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1387412537">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd">no, wait</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1387412544">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1387412544">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd">still in use for second bind</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1387412628">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1387412628">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">is this even supposed to work in libzmq 4.0.x&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1387412667">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1387412667">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd">4.0.0rc1 changelog says &quot;New wire level protocol, ZMTP/3.0&quot;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1387413436">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1387413436">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd">binding to different resources doesn&apos;t work</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1387413545">02:23</span>]</a></td><td class="nicktd" style="color: darkolivegreen">minrk</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1387413545">02:23</span>]</a></td><td class="nicktd" style="color: darkorchid">minrk</td>
 		<td class="msgtd"><strong>agronholm:</strong> it doesn&apos;t work: <a href="https://github.com/zeromq/libzmq/pull/793">https://github.com/zeromq/libzmq/pull/793</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1387414096">02:23</span>]</a></td><td class="nicktd" style="color: darkviolet">rukubites</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1387414096">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">rukubites</td>
 		<td class="msgtd">Hello there, I need a little help with calling zeromq from threads which are created by a third party webserver package. I very much know that sharing sockets is bad. I also know that repetitive creation and destruction of sockets is bad. I don&apos;t want to create a socket pool, because that uses locks and is bad.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1387414144">02:23</span>]</a></td><td class="nicktd" style="color: darkmagenta">agronholm</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1387414144">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">agronholm</td>
 		<td class="msgtd"><strong>minrk:</strong> ok, thanks for checking it out</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1387414233">02:23</span>]</a></td><td class="nicktd" style="color: darkviolet">rukubites</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1387414233">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">rukubites</td>
 		<td class="msgtd">I was wondering whether point 2 is necessarily true. Does creating and tearing down &midast;inproc&midast; sockets create issues the same way as tcp and ipc&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1387418515">02:23</span>]</a></td><td class="nicktd" style="color: darkviolet">rukubites</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1387418515">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">rukubites</td>
 		<td class="msgtd">No love.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1387418532">02:23</span>]</a></td><td class="nicktd" style="color: red">jhawk28</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1387418532">02:23</span>]</a></td><td class="nicktd" style="color: violet">jhawk28</td>
 		<td class="msgtd">wait till valentines day</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1387419069">02:23</span>]</a></td><td class="nicktd" style="color: darkviolet">rukubites</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1387419069">02:23</span>]</a></td><td class="nicktd" style="color: darkorange">rukubites</td>
 		<td class="msgtd">Just asking this question again:  Does repeatedly creating and tearing down &midast;inproc&midast; sockets create issues the same way as tcp and ipc&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1387423241">02:23</span>]</a></td><td class="nicktd" style="color: magenta">cremes</td>
+		<td class="msgtd"><strong>rukubites:</strong> Not exactly. It&apos;s cheaper to create/destroy sockets with inproc transport. However, if you are doing this very rapidly then it&apos;s an anti-pattern. Tell us your use-case (or post it to the ML) and we&apos;ll help you figure out a better way.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
