@@ -66,68 +66,76 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1387999802">Wednesday December 25th 2013</h3>
+<h3 id="titleDate" data-time="1388001601">Wednesday December 25th 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1387964013">02:32</span>]</a></td><td class="nicktd" style="color: darkred">solarradiation</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1387964013">02:32</span>]</a></td><td class="nicktd" style="color: red">solarradiation</td>
 		<td class="msgtd">is it safe to check zctx&UnderBar;interrupted from non-main threads&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1387988049">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1387988049">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">I am trying to implement the poll method with timeout and have this function <a href="http://pastebin.com/jBVfw0bZ">http://pastebin.com/jBVfw0bZ</a>  , but when the server is down the client still hangs.  </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1387988206">02:33</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1387988206">02:33</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
 		<td class="msgtd"><strong>vipconsult:</strong> on what line is it hanging&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1387988222">02:33</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1387988222">02:33</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
 		<td class="msgtd">perhaps it&apos;s hanging on the &quot;connect&quot; call (I don&apos;t know much about ZMQ so beware.)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1387988296">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1387988296">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">yes that is correct , but that is why the poll method has timout opt to give up after 2500 msec</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1387989245">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1387989245">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">actully it is the SOCKOPT&UnderBar;LINGER option that is supposed to set the timout exit</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1387995094">02:33</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1387995094">02:33</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
 		<td class="msgtd"><strong>vipconsult:</strong> I think your poll only starts after the connect has completed, so if the connect never completes, then your poll settings are irrelevant.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1387995120">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1387995120">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">offby1 : yes that was the problem I fixed it an hour ago.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1387995134">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1387995134">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">offby1 :thanks</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1387995175">02:33</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1387995175">02:33</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
 		<td class="msgtd">good</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1387995185">02:33</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1387995185">02:33</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
 		<td class="msgtd">just out of curiosity: &UnderBar;why&UnderBar; was &quot;connect&quot; hanging, and how did you fix it&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1387998772">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1387998772">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">offby1 : the recursion function was causing in infinite loop</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1387998779">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1387998779">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">here is the final version that works fine</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1387998779">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1387998779">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd"><strong>http:</strong>//pastebin.com/uS9GS0zC</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1387998795">02:33</span>]</a></td><td class="nicktd" style="color: magenta">vipconsult</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1387998795">02:33</span>]</a></td><td class="nicktd" style="color: darkcyan">vipconsult</td>
 		<td class="msgtd">so basically I split the code in 2 functions instead of one</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1388001184">02:33</span>]</a></td><td class="nicktd" style="color: darkred">Annia</td>
+		<td class="msgtd">Can I connect to an IRC sever using TCP ZMQ&UnderBar;REQ socket&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1388001369">02:33</span>]</a></td><td class="nicktd" style="color: olive">agronholm</td>
+		<td class="msgtd">no</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
