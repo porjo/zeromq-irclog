@@ -66,28 +66,92 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2013/12/index.html">Dec 2013</a></div>
-<h3 id="titleDate" data-time="1388478601">Tuesday December 31st 2013</h3>
+<h3 id="titleDate" data-time="1388480402">Tuesday December 31st 2013</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1388469339">02:41</span>]</a></td><td class="nicktd" style="color: darkblue">drew23</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1388469339">02:41</span>]</a></td><td class="nicktd" style="color: magenta">drew23</td>
 		<td class="msgtd">I&apos;m wondering how to find out the ZAP identity of a user when using ROUTER&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1388469408">02:41</span>]</a></td><td class="nicktd" style="color: darkblue">drew23</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1388469408">02:41</span>]</a></td><td class="nicktd" style="color: magenta">drew23</td>
 		<td class="msgtd">The ZAP identity is aparrently different from the entity that appears in the ROUTER envelope</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1388475583">02:41</span>]</a></td><td class="nicktd" style="color: maroon">genjix</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1388475583">02:41</span>]</a></td><td class="nicktd" style="color: purple">genjix</td>
 		<td class="msgtd">how can i wakeup zmq&UnderBar;poll when I have messages ready to send&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1388477861">02:41</span>]</a></td><td class="nicktd" style="color: fuchsia">frege</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1388477861">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
 		<td class="msgtd">&quot;A subscriber can connect to more than one publisher, using one connect call each time. Data will then arrive and be interleaved (&quot;fair-queued&quot;) so that no single publisher drowns out the others.&quot;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1388477872">02:41</span>]</a></td><td class="nicktd" style="color: fuchsia">frege</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1388477872">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
 		<td class="msgtd">what does fair-queued mean here&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1388478679">02:41</span>]</a></td><td class="nicktd" style="color: red">solarradiation</td>
+		<td class="msgtd"><strong>frege:</strong> see figure 6 in the guide: <a href="https://github.com/imatix/zguide/raw/master/images/fig6.png">https://github.com/imatix/zguide/raw/master/images/fig6.png</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1388478773">02:41</span>]</a></td><td class="nicktd" style="color: red">solarradiation</td>
+		<td class="msgtd">that figure refers to push/pull, but pull and sub both do fair queueing</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1388478826">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd"><strong>solarradiation:</strong> that&apos;s not what I want :(, I want to sync based on timestamp of each message</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1388478837">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">if one of them is missing, then discard all of them</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1388478840">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">that&apos;s my logic</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1388478853">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd"><strong>solarradiation:</strong> do you think I can implement that using 0mq&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1388478866">02:41</span>]</a></td><td class="nicktd" style="color: red">solarradiation</td>
+		<td class="msgtd">I think you&apos;re going to have to do that in your application, not at the zeromq-level</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1388478889">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">&quot;If you&apos;re using TCP and a subscriber is slow, messages will queue up on the publisher. We&apos;ll look at how to protect publishers against this using the &quot;high-water mark&quot; later.&quot;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1388478892">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">also this one</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1388478897">02:41</span>]</a></td><td class="nicktd" style="color: red">solarradiation</td>
+		<td class="msgtd">include a timestamp frame in each message, sort them some how&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1388478898">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">I don&apos;t want it to queue-up</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1388478918">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">since my application is soft real-time</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1388478924">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">I want to keep it live</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1388478942">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd"><strong>solarradiation:</strong> is that possible to turn off the queue&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1388478962">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">I kinda feel 0mq isn&apos;t meant for my use case</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1388479034">02:41</span>]</a></td><td class="nicktd" style="color: black">frege</td>
+		<td class="msgtd">the only thing that 0mq has for me is sending a msg with whatever size and getting it in different languages with no problem</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
