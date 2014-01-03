@@ -66,24 +66,64 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2014/01/index.html">Jan 2014</a></div>
-<h3 id="titleDate" data-time="1388728801">Friday January 3rd 2014</h3>
+<h3 id="titleDate" data-time="1388734202">Friday January 3rd 2014</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1388722469">02:45</span>]</a></td><td class="nicktd" style="color: violet">jamescarr</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1388722469">02:45</span>]</a></td><td class="nicktd" style="color: brown">jamescarr</td>
 		<td class="msgtd">is there a way to do dealer-router but have the workers handle one at a time&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1388722474">02:45</span>]</a></td><td class="nicktd" style="color: violet">jamescarr</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1388722474">02:45</span>]</a></td><td class="nicktd" style="color: brown">jamescarr</td>
 		<td class="msgtd">like one message at a time&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1388723276">02:45</span>]</a></td><td class="nicktd" style="color: indigo">pingu</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1388723276">02:45</span>]</a></td><td class="nicktd" style="color: darkred">pingu</td>
 		<td class="msgtd">Is there any sort of zeromq netcat utility out there&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1388728549">02:45</span>]</a></td><td class="nicktd" style="color: darkviolet">legoktm</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1388728549">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
 		<td class="msgtd">hi, question about the PHP bindings. When getting a ZMQSocket object, is there any difference between new ZMQSocket( &dollar;context, ... ) versus &dollar;context-&gt;getSocket( ... ) &quest; </td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1388732390">02:45</span>]</a></td><td class="nicktd" style="color: indigo">jalcine</td>
+		<td class="msgtd"><strong>legoktm:</strong> the first creates whereas the second retrieves</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1388732400">02:45</span>]</a></td><td class="nicktd" style="color: indigo">jalcine</td>
+		<td class="msgtd">it being a socket in both cases</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1388732432">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
+		<td class="msgtd">ah.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1388732440">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
+		<td class="msgtd">so I should probably be using &dollar;context-&gt;getSocket then&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1388732565">02:45</span>]</a></td><td class="nicktd" style="color: indigo">jalcine</td>
+		<td class="msgtd">what are you trying to do&quest; create a socket or obtain one&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1388732579">02:45</span>]</a></td><td class="nicktd" style="color: indigo">jalcine</td>
+		<td class="msgtd">I&apos;d also recommend to check the PHP docs</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1388732591">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
+		<td class="msgtd">umm, I&apos;m trying to send a message :P</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1388732608">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
+		<td class="msgtd">the PHP docs used both forms :/</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1388732641">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
+		<td class="msgtd"><strong>https:</strong>//gerrit.wikimedia.org/r/&num;/c/105117/3/includes/rcfeed/ZeroMQFeedEngine.php is what the code looks like, the socket part is at the bottom</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1388732656">02:45</span>]</a></td><td class="nicktd" style="color: violet">legoktm</td>
+		<td class="msgtd">and you can see some comments with me and someone else discussing this</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
