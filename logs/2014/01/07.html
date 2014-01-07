@@ -66,11 +66,11 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2014/01/index.html">Jan 2014</a></div>
-<h3 id="titleDate" data-time="1389090601">Tuesday January 7th 2014</h3>
+<h3 id="titleDate" data-time="1389096001">Tuesday January 7th 2014</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1389054561">00:29</span>]</a></td><td class="nicktd" style="color: darkorange">offby1</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1389054561">00:29</span>]</a></td><td class="nicktd" style="color: violet">offby1</td>
 		<td class="msgtd">the guide said it&apos;d take a couple of days for everything to sink in&semi; that seems about right</td>
 	</tr>
 	<tr class="dark">
@@ -90,8 +90,36 @@
 		<td class="msgtd">ok, thanks from past life :) ( <a href="http://travlr.github.io/zmqirclog/110416.html">http://travlr.github.io/zmqirclog/110416.html</a> )</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1389089078">10:04</span>]</a></td><td class="nicktd" style="color: darkcyan">tmaroschik</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1389089078">10:04</span>]</a></td><td class="nicktd" style="color: brown">tmaroschik</td>
 		<td class="msgtd">dear helpful messagers. I&apos;m trying to figure out if one sub socket can issue multiple subscriptions or do I need multiple subs for that&quest; I already tried to read the guide, the faq and the pub sub envelope guide. there wasn&apos;t a note about that there.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1389094150">11:29</span>]</a></td><td class="nicktd" style="color: magenta">FunkyDrummer</td>
+		<td class="msgtd">I&apos;ve been having some problems connecting clrzmq (.net binding) to my C&plus;&plus; application - it seems it doesn&apos;t support zmq 4.0, are there any other bindings that do support it, or should I migrate my C&plus;&plus; application to zmq 3.x&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1389094402">11:33</span>]</a></td><td class="nicktd" style="color: darkred">Faux</td>
+		<td class="msgtd">Aren&apos;t they compatiable&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1389094432">11:33</span>]</a></td><td class="nicktd" style="color: olive">taotetek</td>
+		<td class="msgtd">they should be able to talk to each other, yes.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1389094466">11:34</span>]</a></td><td class="nicktd" style="color: olive">taotetek</td>
+		<td class="msgtd">clrzmq has not had a commit since Nov of 2012 though - I&apos;m not sure how comfortable I&apos;d be depending on it.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1389095167">11:46</span>]</a></td><td class="nicktd" style="color: magenta">FunkyDrummer</td>
+		<td class="msgtd">I can PUB stuff from C&num; and it arrived in the C&plus;&plus; app, but when I try PUB from C&plus;&plus;, I just get an empty message in C&num; and then it blocks on the next recv()</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1389095191">11:46</span>]</a></td><td class="nicktd" style="color: magenta">FunkyDrummer</td>
+		<td class="msgtd">I&apos;ll try netmq, and downgrade if that doesn&apos;t work</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1389095647">11:54</span>]</a></td><td class="nicktd" style="color: darkred">Faux</td>
+		<td class="msgtd"><strong>FunkyDrummer:</strong> The second on STRINGS in the guide may be relevant.</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
