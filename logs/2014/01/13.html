@@ -70,44 +70,80 @@
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1389571680">00:08</span>]</a></td><td class="nicktd" style="color: brown">hlprmnky</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1389571680">00:08</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
 		<td class="msgtd">Is there a way to know for sure that a given version of jzmq will compile and work correctly with a given version of 0mq&quest; Let&apos;s say, for argument&apos;s sake, zeromq/jzmq master and 0mq 4.0.3 as installed by homebrew</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1389571797">00:09</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1389571797">00:09</span>]</a></td><td class="nicktd" style="color: darksalmon">offby1</td>
 		<td class="msgtd">no idea</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1389572026">00:13</span>]</a></td><td class="nicktd" style="color: brown">hlprmnky</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1389572026">00:13</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
 		<td class="msgtd">I mean, when I see a test failure in mvn test from jzmq I &midast;tend to assume&midast; that I&apos;ve done something wrong, not the library, but I&apos;m running out of places to look for where I messed up. :)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1389572747">00:25</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1389572747">00:25</span>]</a></td><td class="nicktd" style="color: darksalmon">offby1</td>
 		<td class="msgtd">if you simply downloaded some software and ran mvn test and it failed, I&apos;d assume the package is buggy, not you.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1389572757">00:25</span>]</a></td><td class="nicktd" style="color: brown">offby1</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1389572757">00:25</span>]</a></td><td class="nicktd" style="color: darksalmon">offby1</td>
 		<td class="msgtd">unless -- as I suspect is your point -- you bungled the dependencies</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1389573143">00:32</span>]</a></td><td class="nicktd" style="color: brown">hlprmnky</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1389573143">00:32</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
 		<td class="msgtd">well, the wrinkle here is that I&apos;m building a JAR that&apos;s supposed to be using a JNI library to talk to a native libzmq.a, which travels separately from the jzmq project I checked out</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1389573189">00:33</span>]</a></td><td class="nicktd" style="color: brown">hlprmnky</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1389573189">00:33</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
 		<td class="msgtd">so, yeah, my suspicion is that the current master of jzmq is either ahead of or behind the native library version I have, but all it says anywhere is &quot;use a recent version of libzmq&quot; </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1389573229">00:33</span>]</a></td><td class="nicktd" style="color: brown">hlprmnky</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1389573229">00:33</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
 		<td class="msgtd">(to clarify, the test error is in a native method call in the library, and I only have the one, so I have to assume that it&apos;s finding libzmq and just not liking what it sees therein)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1389574025">00:47</span>]</a></td><td class="nicktd" style="color: darksalmon">felipecruz</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1389574025">00:47</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
 		<td class="msgtd">hi&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1389574106">00:48</span>]</a></td><td class="nicktd" style="color: darksalmon">felipecruz</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1389574106">00:48</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
 		<td class="msgtd">anyone experiencing problems building libzmq on osx 10.9&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1389574599">00:56</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="msgtd">what version are you trying to build&quest; the 4.0.3 in homebrew &midast;seems&midast; to compile okay for me, though I&apos;m having some issues getting jzmq to work so maybe it&apos;s not all there</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1389574763">00:59</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
+		<td class="msgtd"><strong>hlprmnky:</strong> I&apos;m building from source</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1389574768">00:59</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
+		<td class="msgtd"><strong>ld:</strong> unknown option: --version-script&equals;libzmq.vers</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1389574768">00:59</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
+		<td class="msgtd"><strong>clang:</strong> error: linker command failed with exit code 1 (use -v to see invocation)</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1389576052">01:20</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="msgtd"><strong>felipecruz:</strong> what version do you have downloaded&quest; I&apos;ll pull it down and try here, see what I get</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1389576095">01:21</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
+		<td class="msgtd">from github master</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1389576107">01:21</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
+		<td class="msgtd">I&apos;m installing gcc49 via homebrew</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1389576114">01:21</span>]</a></td><td class="nicktd" style="color: darkred">felipecruz</td>
+		<td class="msgtd">let&apos;s see if it works</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1389576298">01:24</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="msgtd">I do get the same error as you after ./autogen.sh&semi; ./configure&semi; make</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
