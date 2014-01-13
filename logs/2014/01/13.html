@@ -70,336 +70,376 @@
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1389571680">00:08</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1389571680">00:08</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">Is there a way to know for sure that a given version of jzmq will compile and work correctly with a given version of 0mq&quest; Let&apos;s say, for argument&apos;s sake, zeromq/jzmq master and 0mq 4.0.3 as installed by homebrew</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1389571797">00:09</span>]</a></td><td class="nicktd" style="color: darksalmon">offby1</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1389571797">00:09</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
 		<td class="msgtd">no idea</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1389572026">00:13</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1389572026">00:13</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I mean, when I see a test failure in mvn test from jzmq I &midast;tend to assume&midast; that I&apos;ve done something wrong, not the library, but I&apos;m running out of places to look for where I messed up. :)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1389572747">00:25</span>]</a></td><td class="nicktd" style="color: darksalmon">offby1</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1389572747">00:25</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
 		<td class="msgtd">if you simply downloaded some software and ran mvn test and it failed, I&apos;d assume the package is buggy, not you.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1389572757">00:25</span>]</a></td><td class="nicktd" style="color: darksalmon">offby1</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1389572757">00:25</span>]</a></td><td class="nicktd" style="color: red">offby1</td>
 		<td class="msgtd">unless -- as I suspect is your point -- you bungled the dependencies</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1389573143">00:32</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1389573143">00:32</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">well, the wrinkle here is that I&apos;m building a JAR that&apos;s supposed to be using a JNI library to talk to a native libzmq.a, which travels separately from the jzmq project I checked out</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1389573189">00:33</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1389573189">00:33</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">so, yeah, my suspicion is that the current master of jzmq is either ahead of or behind the native library version I have, but all it says anywhere is &quot;use a recent version of libzmq&quot; </td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1389573229">00:33</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1389573229">00:33</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">(to clarify, the test error is in a native method call in the library, and I only have the one, so I have to assume that it&apos;s finding libzmq and just not liking what it sees therein)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1389574025">00:47</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1389574025">00:47</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">hi&excl;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1389574106">00:48</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1389574106">00:48</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">anyone experiencing problems building libzmq on osx 10.9&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1389574599">00:56</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1389574599">00:56</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">what version are you trying to build&quest; the 4.0.3 in homebrew &midast;seems&midast; to compile okay for me, though I&apos;m having some issues getting jzmq to work so maybe it&apos;s not all there</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1389574763">00:59</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1389574763">00:59</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd"><strong>hlprmnky:</strong> I&apos;m building from source</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1389574768">00:59</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1389574768">00:59</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd"><strong>ld:</strong> unknown option: --version-script&equals;libzmq.vers</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1389574768">00:59</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1389574768">00:59</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd"><strong>clang:</strong> error: linker command failed with exit code 1 (use -v to see invocation)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1389576052">01:20</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1389576052">01:20</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd"><strong>felipecruz:</strong> what version do you have downloaded&quest; I&apos;ll pull it down and try here, see what I get</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1389576095">01:21</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1389576095">01:21</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">from github master</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1389576107">01:21</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1389576107">01:21</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">I&apos;m installing gcc49 via homebrew</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1389576114">01:21</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1389576114">01:21</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">let&apos;s see if it works</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1389576298">01:24</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1389576298">01:24</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I do get the same error as you after ./autogen.sh&semi; ./configure&semi; make</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1389576399">01:26</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1389576399">01:26</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">well.. let&apos;s see if gcc49 solves it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1389576741">01:32</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1389576741">01:32</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">man, this is just a mess</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1389576778">01:32</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1389576778">01:32</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I can get libzmq 4.0.(1&VerticalLine;2&VerticalLine;3) from homebrew, I can (fail to) build libzmq 4.1.0 from source</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1389576793">01:33</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1389576793">01:33</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">the version of jzmq that&apos;s available from git is 4.0.0</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1389576849">01:34</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1389576849">01:34</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I suppose I could check out 4.0.0 from source, but unless I can build it - I&apos;m still not sure version mismatch is &midast;really&midast; my problem but I&apos;d feel a lot better about being sure that the problem I was having was a PEBKAC issue if I had the same version of each</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1389577014">01:36</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-25">[<span class="ts" data-time="1389577014">01:36</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd">have you seen jeromq&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1389577506">01:45</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-26">[<span class="ts" data-time="1389577506">01:45</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I&apos;m aware of it, but my reason for wanting jzmq is to evaluate zeromq as a low-latency, high-throughput messaging library for Clojure code</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1389577552">01:45</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-27">[<span class="ts" data-time="1389577552">01:45</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I suppose I could write a PoC against jeromq, but the senior members of my team would just go run benchmarks and laugh at me a cruel and disparaging laugh, so I might as well sort out the faster lib instead</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1389577597">01:46</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-28">[<span class="ts" data-time="1389577597">01:46</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">hlprmnky, Jeromq is fast.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1389577642">01:47</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-29">[<span class="ts" data-time="1389577642">01:47</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">it is&quest; It specifically says &quot;if you need performance you&apos;ll want the JNI version&quot;, but I suppose it wouldn&apos;t hurt to try it out.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1389577668">01:47</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-30">[<span class="ts" data-time="1389577668">01:47</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">hlprmnky, in simple cases that I tested, JeroMQ was on par with jzmq.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1389577680">01:48</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-31">[<span class="ts" data-time="1389577680">01:48</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">asynchronous send/recv</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1389577687">01:48</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-32">[<span class="ts" data-time="1389577687">01:48</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">that&apos;s surprising and interesting information</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1389577705">01:48</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-33">[<span class="ts" data-time="1389577705">01:48</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">I will definitely check it out.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1389577705">01:48</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-34">[<span class="ts" data-time="1389577705">01:48</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">hlprmnky, You can always swap jeromq with jzmq.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1389577710">01:48</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-35">[<span class="ts" data-time="1389577710">01:48</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">They&apos;re API-compatible.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1389577717">01:48</span>]</a></td><td class="nicktd" style="color: violet">felipecruz</td>
+		<td class="timetd"><a href="#msg-36">[<span class="ts" data-time="1389577717">01:48</span>]</a></td><td class="nicktd" style="color: fuchsia">felipecruz</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/jeromq/wiki/Perfomance">https://github.com/zeromq/jeromq/wiki/Perfomance</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1389577778">01:49</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-37">[<span class="ts" data-time="1389577778">01:49</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">that&apos;s a good point, crocket, I should definitely finish getting my PoC working so I can show it off, and then work on compilation issues with lib/jzmq later</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1389577813">01:50</span>]</a></td><td class="nicktd" style="color: violet">hlprmnky</td>
+		<td class="timetd"><a href="#msg-38">[<span class="ts" data-time="1389577813">01:50</span>]</a></td><td class="nicktd" style="color: black">hlprmnky</td>
 		<td class="msgtd">especially since I&apos;m doing all this work just for a local REPL, basically - none of this will be &midast;running&midast; on mavericks boxes in test/production</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1389577825">01:50</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-39">[<span class="ts" data-time="1389577825">01:50</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">It&apos;s just that JeroMQ doesn&apos;t support ZMQ security yet.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1389594204">06:23</span>]</a></td><td class="nicktd" style="color: darkorchid">crocket</td>
+		<td class="timetd"><a href="#msg-40">[<span class="ts" data-time="1389594204">06:23</span>]</a></td><td class="nicktd" style="color: green">crocket</td>
 		<td class="msgtd">hlprmnky, How&apos;s your experimentation going&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1389603442">08:57</span>]</a></td><td class="nicktd" style="color: purple">ZMQ&UnderBar;newer</td>
+		<td class="timetd"><a href="#msg-41">[<span class="ts" data-time="1389603442">08:57</span>]</a></td><td class="nicktd" style="color: indigo">ZMQ&UnderBar;newer</td>
 		<td class="msgtd">hello</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1389603493">08:58</span>]</a></td><td class="nicktd" style="color: purple">ZMQ&UnderBar;newer</td>
+		<td class="timetd"><a href="#msg-42">[<span class="ts" data-time="1389603493">08:58</span>]</a></td><td class="nicktd" style="color: indigo">ZMQ&UnderBar;newer</td>
 		<td class="msgtd">Anybody knows how crosscompile node.js binding for ARM&quest; </td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1389603546">08:59</span>]</a></td><td class="nicktd" style="color: purple">ZMQ&UnderBar;newer</td>
+		<td class="timetd"><a href="#msg-43">[<span class="ts" data-time="1389603546">08:59</span>]</a></td><td class="nicktd" style="color: indigo">ZMQ&UnderBar;newer</td>
 		<td class="msgtd">I have no binutils in my target, then I cann&apos;t use npm...</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1389606041">09:40</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-44">[<span class="ts" data-time="1389606041">09:40</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">I&apos;ve written a little ZAP server and return a 400 &quot;login failure&quot; on connect. But then the client tries to reconnect every second (and fails again, surprise). Shouldn&apos;t the client get an error&quest; How do I catch this in the client&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1389606218">09:43</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-45">[<span class="ts" data-time="1389606218">09:43</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">good question</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1389606234">09:43</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-46">[<span class="ts" data-time="1389606234">09:43</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">any chance the monitoring interface has an event for that&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1389606244">09:44</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-47">[<span class="ts" data-time="1389606244">09:44</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">i&apos;m not sure</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1389606250">09:44</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-48">[<span class="ts" data-time="1389606250">09:44</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">please have a look</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1389606528">09:48</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-49">[<span class="ts" data-time="1389606528">09:48</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd"><a href="http://api.zeromq.org/4-0:zmq-socket-monitor">http://api.zeromq.org/4-0:zmq-socket-monitor</a> doesn&apos;t list anything</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1389606545">09:49</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-50">[<span class="ts" data-time="1389606545">09:49</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">too bad</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1389606755">09:52</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-51">[<span class="ts" data-time="1389606755">09:52</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">work around could be the use of the ZMQ&UnderBar;IMMEDATE flag on the socket and then try to send something</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1389606768">09:52</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-52">[<span class="ts" data-time="1389606768">09:52</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">but this is clumsy, no question</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1389606819">09:53</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-53">[<span class="ts" data-time="1389606819">09:53</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">and won&apos;t give me the error text included in the rejection</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1389606902">09:55</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-54">[<span class="ts" data-time="1389606902">09:55</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">of course not</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1389606924">09:55</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-55">[<span class="ts" data-time="1389606924">09:55</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">giving proper feedback is not the domain of &#65533;MQ  &semi;)</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1389606949">09:55</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-56">[<span class="ts" data-time="1389606949">09:55</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">If I use ZMQ&UnderBar;IMMEDATE how does that help&quest; Wouldn&apos;t that just make the client hang&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1389607003">09:56</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-57">[<span class="ts" data-time="1389607003">09:56</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">send w/ DONTWAIT&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1389607028">09:57</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-58">[<span class="ts" data-time="1389607028">09:57</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">or use of send timeout</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1389607066">09:57</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-59">[<span class="ts" data-time="1389607066">09:57</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">That&apos;s realy insufficient. That doesn&apos;t tell me wether the server is unreachable, unresponsive or the credentials are wrong.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1389607085">09:58</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-60">[<span class="ts" data-time="1389607085">09:58</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">go ahead and send a patch</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1389607106">09:58</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-61">[<span class="ts" data-time="1389607106">09:58</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">well, first this needs a design.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1389607129">09:58</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-62">[<span class="ts" data-time="1389607129">09:58</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">feel free to discuss that on the ml</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1389607170">09:59</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-63">[<span class="ts" data-time="1389607170">09:59</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">Another question. The ZAP response can set a user name and meta data. Can the server access those&quest; Or the client&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1389607193">09:59</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-64">[<span class="ts" data-time="1389607193">09:59</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">(not that server/client makes much sense in zmq)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1389607223">10:00</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-65">[<span class="ts" data-time="1389607223">10:00</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">no clue, didn&apos;t do any zap myself</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1389607446">10:04</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-66">[<span class="ts" data-time="1389607446">10:04</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">Either I&apos;m missing something or this isn&apos;t fully thought out yet.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1389607642">10:07</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-67">[<span class="ts" data-time="1389607642">10:07</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd"><strong>guido&UnderBar;g:</strong> We use zmq 3 &plus; TLS patches on a cluster. The problem we have is that when the server goes down a while and comes back then it gets DOSed by all the nodes trying to reconnect and something goes wrong in the TLS patches making it reject connections. Then the code keeps spinning at 100&percnt;. I fear the same will haven with zmq 4 if logins get rejected (e.g. key expired).</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1389607667">10:07</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-68">[<span class="ts" data-time="1389607667">10:07</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">s/haven/happen/</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1389607739">10:08</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-69">[<span class="ts" data-time="1389607739">10:08</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">you get notifications for disconnects though, just close the sockets and don&apos;t rely on automatic reconnect</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1389607796">10:09</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-70">[<span class="ts" data-time="1389607796">10:09</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">you think when the login fails I get a disconnect signal&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1389607845">10:10</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-71">[<span class="ts" data-time="1389607845">10:10</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">i think you get a disconnect event when the server goes down</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1389608081">10:14</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-72">[<span class="ts" data-time="1389608081">10:14</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">Can I tune how often/fast zmq tries to connect&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1389608160">10:16</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-73">[<span class="ts" data-time="1389608160">10:16</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">can you read the docs&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1389608169">10:16</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-74">[<span class="ts" data-time="1389608169">10:16</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd"><a href="http://api.zeromq.org/4-0:zmq-setsockopt">http://api.zeromq.org/4-0:zmq-setsockopt</a></td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1389608270">10:17</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-75">[<span class="ts" data-time="1389608270">10:17</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">thx</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1389611152">11:05</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-76">[<span class="ts" data-time="1389611152">11:05</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">Looks like I&apos;m getting the following on ZAP rejections: DISCONNECTED, CONNECT&UnderBar;RETRIED, EVENT&UnderBar;CONNECT&UnderBar;DELAYED, EVENT&UnderBar;CONNECTED</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1389611423">11:10</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-77">[<span class="ts" data-time="1389611423">11:10</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">The zmq&UnderBar;socket&UnderBar;monitor page says it sends messages of 2 frames each. I wonder how bad it would be to make that 2 or 3 (only for some new events) frames. Do you think there are apps that set an event mask of ~0 and assume only 2 frames are send per event&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1389611458">11:10</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-78">[<span class="ts" data-time="1389611458">11:10</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">I&apos;m thinking there should be an AUTH&UnderBar;FAILED event that sends a 3rd frame containing the failure text</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1389611547">11:12</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-79">[<span class="ts" data-time="1389611547">11:12</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">go ahead, send a patch</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1389611598">11:13</span>]</a></td><td class="nicktd" style="color: green">mrvn</td>
+		<td class="timetd"><a href="#msg-80">[<span class="ts" data-time="1389611598">11:13</span>]</a></td><td class="nicktd" style="color: darkorchid">mrvn</td>
 		<td class="msgtd">maybe. I&apos;m still trying to think of some way to have the connect, send or recv fail directly. But that doesn&apos;t mesh well with the async nature.</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1389630265">16:24</span>]</a></td><td class="nicktd" style="color: darkgreen">berzerka</td>
+		<td class="timetd"><a href="#msg-81">[<span class="ts" data-time="1389630265">16:24</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
 		<td class="msgtd">hi there</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1389630294">16:24</span>]</a></td><td class="nicktd" style="color: darkgreen">berzerka</td>
+		<td class="timetd"><a href="#msg-82">[<span class="ts" data-time="1389630294">16:24</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
 		<td class="msgtd">guido&UnderBar;g, ping :)</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1389630307">16:25</span>]</a></td><td class="nicktd" style="color: darkblue">guido&UnderBar;g</td>
+		<td class="timetd"><a href="#msg-83">[<span class="ts" data-time="1389630307">16:25</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
 		<td class="msgtd">pong</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-84">[<span class="ts" data-time="1389630352">16:25</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
+		<td class="msgtd">hey, have read a lot of automake documentation regarding the indication wether zeromq was built with or without e.g. PGM</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-85">[<span class="ts" data-time="1389630368">16:26</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
+		<td class="msgtd">ah okay</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-86">[<span class="ts" data-time="1389630371">16:26</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
+		<td class="msgtd">any news&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-87">[<span class="ts" data-time="1389630427">16:27</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
+		<td class="msgtd">guido&UnderBar;g, there are several possibilities. i think the easiest would be to introduce a new header zeromq&UnderBar;config.h or the like, which contains a subset of src/platform.hpp, i.e. those which might be relevant to the user, like ZMQ&UnderBar;WITH&UnderBar;PGM or later ZMQ&UnderBar;WITH&UnderBar;UDP for example.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-88">[<span class="ts" data-time="1389630476">16:27</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
+		<td class="msgtd">sounds good</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-89">[<span class="ts" data-time="1389630506">16:28</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
+		<td class="msgtd">in that case we could simple add another AC&UnderBar;CONFIG&UnderBar;HEADER to autoconf and have it auto-generated each time.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-90">[<span class="ts" data-time="1389630509">16:28</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
+		<td class="msgtd">you should discuss that on the ml though, most of the devs are there</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-91">[<span class="ts" data-time="1389630523">16:28</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
+		<td class="msgtd">otoh, zmq.h already contains a lot of compile-time information on that specific zmq build/version so it would also be nice to have only that one header.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-92">[<span class="ts" data-time="1389630542">16:29</span>]</a></td><td class="nicktd" style="color: olive">berzerka</td>
+		<td class="msgtd">alright i will write up what i thought of and see what the ml has to say on it.</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-93">[<span class="ts" data-time="1389630558">16:29</span>]</a></td><td class="nicktd" style="color: darkviolet">guido&UnderBar;g</td>
+		<td class="msgtd">great&excl; and good luck&excl;</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
