@@ -70,11 +70,11 @@
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1391566055">02:07</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1391566055">02:07</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">In PyZMQ I&apos;ve noticed that a REP socket listens on this address (&quot;inproc://zeromq.zap.01&quot;) in the zmq.auth.Authenticator, but there&apos;s no place in the code-base that connects to that address.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1391566077">02:07</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1391566077">02:07</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">Does anybody know how exactly ZAP works internally like that&quest; I think there&apos;s some sort of magic I&apos;m missing.</td>
 	</tr>
 	<tr class="light">
@@ -82,15 +82,15 @@
 		<td class="msgtd"><strong>d4de:</strong> <a href="http://rfc.zeromq.org/spec:27">http://rfc.zeromq.org/spec:27</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1391566503">02:15</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1391566503">02:15</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">Ah so basically I have to build a server socket where it connects to that endpoint using a REQ/DEALER socket and that&apos;s how clients authenticated, right&quest;</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1391566534">02:15</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1391566534">02:15</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">Should that socket be solely dedicated to authentication&quest; Because it looks like that in the code</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1391566663">02:17</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1391566663">02:17</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">I&apos;m quite lost at how to get authenticated/decrypted messages out of it</td>
 	</tr>
 	<tr class="light">
@@ -106,7 +106,7 @@
 		<td class="msgtd">when you set the security mechanism with socket options</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1391566742">02:19</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1391566742">02:19</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">Okay for example <a href="https://github.com/zeromq/pyzmq/blob/98068b5794d40c3c2bf1f9be65a0ad1b1957e7a0/examples/security/ironhouse.py">https://github.com/zeromq/pyzmq/blob/98068b5794d40c3c2bf1f9be65a0ad1b1957e7a0/examples/security/ironhouse.py</a></td>
 	</tr>
 	<tr class="light">
@@ -114,15 +114,15 @@
 		<td class="msgtd">right</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1391566827">02:20</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1391566827">02:20</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">yeah but the serer and client sockets connect on a different endpoint than zeromq.zap.01, does that mean that all the authentication and decryption happen behind the scenes and I just don&apos;t have to worry about it</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1391566828">02:20</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1391566828">02:20</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">&quest;</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1391566911">02:21</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1391566911">02:21</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">my question really is who/what connects to inproc://zeromq.zap.01, is that something internal to libzmq and it uses that endpoint to handle messages coming through ALL sockets somehow&quest;</td>
 	</tr>
 	<tr class="light">
@@ -138,15 +138,15 @@
 		<td class="msgtd">libzmq does</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1391567608">02:33</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1391567608">02:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">right zmq::session&UnderBar;base&UnderBar;t::zap&UnderBar;connect() does that.. so ZAP session messages are intercepted and rerouted through libzmq so I can handle them from a frontend socket</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1391567626">02:33</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1391567626">02:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">that&apos;s counterintuitive..</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1391567639">02:33</span>]</a></td><td class="nicktd" style="color: red">d4de</td>
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1391567639">02:33</span>]</a></td><td class="nicktd" style="color: darkolivegreen">d4de</td>
 		<td class="msgtd">but I like it :D .. thanks&excl;</td>
 	</tr>
 </table>
