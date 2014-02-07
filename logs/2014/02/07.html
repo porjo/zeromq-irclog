@@ -66,24 +66,104 @@
       </section>
 <div id="msgtablediv">
 <div><a href="/zeromq-irclog/index.html">Home</a>&nbsp;&gt;&nbsp;<a href="/zeromq-irclog/logs/2014/02/index.html">Feb 2014</a></div>
-<h3 id="titleDate" data-time="1391731202">Friday February 7th 2014</h3>
+<h3 id="titleDate" data-time="1391731201">Friday February 7th 2014</h3>
 <table id="msgtable">
 <tr id="msgtableHead"><td>Time*</td><td>Nickname</td><td>Message</td></tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1391731247">00:00</span>]</a></td><td class="nicktd" style="color: darkred">ovanes</td>
+		<td class="timetd"><a href="#msg-1">[<span class="ts" data-time="1391731247">00:00</span>]</a></td><td class="nicktd" style="color: maroon">ovanes</td>
 		<td class="msgtd">A while ago I asked the question on SO if there is a way to build ZMQ on Mac OS X and link it to libstdc&plus;&plus; with XCode 5. We need that because of some 3rd party lib we get pre-compiled. Any help is highly appreciated.</td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1391734785">00:59</span>]</a></td><td class="nicktd" style="color: green">pingu</td>
+		<td class="timetd"><a href="#msg-2">[<span class="ts" data-time="1391734785">00:59</span>]</a></td><td class="nicktd" style="color: darksalmon">pingu</td>
 		<td class="msgtd">Are there any devs here&quest; I&apos;d like to make this happen but I&apos;m unsure where to best apply my efforts:</td>
 	</tr>
 	<tr class="light">
-		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1391734788">00:59</span>]</a></td><td class="nicktd" style="color: green">pingu</td>
+		<td class="timetd"><a href="#msg-3">[<span class="ts" data-time="1391734788">00:59</span>]</a></td><td class="nicktd" style="color: darksalmon">pingu</td>
 		<td class="msgtd"><a href="https://github.com/zeromq/libzmq/issues/802">https://github.com/zeromq/libzmq/issues/802</a></td>
 	</tr>
 	<tr class="dark">
-		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1391763575">08:59</span>]</a></td><td class="nicktd" style="color: blue">linux&UnderBar;</td>
+		<td class="timetd"><a href="#msg-4">[<span class="ts" data-time="1391763575">08:59</span>]</a></td><td class="nicktd" style="color: darkblue">linux&UnderBar;</td>
 		<td class="msgtd">would it be feasible to extend zeromq that it can communicate over a can bus&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-5">[<span class="ts" data-time="1391769507">10:38</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">Hi</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-6">[<span class="ts" data-time="1391769533">10:38</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">I have a strang problem using PAIR between Python and Nodejs app</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-7">[<span class="ts" data-time="1391769536">10:38</span>]</a></td><td class="nicktd" style="color: darkviolet">mhaberler</td>
+		<td class="msgtd"><strong>linux:</strong> what&apos;s your can bus interface look like&quest; a proxy thread might be the way to go, maybe even just talk via a normal FD</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-8">[<span class="ts" data-time="1391769562">10:39</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">i get this error:Assertion failed: &excl;inpipe &amp;&amp; &excl;outpipe (pair.cpp:49)</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-9">[<span class="ts" data-time="1391769589">10:39</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">anyone know how could i solve this&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-10">[<span class="ts" data-time="1391769832">10:43</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> ZMQ&UnderBar;PAIR are mostly for communicating between threads in the same process over inproc transport</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-11">[<span class="ts" data-time="1391769855">10:44</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> don&apos;t use them for communicating between separate processes.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-12">[<span class="ts" data-time="1391769890">10:44</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">thanks, so which type should i use between different apps&quest;</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-13">[<span class="ts" data-time="1391769926">10:45</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> that depends on the communication pattern you are trying to set up - your first step might be to work through some of the zeromq guide so you can understand the various possibilities.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-14">[<span class="ts" data-time="1391769929">10:45</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">Performance is important</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-15">[<span class="ts" data-time="1391769945">10:45</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">thanks again</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-16">[<span class="ts" data-time="1391769960">10:46</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> for a strict request reply pattern ZMQ&UnderBar;REP / ZMQ&UnderBar;REQ</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-17">[<span class="ts" data-time="1391769996">10:46</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> but if what you are working on is a request / reply based pattern I&apos;d definitely go through the section in the guide concerning reliable request / reply patterns.</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-18">[<span class="ts" data-time="1391770052">10:47</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">actually i have some agents which is written in python. they send messages to main app which is nodejs</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-19">[<span class="ts" data-time="1391770106">10:48</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">there no strict reply for each request, the main app mostly get messages with out any reply. still you think req,rep is good for this architecure&quest;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-20">[<span class="ts" data-time="1391770171">10:49</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> <a href="http://zguide.zeromq.org/page:all&num;toc32">http://zguide.zeromq.org/page:all&num;toc32</a></td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-21">[<span class="ts" data-time="1391770183">10:49</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd"><strong>Guest71835:</strong> that section gives a high level overview of the sockets and patterns</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-22">[<span class="ts" data-time="1391770238">10:50</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">thank you taotetek</td>
+	</tr>
+	<tr class="light">
+		<td class="timetd"><a href="#msg-23">[<span class="ts" data-time="1391770243">10:50</span>]</a></td><td class="nicktd" style="color: darkorange">taotetek</td>
+		<td class="msgtd">no problem&excl;</td>
+	</tr>
+	<tr class="dark">
+		<td class="timetd"><a href="#msg-24">[<span class="ts" data-time="1391770244">10:50</span>]</a></td><td class="nicktd" style="color: darkorchid">Guest71835</td>
+		<td class="msgtd">i will read that</td>
 	</tr>
 </table>
 <p id="timeinfo">*Times are in UTC</p>
